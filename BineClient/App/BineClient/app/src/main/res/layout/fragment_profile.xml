@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/dp_16"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:id="@+id/profileImageBackground"
+                    android:layout_width="@dimen/dp_120"
+                    android:layout_height="@dimen/dp_120"
+                    android:layout_marginTop="@dimen/dp_32"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:contentDescription="@string/bn_image_description"
+                    android:src="@drawable/ic_edit_profile"
+                    android:translationZ="@dimen/dp_8"/>
+
+                <ImageView
+                    android:id="@+id/profileImage"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_constraintStart_toStartOf="@id/profileImageBackground"
+                    app:layout_constraintTop_toTopOf="@id/profileImageBackground"
+                    app:layout_constraintEnd_toEndOf="@id/profileImageBackground"
+                    app:layout_constraintBottom_toBottomOf="@id/profileImageBackground"
+                    android:contentDescription="@string/bn_image_description"
+                    android:padding="@dimen/dp_12"
+                    android:translationZ="@dimen/dp_8"/>
+
+                <EditText
+                    android:background="@null"
+                    android:id="@+id/userName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_12"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:maxLength="20"
+                    android:hint="@string/enter_name"
+                    android:drawablePadding="@dimen/dp_12"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/profileImage"
+                    style="@style/SubHeadingText"/>
+
+                <ImageView
+                    android:id="@+id/edit_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_8"
+                    app:layout_constraintStart_toEndOf="@id/userName"
+                    app:layout_constraintTop_toTopOf="@id/userName"
+                    app:layout_constraintBottom_toBottomOf="@id/userName"
+                    android:src="@drawable/ic_baseline_edit_12"
+                    android:paddingBottom="@dimen/dp_6"/>
+
+                <ImageView
+                    android:id="@+id/saveUsername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_8"
+                    app:layout_constraintStart_toEndOf="@id/edit_icon"
+                    app:layout_constraintTop_toTopOf="@id/userName"
+                    app:layout_constraintBottom_toBottomOf="@id/userName"
+                    android:src="@drawable/ic_baseline_done_24"
+                    android:paddingBottom="@dimen/dp_6"/>
+
+
+                <TextView
+                    android:id="@+id/userMobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_12"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/userName"
+                    style="@style/BodyText16sp"/>
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="@dimen/dp_16"
+                    android:layout_marginTop="@dimen/dp_16"
+                    android:layout_marginEnd="@dimen/dp_16"
+                    android:background="#D4E5F1"
+                    app:layout_constraintTop_toBottomOf="@+id/userMobile" />
+
+                <TextView
+                    android:id="@+id/lblContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_16"
+                    android:layout_marginTop="@dimen/dp_16"
+                    android:text="@string/bn_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/view"
+                    style="@style/BodyText16sp"
+                    android:textColor="@color/light_text_color"/>
+
+
+                <TextView
+                    android:id="@+id/subscription"
+                    style="@style/BnProfileTextTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_16"
+                    android:drawablePadding="@dimen/dp_16"
+                    android:paddingStart="@dimen/dp_16"
+                    android:paddingTop="@dimen/dp_10"
+                    android:paddingEnd="@dimen/dp_16"
+                    android:paddingBottom="@dimen/dp_10"
+                    android:text="@string/bn_subscriptions"
+                    app:layout_constraintTop_toBottomOf="@id/lblContent"
+                    app:drawableStartCompat="@drawable/bn_ic_subscription"
+                    app:drawableEndCompat="@drawable/bn_ic_right_arrow" />
+
+                <TextView
+                    android:id="@+id/subscription_badge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp_18"
+                    android:background="@drawable/rounded_corner_badge"
+                    android:text="1"
+                    android:textColor="@color/white"
+                    app:layout_constraintTop_toTopOf="@id/subscription"
+                    app:layout_constraintBottom_toBottomOf="@id/subscription"
+                    app:layout_constraintEnd_toEndOf="@id/subscription"
+                    android:layout_marginEnd="@dimen/dp_50"
+                    style="@style/BodyText14sp"
+                    android:paddingStart="@dimen/dp_6"
+                    android:paddingEnd="@dimen/dp_6"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:visibility="gone"/>
+
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="@dimen/dp_16"
+                    android:layout_marginTop="@dimen/dp_16"
+                    android:layout_marginEnd="@dimen/dp_16"
+                    android:background="#D4E5F1"
+                    app:layout_constraintTop_toBottomOf="@+id/subscription" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/lblJobs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_16"
+                    android:layout_marginTop="@dimen/dp_16"
+                    android:text="@string/bn_jobs"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/view2" />
+
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/JobTypes"
+                    style="@style/BnProfileTextTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_16"
+                    android:drawablePadding="@dimen/dp_16"
+                    android:paddingStart="@dimen/dp_16"
+                    android:paddingTop="@dimen/dp_10"
+                    android:paddingEnd="@dimen/dp_16"
+                    android:paddingBottom="@dimen/dp_10"
+                    android:text="@string/bn_job_types"
+                    app:layout_constraintTop_toBottomOf="@id/lblJobs"
+                    app:drawableEndCompat="@drawable/bn_ic_right_arrow"
+                    app:drawableStartCompat="@drawable/bn_ic_jobs" />
+
+                <View
+                    android:visibility="gone"
+                    android:id="@+id/view3"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="@dimen/dp_16"
+                    android:layout_marginTop="@dimen/dp_16"
+                    android:layout_marginEnd="@dimen/dp_16"
+                    android:background="#D4E5F1"
+                    app:layout_constraintTop_toBottomOf="@+id/JobTypes" />
+
+                <TextView
+                    android:id="@+id/lblPrefernces"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_16"
+                    android:layout_marginTop="@dimen/dp_16"
+                    android:text="@string/bn_preference"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/view3"
+                    style="@style/BodyText16sp"
+                    android:textColor="@color/light_text_color"/>
+
+                <TextView
+                    android:id="@+id/lblLanguage"
+                    style="@style/BnProfileTextTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_16"
+                    android:drawablePadding="@dimen/dp_16"
+                    android:paddingStart="@dimen/dp_16"
+                    android:paddingTop="@dimen/dp_10"
+                    android:paddingEnd="@dimen/dp_16"
+                    android:paddingBottom="@dimen/dp_10"
+                    android:text="@string/bn_app_language"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/lblPrefernces"
+                    app:drawableStartCompat="@drawable/bn_ic_app_language" />
+
+                <TextView
+                    android:id="@+id/lblLocation"
+                    style="@style/BnProfileTextTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_16"
+                    android:drawablePadding="@dimen/dp_16"
+                    android:paddingStart="@dimen/dp_16"
+                    android:paddingTop="@dimen/dp_10"
+                    android:paddingEnd="@dimen/dp_16"
+                    android:paddingBottom="@dimen/dp_10"
+                    android:text="@string/bn_location"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/lblLanguage"
+                    app:drawableStartCompat="@drawable/ic_location_settings" />
+
+                <TextView
+                    android:id="@+id/lblLocationRefresh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/dp_10"
+                    android:paddingStart="@dimen/dp_16"
+                    android:paddingEnd="@dimen/dp_16"
+                    style="@style/BodyText16sp"
+                    app:layout_constraintBottom_toBottomOf="@id/lblLocation"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/lblLocation"
+                    app:drawableEndCompat="@drawable/bn_ic_right_arrow"
+                    android:text="@string/bn_refresh"
+                    android:textColor="@color/button_color"/>
+
+                <TextView
+                    android:id="@+id/account_settings"
+                    style="@style/BnProfileTextTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_16"
+                    android:drawablePadding="@dimen/dp_16"
+                    android:paddingStart="@dimen/dp_16"
+                    android:paddingTop="@dimen/dp_10"
+                    android:paddingEnd="@dimen/dp_16"
+                    android:paddingBottom="@dimen/dp_10"
+                    android:text="@string/account_settings"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/lblLocation"
+                    app:drawableStartCompat="@drawable/bn_ic_app_language"
+                    app:drawableEndCompat="@drawable/bn_ic_right_arrow" />
+
+                <TextView
+                    android:id="@+id/account_settings_badge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp_18"
+                    android:background="@drawable/rounded_corner_badge"
+                    android:text="1"
+                    android:textColor="@color/white"
+                    app:layout_constraintTop_toTopOf="@id/account_settings"
+                    app:layout_constraintBottom_toBottomOf="@id/account_settings"
+                    app:layout_constraintEnd_toEndOf="@id/account_settings"
+                    android:layout_marginEnd="@dimen/dp_50"
+                    style="@style/BodyText14sp"
+                    android:paddingStart="@dimen/dp_6"
+                    android:paddingEnd="@dimen/dp_6"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/appLanguage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/dp_10"
+                    android:paddingStart="@dimen/dp_16"
+                    android:paddingEnd="@dimen/dp_16"
+                    style="@style/BodyText16sp"
+                    app:layout_constraintBottom_toBottomOf="@id/lblLanguage"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/lblLanguage"
+                    app:drawableEndCompat="@drawable/bn_ic_right_arrow"
+                    android:textColor="@color/button_color"/>
+
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/lblDarkMode"
+                    style="@style/BodyText16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_16"
+                    android:drawablePadding="@dimen/dp_16"
+                    android:paddingStart="@dimen/dp_16"
+                    android:paddingTop="@dimen/dp_10"
+                    android:paddingEnd="@dimen/dp_16"
+                    android:paddingBottom="@dimen/dp_10"
+                    android:text="@string/bn_dark_mode"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/account_settings" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/switchDarkMode"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dp_16"
+                    app:layout_constraintBottom_toBottomOf="@id/lblDarkMode"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/lblDarkMode" />
+
+                <View
+                    android:id="@+id/view4"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="@dimen/dp_16"
+                    android:layout_marginTop="@dimen/dp_16"
+                    android:layout_marginEnd="@dimen/dp_16"
+                    android:background="#D4E5F1"
+                    app:layout_constraintTop_toBottomOf="@+id/lblDarkMode" />
+
+
+                <TextView
+                    android:id="@+id/lblSupport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_16"
+                    android:layout_marginTop="@dimen/dp_16"
+                    android:text="@string/bn_support"
+                    style="@style/BodyText16sp"
+                    android:textColor="@color/light_text_color"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/view4" />
+
+
+                <TextView
+                    android:id="@+id/orderHistory"
+                    style="@style/BnProfileTextTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_16"
+                    android:drawablePadding="@dimen/dp_16"
+                    android:paddingStart="@dimen/dp_16"
+                    android:paddingTop="@dimen/dp_10"
+                    android:paddingEnd="@dimen/dp_16"
+                    android:paddingBottom="@dimen/dp_10"
+                    android:text="@string/bn_order_history"
+                    app:layout_constraintTop_toBottomOf="@id/lblSupport"
+                    app:drawableEndCompat="@drawable/bn_ic_right_arrow"
+                    app:drawableStartCompat="@drawable/bn_ic_order_history" />
+
+                <TextView
+                    android:id="@+id/referralCode"
+                    style="@style/BnProfileTextTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_16"
+                    android:drawablePadding="@dimen/dp_16"
+                    android:paddingStart="@dimen/dp_16"
+                    android:paddingTop="@dimen/dp_10"
+                    android:paddingEnd="@dimen/dp_16"
+                    android:paddingBottom="@dimen/dp_10"
+                    android:text="@string/bn_referral_code"
+                    app:layout_constraintTop_toBottomOf="@id/orderHistory"
+                    app:drawableEndCompat="@drawable/bn_ic_right_arrow"
+                    app:drawableStartCompat="@drawable/bn_ic_referral_code" />
+
+
+                <TextView
+                    android:id="@+id/showReferralCode"
+                    style="@style/BnProfileTextTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/dp_16"
+                    android:paddingTop="@dimen/dp_10"
+                    android:paddingEnd="@dimen/dp_16"
+                    android:paddingBottom="@dimen/dp_10"
+                    app:layout_constraintTop_toBottomOf="@id/orderHistory"
+                    app:layout_constraintBottom_toTopOf="@id/helpAndSupport"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:textColor="@color/button_color"/>
+
+
+                <TextView
+                    android:id="@+id/helpAndSupport"
+                    style="@style/BnProfileTextTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_16"
+                    android:drawablePadding="@dimen/dp_16"
+                    android:paddingStart="@dimen/dp_16"
+                    android:paddingTop="@dimen/dp_10"
+                    android:paddingEnd="@dimen/dp_16"
+                    android:paddingBottom="@dimen/dp_10"
+                    android:text="@string/bn_help_support"
+                    app:layout_constraintTop_toBottomOf="@id/referralCode"
+                    app:drawableEndCompat="@drawable/bn_ic_right_arrow"
+                    app:drawableStartCompat="@drawable/bn_ic_support" />
+
+                <View
+                    android:id="@+id/view5"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="@dimen/dp_16"
+                    android:layout_marginTop="@dimen/dp_16"
+                    android:layout_marginEnd="@dimen/dp_16"
+                    android:background="#D4E5F1"
+                    app:layout_constraintTop_toBottomOf="@+id/helpAndSupport" />
+
+
+                <TextView
+                    android:id="@+id/lblApp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_16"
+                    android:layout_marginTop="@dimen/dp_16"
+                    android:text="@string/bn_app"
+                    style="@style/BodyText16sp"
+                    android:textColor="@color/light_text_color"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/view5" />
+
+                <TextView
+                    android:id="@+id/share_friends"
+                    style="@style/BnProfileTextTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_16"
+                    android:drawablePadding="@dimen/dp_16"
+                    android:paddingStart="@dimen/dp_16"
+                    android:paddingTop="@dimen/dp_10"
+                    android:paddingEnd="@dimen/dp_16"
+                    android:paddingBottom="@dimen/dp_10"
+                    android:text="@string/share_with_friends"
+                    app:layout_constraintTop_toBottomOf="@id/lblApp"
+                    app:drawableStartCompat="@drawable/ic_share_with_friends"
+                    app:drawableEndCompat="@drawable/bn_ic_right_arrow" />
+
+                <TextView
+                    android:id="@+id/rate_us"
+                    style="@style/BnProfileTextTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_16"
+                    android:drawablePadding="@dimen/dp_16"
+                    android:paddingStart="@dimen/dp_16"
+                    android:paddingTop="@dimen/dp_10"
+                    android:paddingEnd="@dimen/dp_16"
+                    android:paddingBottom="@dimen/dp_10"
+                    android:text="@string/rate_us"
+                    app:layout_constraintTop_toBottomOf="@id/share_friends"
+                    app:drawableStartCompat="@drawable/ic_rate_us"
+                    app:drawableEndCompat="@drawable/bn_ic_right_arrow" />
+
+                <TextView
+                    android:id="@+id/about_us"
+                    style="@style/BnProfileTextTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_16"
+                    android:drawablePadding="@dimen/dp_16"
+                    android:paddingStart="@dimen/dp_16"
+                    android:paddingTop="@dimen/dp_10"
+                    android:paddingEnd="@dimen/dp_16"
+                    android:paddingBottom="@dimen/dp_10"
+                    android:text="@string/about_us"
+                    app:layout_constraintTop_toBottomOf="@id/rate_us"
+                    app:drawableStartCompat="@drawable/bn_ic_info"
+                    app:drawableEndCompat="@drawable/bn_ic_right_arrow" />
+
+                <TextView
+                    android:id="@+id/logout"
+                    style="@style/BnProfileTextTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_16"
+                    android:drawablePadding="@dimen/dp_16"
+                    android:paddingStart="@dimen/dp_16"
+                    android:paddingTop="@dimen/dp_10"
+                    android:paddingEnd="@dimen/dp_16"
+                    android:paddingBottom="@dimen/dp_10"
+                    android:text="@string/bn_logout"
+                    app:layout_constraintTop_toBottomOf="@id/about_us"
+                    app:drawableEndCompat="@drawable/bn_ic_right_arrow"
+                    app:drawableStartCompat="@drawable/bn_ic_logout" />
+
+                <View
+                    android:id="@+id/view6"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="@dimen/dp_16"
+                    android:layout_marginTop="@dimen/dp_16"
+                    android:layout_marginEnd="@dimen/dp_16"
+                    android:background="#D4E5F1"
+                    app:layout_constraintTop_toBottomOf="@+id/logout" />
+
+                <TextView
+                    android:id="@+id/lblVersionName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_16"
+                    android:layout_marginTop="@dimen/dp_16"
+                    style="@style/BodyText16sp"
+                    android:textColor="@color/profile_light_text"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/view6" />
+
+                <TextView
+                    android:id="@+id/lblCutOffDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_16"
+                    android:layout_marginTop="@dimen/dp_8"
+                    style="@style/BodyText16sp"
+                    android:drawablePadding="@dimen/dp_8"
+                    app:drawableTint="@color/profile_light_text"
+                    app:drawableStartCompat="@drawable/info_icon"
+                    android:textColor="@color/profile_light_text"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/lblVersionName" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <ProgressBar
+            android:visibility="gone"
+            android:id="@+id/progress_bar"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

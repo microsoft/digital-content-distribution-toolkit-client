@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:background="@drawable/bn_bg_exclusive_pager"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="367dp"/>
+
+
+        <ImageView
+            android:layout_marginStart="@dimen/dp_20"
+            android:background="@drawable/bn_ic_erosnow"
+            android:id="@+id/iconOtt"
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="21dp"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="@dimen/dp_16"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/bn_image_description" />
+
+        <ImageView
+            android:src="@drawable/bn_ic_exclusive"
+            app:layout_constraintStart_toEndOf="@id/iconOtt"
+            app:layout_constraintBottom_toBottomOf="@id/iconOtt"
+            app:layout_constraintTop_toTopOf="@id/iconOtt"
+            android:layout_width="75dp"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:layout_height="@dimen/dp_16"
+            android:contentDescription="@string/bn_image_description"/>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintTop_toBottomOf="@id/iconOtt"
+            tools:itemCount="3"
+            tools:listitem="@layout/list_item_exclusive" />
+
+        <View
+            android:layout_marginTop="@dimen/dp_10"
+            app:layout_constraintTop_toBottomOf="@id/recyclerView"
+            android:background="#E5E5E5"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_2"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

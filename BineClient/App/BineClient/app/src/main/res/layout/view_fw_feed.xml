@@ -1,0 +1,101 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/parent_card_view"
+        android:layout_marginBottom="@dimen/dp_8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/dp_40">
+
+            <TextView
+                android:id="@+id/fw_view_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_20"
+                style="@style/GroupTitleStyle"
+                android:text="@string/bn_more_short_clips"
+                app:layout_constraintEnd_toStartOf="@id/fw_view_logo"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <ImageView
+                android:id="@+id/fw_view_logo"
+                android:layout_width="@dimen/dp_70"
+                android:layout_height="@dimen/fw_padding_18"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:src="@drawable/bn_ic_fw_logo"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_marginEnd="@dimen/dp_20"
+                android:contentDescription="@string/bn_image_description"/>
+
+            <com.loopnow.fireworklibrary.views.VideoFeedView
+                android:id="@+id/fw_feed_view"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginBottom="@dimen/dp_10"
+                app:columns="2"
+                app:gutterSpace="@dimen/dp_5"
+                app:feedLayout="horizontal"
+                app:imageStyle="@style/ImageStyle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/fw_view_title"
+                app:showTitle="false"
+                app:textStyle="@style/FWFeedTextStyle"
+                app:autoPlay="true"/>
+            <LinearLayout
+                android:id="@+id/fw_feed_error_container"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_200"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:visibility="gone"
+                android:background="@drawable/bn_bg_error"
+                android:layout_marginBottom="@dimen/dp_16"
+                android:layout_marginTop="@dimen/dp_16"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/fw_feed_view">
+
+                <TextView
+                    android:drawablePadding="@dimen/dp_10"
+                    style="@style/BodyText16sp"
+                    android:textColor="#5D6973"
+                    android:text="@string/bn_no_internet_connection"
+                    android:id="@+id/errorText"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:drawableTopCompat="@drawable/bn_ic_error_place_holder" />
+
+                <TextView
+                    android:id="@+id/btnRetry"
+                    android:textSize="@dimen/sp_16"
+                    style="@style/BodyText16sp"
+                    android:layout_marginTop="@dimen/dp_24"
+                    android:textStyle="bold"
+                    android:textColor="@color/button_color"
+                    android:paddingBottom="@dimen/dp_5"
+                    android:paddingTop="@dimen/dp_5"
+                    android:paddingStart="@dimen/dp_20"
+                    android:paddingEnd="@dimen/dp_20"
+                    android:background="@drawable/bn_bg_refresh"
+                    android:text="@string/bn_refresh"
+                    app:layout_constraintTop_toBottomOf="@id/errorText"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"/>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

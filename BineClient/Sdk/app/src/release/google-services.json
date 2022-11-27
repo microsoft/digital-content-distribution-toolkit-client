@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "678141556178",
+    "firebase_url": "https://mishtu-7f570.firebaseio.com",
+    "project_id": "mishtu-7f570",
+    "storage_bucket": "mishtu-7f570.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:678141556178:android:bd5e947591e6da13e7440b",
+        "android_client_info": {
+          "package_name": "com.msr.mishtu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "678141556178-26npdsgh195b6kjbtgun2p1v0lvjbbtv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlkZaZjjBEdEVmF3vyuDG75covTffV6s0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "678141556178-26npdsgh195b6kjbtgun2p1v0lvjbbtv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

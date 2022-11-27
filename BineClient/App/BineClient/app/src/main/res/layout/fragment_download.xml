@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/go_to_store_button"
+            android:fillViewport="true"
+            tools:context=".ui.fragment.DownloadFragment">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:id="@+id/button_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/bn_ic_back_arrow"
+                    android:layout_marginStart="@dimen/dp_20"
+                    android:layout_marginTop="23dp"
+                    android:visibility="gone"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/downloads_title"
+                    app:layout_constraintTop_toTopOf="@id/downloads_title"></ImageView>
+
+                <TextView
+                    android:id="@+id/downloads_title"
+                    style="@style/HeadingText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_16"
+                    android:text="@string/your_downloads"
+                    app:layout_constraintStart_toEndOf="@id/button_back"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <!-- Pack Expiry Section-->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/download_pack_expiry_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/downloads_title">
+
+                    <LinearLayout
+                        android:id="@+id/downloads_pack_will_expire_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/pack_expired_color"
+                        android:orientation="vertical"
+                        android:padding="@dimen/dp_16"
+                        android:visibility="gone"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:id="@+id/downloads_pack_will_expire_alert"
+                            style="@style/HeadingText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sp_16" />
+
+                        <TextView
+                            style="@style/BodyText14sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/dont_forget_to_recharge"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+
+                    <include
+                        android:id="@+id/downloads_pack_expired_layout"
+                        layout="@layout/layout_subscription_expired"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <!-- Downloading section-->
+                <LinearLayout
+                    android:id="@+id/downloading_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/download_pack_expiry_layout">
+
+                    <TextView
+                        style="@style/BodyText16sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp_16"
+                        android:text="@string/downloading_movies" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/downloading_recycler_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/downloaded_title"
+                        tools:itemCount="2"
+                        tools:listitem="@layout/list_item_downloaded" />
+                </LinearLayout>
+
+                <!-- Downloaded section-->
+                <LinearLayout
+                    android:id="@+id/downloaded_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/downloading_layout">
+
+                    <TextView
+                        android:id="@+id/downloaded_title"
+                        style="@style/BodyText16sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp_16"
+                        android:text="@string/downloaded_movies" />
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/downloaded_recycler_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/downloaded_title"
+                        tools:listitem="@layout/list_item_downloaded" />
+                </LinearLayout>
+
+                <!-- Instruction Screen-->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/no_downloads_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/no_downloads_step1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="@dimen/dp_8"
+                        app:layout_constraintBottom_toTopOf="@+id/no_downloads_step1_arrow"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_chainStyle="packed">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/dp_16">
+
+                            <TextView
+                                style="@style/HeadingText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/_1"
+                                android:textSize="@dimen/sp_30" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/dp_16"
+                                android:contentDescription="@string/bn_image_description"
+                                android:src="@drawable/ic_locate_store" />
+
+                            <TextView
+                                android:id="@+id/no_downloads_step1_text"
+                                style="@style/BodyText16sp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/dp_20"
+                                android:text="@string/go_to_nearby_store_and_take_assistance" />
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <ImageView
+                        android:id="@+id/no_downloads_step1_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:contentDescription="@string/bn_image_description"
+                        android:src="@drawable/ic_offline_instructions"
+                        app:layout_constraintBottom_toTopOf="@+id/no_downloads_step2"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/no_downloads_step1" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/no_downloads_step2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="@dimen/dp_8"
+                        app:layout_constraintBottom_toTopOf="@+id/no_downloads_step2_arrow"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/no_downloads_step1_arrow">
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/dp_16">
+
+                            <TextView
+                                style="@style/HeadingText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/_2"
+                                android:textSize="@dimen/sp_30" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/dp_16"
+                                android:contentDescription="@string/bn_image_description"
+                                android:src="@drawable/ic_connect_wifi" />
+
+                            <TextView
+                                android:id="@+id/no_downloads_step2_text"
+                                style="@style/BodyText16sp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/dp_20"
+                                android:text="@string/turn_on_wifi" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <ImageView
+                        android:id="@+id/no_downloads_step2_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:contentDescription="@string/bn_image_description"
+                        android:src="@drawable/ic_offline_instructions"
+                        app:layout_constraintBottom_toTopOf="@+id/no_downloads_step3"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/no_downloads_step2" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/no_downloads_step3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="@dimen/dp_8"
+                        app:layout_constraintBottom_toTopOf="@+id/no_downloads_step3_arrow"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/no_downloads_step2_arrow">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/dp_16">
+
+                            <TextView
+                                style="@style/HeadingText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/_3"
+                                android:textSize="@dimen/sp_30" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/dp_16"
+                                android:contentDescription="@string/bn_image_description"
+                                android:src="@drawable/ic_connect_ssid" />
+
+                            <TextView
+                                android:id="@+id/no_downloads_step3_text"
+                                style="@style/BodyText16sp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/dp_20"
+                                android:text="@string/join_a_network_with_name_nearme_xxxxxx" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <ImageView
+                        android:id="@+id/no_downloads_step3_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:contentDescription="@string/bn_image_description"
+                        android:src="@drawable/ic_offline_instructions"
+                        app:layout_constraintBottom_toTopOf="@+id/no_downloads_step4"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/no_downloads_step3" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/no_downloads_step4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="@dimen/dp_8"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/no_downloads_step3_arrow">
+
+                        <LinearLayout
+                            android:id="@+id/no_downloads_step4_x"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/dp_16"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <TextView
+                                style="@style/HeadingText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/_4"
+                                android:textSize="@dimen/sp_30" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/dp_16"
+                                android:contentDescription="@string/bn_image_description"
+                                android:src="@drawable/ic_download_offline" />
+
+                            <TextView
+                                android:id="@+id/no_downloads_step4_text"
+                                style="@style/BodyText16sp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/dp_20"
+                                android:text="@string/download_films_for_free_at_the_store" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <Button
+            android:id="@+id/go_to_store_button"
+            style="@style/SubmitButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bn_find_a_store"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dp_28"
+            android:visibility="gone"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/downloads_no_hubs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".ui.activity.LocationCaptureActivity"
+            android:orientation="vertical"
+            android:background="#111322"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/card_smiley_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_smiley_sad_uh_no"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintVertical_bias="0.25"
+                android:contentDescription="@string/bn_image_description"/>
+
+            <TextView
+                android:id="@+id/card_info_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/card_smiley_image"
+                style="@style/HeadingText"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:textSize="28sp"
+                android:padding="@dimen/dp_10"
+                android:text="@string/uh_oh"/>
+
+            <TextView
+                android:id="@+id/card_info_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/card_info_title"
+                style="@style/HeadingText"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:paddingStart="@dimen/dp_20"
+                android:paddingEnd="@dimen/dp_20"
+                android:text="@string/free_download_not_available"/>
+
+            <Button
+                android:id="@+id/watch_films"
+                style="@style/SubmitButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_40"
+                android:text="@string/watch_film"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:layout_editor_absoluteX="20dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </RelativeLayout>
+</layout>

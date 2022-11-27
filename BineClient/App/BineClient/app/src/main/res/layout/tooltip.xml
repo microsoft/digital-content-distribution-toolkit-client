@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout
+        android:id="@+id/tooltip_topframe"
+        android:layout_width="match_parent"
+        android:background="@drawable/tooltip_top_frame"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:elevation="2dp" />
+
+    <ImageView
+        android:id="@+id/tooltip_pointer_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tooltip_arrow_up"
+        tools:ignore="ContentDescription"
+        android:elevation="2dp" />
+
+    <FrameLayout
+        android:id="@+id/tooltip_contentholder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:layout_below="@id/tooltip_topframe"
+        android:elevation="2dp"
+        android:paddingStart="4dp"
+        android:paddingEnd="4dp"
+        android:scrollbars="none">
+
+        <TextView
+            android:id="@+id/tooltip_contenttv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"/>
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/tooltip_bottomframe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tooltip_bottom_frame"
+        android:layout_below="@id/tooltip_contentholder"
+        android:elevation="2dp" />
+
+    <View
+        android:id="@+id/tooltip_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:alpha="1"
+        android:background="@drawable/shadow"
+        android:layout_below="@id/tooltip_bottomframe"
+        android:visibility="gone"
+        android:layout_marginTop="-1dp" />
+
+    <ImageView
+        android:id="@+id/tooltip_pointer_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tooltip_bottomframe"
+        android:layout_marginTop="-7dp"
+        tools:ignore="ContentDescription"
+        android:src="@drawable/tooltip_arrow_down"
+        android:visibility="gone"
+        android:elevation="2dp" />
+
+    <ImageView
+        android:id="@+id/tooltip_pointer_left_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/tooltip_bottomframe"
+        android:layout_marginTop="-3.5dp"
+        android:elevation="2dp"
+        android:src="@drawable/beak_left_bottom"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/tooltip_pointer_right_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tooltip_bottomframe"
+        android:layout_marginTop="-3.5dp"
+        tools:ignore="ContentDescription"
+        android:src="@drawable/beak_right_bottom"
+        android:elevation="2dp" />
+
+
+    <ImageView
+        android:id="@+id/fre_dismiss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/bn_image_description"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/cross"/>
+
+</RelativeLayout>

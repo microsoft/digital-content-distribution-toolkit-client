@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/notification_title"
+        style="@style/TextAppearance.Compat.Notification.Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@+id/idImageContainer"
+        android:text="@string/download_done"/>
+
+    <TextView
+        android:id="@+id/idContentName"
+        style="@style/TextAppearance.Compat.Notification.Line2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/notification_title"
+        android:layout_toStartOf="@+id/idImageContainer"
+        tools:text="Dangal" />
+
+    <!--<LinearLayout
+        android:id="@+id/idImageContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:orientation="vertical">-->
+
+        <RelativeLayout
+            android:id="@+id/idImageContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBtnPermission"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="@dimen/dp_10"
+            android:paddingBottom="@dimen/dp_3">
+
+            <ImageView
+                android:id="@+id/idContentImage"
+                android:layout_width="@dimen/folder_thumbnail_size"
+                android:layout_height="36dp"
+                android:scaleType="centerCrop"
+                android:background="@color/colorAccent" />
+
+            <ImageView
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_20"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_play" />
+
+        </RelativeLayout>
+
+       <!-- <TextView
+            android:id="@+id/idBtnPlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:padding="@dimen/dp_10"
+            android:text="@string/button_title_play"
+            android:textColor="@color/colorBtnPermission"
+            android:textStyle="bold" />
+   </LinearLayout>-->
+</RelativeLayout>

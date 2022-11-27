@@ -1,0 +1,9 @@
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/colorPrimary"
+    android:exitFadeDuration="@android:integer/config_shortAnimTime">
+    <selector>
+        <item>
+            <color android:color="@android:color/transparent" />
+        </item>
+    </selector>
+</ripple>

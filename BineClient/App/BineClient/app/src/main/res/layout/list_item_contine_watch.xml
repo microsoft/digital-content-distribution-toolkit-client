@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/fw_padding_12"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/dp_5">
+
+        <RelativeLayout
+            android:id="@+id/banner_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bn_bottom_top_gradient_round"
+            android:clipChildren="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/banner"
+                android:layout_width="144dp"
+                android:layout_height="90dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/bg_shimmer_gradient" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_alignStart="@id/banner"
+                android:layout_alignTop="@id/banner"
+                android:layout_alignEnd="@id/banner"
+                android:layout_alignBottom="@id/banner"
+                android:background="@drawable/bn_bottom_top_gradient_round" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:padding="@dimen/dp_10"
+                android:src="@drawable/bn_ic_play" />
+
+            <ImageView
+                android:id="@+id/provider_logo"
+                android:layout_width="@dimen/dp_25"
+                android:layout_height="@dimen/dp_25"
+                android:layout_alignEnd="@id/banner"
+                android:layout_alignBottom="@id/banner"
+                android:layout_marginTop="@dimen/dp_6"
+                android:layout_marginEnd="@dimen/dp_6"
+                android:layout_marginBottom="@dimen/dp_6"
+                android:scaleType="fitXY" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_8"
+                android:layout_alignStart="@id/banner"
+                android:layout_alignEnd="@id/banner"
+                android:layout_alignBottom="@id/banner"
+                android:layout_marginBottom="-2dp"
+                android:background="#c4c4c4"
+                android:backgroundTint="@color/transparent"
+                android:foregroundGravity="bottom"
+                android:progressTint="@color/button_color"
+                app:layout_constraintEnd_toEndOf="@id/banner"
+                app:layout_constraintStart_toStartOf="@id/banner" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/BodyText14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_8"
+            app:layout_constraintStart_toStartOf="@id/banner_parent"
+            app:layout_constraintTop_toBottomOf="@id/banner_parent" />
+
+        <TextView
+            android:id="@+id/episode_number"
+            style="@style/BodyText14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_16"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="@id/banner_parent"
+            app:layout_constraintTop_toBottomOf="@id/title" />
+
+        <View
+            android:id="@+id/view_disable"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:alpha="0.5"
+            android:background="@color/white"
+            android:clickable="true"
+            android:focusable="true"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/title"
+            app:layout_constraintEnd_toEndOf="@id/banner_parent"
+            app:layout_constraintStart_toStartOf="@id/banner_parent"
+            app:layout_constraintTop_toTopOf="@id/banner_parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

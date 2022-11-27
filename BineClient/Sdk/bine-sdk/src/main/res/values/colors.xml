@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#9b9b9b</color>
+    <color name="colorToolBar">#ffffff</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#0078d4</color>
+    <color name="bottom_nav_view">#d8d8d8</color>
+    <color name="button_color">#0078d4</color>
+    <color name="folder_background_color">#ebeaea</color>
+
+    <color name="divider_color">#2d9b9b9b</color>
+    <color name="text_dark">#DE000000</color>
+    <color name="icon_blue_color">#00b0ec</color>
+    <color name="text_light_medium">#8A000000</color>
+    <color name="text_gray">#6c6c6c</color>
+    <color name="color_link_blue">#0078D4</color>
+    <color name="edittext_background">#0F000000</color>
+    <color name="color_orange">#ee5236</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorWhiteTran">#90ffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="otp_background">#e7f0f6</color>
+    <color name="colorBtnPermission">#0078d4</color>
+    <color name="colorTitle">#de000000</color>
+    <color name="colorBlackTrans1">#99000000</color>
+    <color name="colorBannerBg">#ebeaea</color>
+    <color name="colorMovieTitle">#de000000</color>
+    <color name="colorMovieDesc">#8b000000</color>
+    <color name="colorProgressBar">#243a5e</color>
+    <color name="colorDistance">#4a90e2</color>
+    <color name="delete_red">#e50b20</color>
+    <color name="grey">#d8d8d8</color>
+    <color name="pinInactive">#EDEAEA</color>
+    <color name="barInactive">#0990F8</color>
+    <color name="colorProgressOne">#0078d4</color>
+    <color name="colorProgressTwo">#008575</color>
+    <color name="colorProgressThree">#8661c5</color>
+    <color name="ic_launcher_background">#FFFFFF</color>
+</resources>

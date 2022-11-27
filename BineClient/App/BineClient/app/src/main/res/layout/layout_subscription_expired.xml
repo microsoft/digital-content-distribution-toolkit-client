@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    android:padding="@dimen/dp_16"
+    android:background="@drawable/bn_ic_subscription_expired_bg"
+    tools:ignore="RtlSymmetry">
+
+    <ImageView
+        android:id="@+id/home_card_active_subs_bg"
+        android:layout_width="match_parent"
+        android:scaleType="fitXY"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bn_ic_home_card_bg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="@string/bn_image_description" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bn_ic_home_active_subscription"
+        app:layout_constraintTop_toTopOf="@id/home_card_active_subs_bg"
+        app:layout_constraintEnd_toEndOf="@id/home_card_active_subs_bg"
+        android:layout_margin="@dimen/dp_10"
+        android:contentDescription="@string/bn_image_description" />
+
+    <TextView
+        android:id="@+id/home_card_subs_pack_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/home_card_active_subs_bg"
+        app:layout_constraintTop_toTopOf="@id/home_card_active_subs_bg"
+        style="@style/SubHeadingText"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/dp_12"
+        android:layout_marginStart="@dimen/dp_20" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/home_card_subs_pack_title"
+        app:layout_constraintBottom_toBottomOf="@id/home_card_subs_pack_title"
+        app:layout_constraintTop_toTopOf="@id/home_card_subs_pack_title"
+        style="@style/BodyText14sp"
+        android:textColor="@color/pack_expired_color"
+        android:text="@string/expired"
+        android:layout_marginStart="@dimen/dp_6" />
+
+    <TextView
+        android:id="@+id/home_card_subs_ott_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/home_card_active_subs_bg"
+        app:layout_constraintTop_toBottomOf="@id/home_card_subs_pack_title"
+        style="@style/BodyText14sp"
+        android:textColor="#5D6973"
+        android:text="@string/eros_now_pack"
+        android:layout_marginStart="@dimen/dp_20" />
+
+    <Button
+        android:id="@+id/home_card_subs_renew"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_44"
+        android:background="@drawable/bn_bg_btn_round"
+        app:layout_constraintTop_toBottomOf="@id/home_card_subs_ott_name"
+        app:layout_constraintBottom_toBottomOf="@id/home_card_active_subs_bg"
+        app:layout_constraintStart_toStartOf="@id/home_card_active_subs_bg"
+        android:text="@string/bn_select_a_pack"
+        android:paddingStart="@dimen/dp_16"
+        android:paddingEnd="@dimen/dp_16"
+        android:textAllCaps="false"
+        android:textSize="@dimen/sp_18"
+        android:textColor="@color/white"
+        style="@style/SubmitButtonStyle"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

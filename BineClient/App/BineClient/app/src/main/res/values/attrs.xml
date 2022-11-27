@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Primary color attributes-->
+    <attr name="primary500" format="reference"/>
+    <attr name="primary400" format="reference"/>
+    <attr name="primary300" format="reference"/>
+    <attr name="primary200" format="reference"/>
+    <attr name="primary100" format="reference"/>
+
+    <!--Background color attributes-->
+    <attr name="backgroundColor" format="color"/>
+
+    <!--Surface color attributes-->
+    <attr name="surfaceColor" format="reference"/>
+    <attr name="surfaceVariant1Color" format="reference"/>
+    <attr name="surface2Color" format="reference"/>
+    <attr name="surface3Color" format="reference"/>
+
+    <attr name="disabledSurfaceColor" format="reference"/>
+
+    <!--Tab attributes-->
+    <attr name="selectedTabTextColor" format="reference"/>
+    <attr name="unselectedTabTextColor" format="reference"/>
+    <attr name="tabBackgroundColor" format="reference"/>
+
+    <!--Transparent color attributes-->
+    <attr name="transparentColor" format="reference"/>
+
+    <declare-styleable name="OtpViewTheme">
+        <attr format="reference" name="otpViewStyle"/>
+    </declare-styleable>
+
+    <attr name="textColor" format="color"/>
+    <attr name="viewBgColor" format="color"/>
+
+    <declare-styleable name="OtpView">
+        <attr format="integer" name="itemCount"/>
+        <attr format="dimension" name="itemWidth"/>
+        <attr format="dimension" name="itemHeight"/>
+        <attr format="dimension" name="itemRadius"/>
+        <attr format="dimension" name="itemPadding"/>
+        <attr format="dimension" name="lineWidth"/>
+        <attr format="reference|color" name="lineColor"/>
+        <attr format="enum" name="viewType">
+            <enum name="rectangle" value="0"/>
+            <enum name="line" value="1"/>
+            <enum name="none" value="2"/>
+        </attr>
+        <attr name="android:cursorVisible"/>
+        <attr format="dimension" name="cursorWidth"/>
+        <attr format="reference|color" name="cursorColor"/>
+        <attr name="android:itemBackground"/>
+        <attr format="boolean" name="hideLineWhenFilled"/>
+        <attr format="boolean" name="state_filled"/>
+        <attr format="boolean" name="rtlTextDirection"/>
+        <attr format="string" name="maskingChar"/>
+    </declare-styleable>
+
+    <declare-styleable name="ScratchView">
+        <attr name="scratchDrawable" format="reference|color" />
+        <attr name="scratchWidth" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="AutoScrollContentView">
+        <attr name="viewMargin" format="dimension" />
+    </declare-styleable>
+</resources>

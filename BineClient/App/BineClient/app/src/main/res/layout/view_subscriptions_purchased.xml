@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="@dimen/dp_16"
+            android:layout_height="@dimen/dp_14"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_20"
+            android:src="@drawable/bn_back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolBar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:layout_toEndOf="@id/back_button"
+            app:layout_constraintTop_toTopOf="parent"
+            app:title="@string/bn_previous_subscriptions"
+            app:titleTextAppearance="@style/ToolbarTextAppearance"
+            app:titleTextColor="@color/black" />
+
+
+        <LinearLayout
+            android:id="@+id/listContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolBar"
+            android:orientation="vertical">
+
+
+            <com.microsoft.mobile.polymer.mishtu.ui.views.SearchView
+                android:id="@+id/subscription_search_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_10"
+                app:layout_constraintStart_toStartOf="parent"
+
+                app:layout_constraintTop_toBottomOf="parent" />
+            <!--                app:HintText="@string/bn_subscription_hint"/>-->
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/subscription_recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_80"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/subscription_search_view"
+                tools:itemCount="5"
+                tools:listitem="@layout/list_item_order_bottom_sheet" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/subscription_renew"
+            style="@style/SubmitButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/listContainer"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:background="@drawable/bn_bg_btn"
+            android:text="@string/button_renew_pack"
+            android:enabled="false"
+            android:textColor="@color/white" />
+
+
+    </RelativeLayout>
+</layout>

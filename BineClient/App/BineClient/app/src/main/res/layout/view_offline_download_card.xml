@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginBottom="@dimen/dp_8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/offline_card_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <!-- Creating a dynamic back-->
+            <ImageView
+                android:id="@+id/card_bg_image_1"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_150"
+                app:layout_constraintEnd_toStartOf="@id/card_bg_image_2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:contentDescription="@string/bn_image_description"
+                android:scaleType="fitXY"/>
+
+            <ImageView
+                android:id="@+id/card_bg_image_2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintStart_toEndOf="@id/card_bg_image_1"
+                app:layout_constraintBottom_toBottomOf="@id/card_bg_image_1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/card_bg_image_3"
+                android:contentDescription="@string/bn_image_description"
+                android:scaleType="fitXY"/>
+
+            <ImageView
+                android:id="@+id/card_bg_image_3"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintStart_toEndOf="@+id/card_bg_image_2"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="@id/card_bg_image_1"
+                android:contentDescription="@string/bn_image_description"
+                android:scaleType="fitXY"/>
+
+
+            <ImageView
+                android:id="@+id/card_bg_image_4"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_150"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/card_bg_image_1"
+                app:layout_constraintEnd_toStartOf="@id/card_bg_image_5"
+                android:contentDescription="@string/bn_image_description"
+                android:scaleType="fitXY"/>
+
+            <ImageView
+                android:id="@+id/card_bg_image_5"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintStart_toEndOf="@id/card_bg_image_4"
+                app:layout_constraintBottom_toBottomOf="@id/card_bg_image_4"
+                app:layout_constraintTop_toTopOf="@id/card_bg_image_4"
+                app:layout_constraintEnd_toStartOf="@id/card_bg_image_6"
+                android:contentDescription="@string/bn_image_description"
+                android:scaleType="fitXY"/>
+
+            <ImageView
+                android:id="@+id/card_bg_image_6"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintStart_toEndOf="@+id/card_bg_image_5"
+                app:layout_constraintTop_toTopOf="@id/card_bg_image_4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="@id/card_bg_image_4"
+                android:contentDescription="@string/bn_image_description"
+                android:scaleType="fitXY"/>
+            <!-- End of dynamic back-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/ic_offline_card_bg">
+
+                <ImageView
+                    android:id="@+id/card_smiley_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_smiley_happy"
+                    android:layout_marginTop="@dimen/dp_34"
+                    android:contentDescription="@string/bn_image_description"/>
+
+
+                <TextView
+                    android:id="@+id/card_info_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/card_smiley_image"
+                    style="@style/HeadingText"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:textSize="28sp"
+                    android:padding="@dimen/dp_10"
+                    android:text="@string/find_a_nearest_shop_and_save_data"/>
+
+                <Button
+                    android:id="@+id/button_go_to_store"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bn_find_a_store"
+                    style="@style/SubmitButtonStyle"
+                    app:layout_constraintTop_toBottomOf="@id/card_info_text"
+                    android:layout_marginBottom="@dimen/dp_20"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_offline_download_promo_confetti"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:padding="@dimen/dp_20"
+                android:contentDescription="@string/bn_image_description"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_marginEnd="@dimen/dp_16"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:id="@+id/fresh_arrival_thumbnail"
+            android:src="@drawable/bg_shimmer_gradient"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/bn_image_description"/>
+
+        <View
+            android:layout_width="0dp"
+            android:background="@drawable/bn_bottom_top_gradient_round"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toTopOf="@id/fresh_arrival_thumbnail"
+            app:layout_constraintBottom_toBottomOf="@id/fresh_arrival_thumbnail"
+            app:layout_constraintStart_toStartOf="@id/fresh_arrival_thumbnail"
+            app:layout_constraintEnd_toEndOf="@id/fresh_arrival_thumbnail"/>
+
+        <ImageView
+            android:padding="@dimen/dp_10"
+            app:layout_constraintEnd_toEndOf="@id/fresh_arrival_thumbnail"
+            app:layout_constraintStart_toStartOf="@id/fresh_arrival_thumbnail"
+            app:layout_constraintBottom_toBottomOf="@id/fresh_arrival_thumbnail"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/bn_ic_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/bn_image_description"/>
+
+        <TextView
+            android:paddingStart="@dimen/dp_16"
+            android:paddingEnd="@dimen/dp_16"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textAlignment="viewStart"
+            android:textColor="@color/white"
+            style="@style/SubHeadingText"
+            android:id="@+id/title"
+            android:maxLines="1"
+            android:ellipsize="end"
+            app:layout_constraintBottom_toTopOf="@id/yearDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginStart="@dimen/dp_16"
+            android:layout_marginBottom="@dimen/dp_16"
+            app:layout_constraintStart_toStartOf="parent"
+            style="@style/BodyText16sp"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@id/fresh_arrival_thumbnail"
+            android:id="@+id/yearDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

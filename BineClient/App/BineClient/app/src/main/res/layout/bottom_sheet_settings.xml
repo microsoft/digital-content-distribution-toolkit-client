@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_16"
+        android:background="@color/white">
+
+        <EditText
+            android:id="@+id/editTextSSID"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_44"
+            android:hint="SSID"
+            android:layout_marginTop="@dimen/dp_16"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/editTextIP"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_44"
+            android:hint="IP Address"
+            android:layout_marginTop="@dimen/dp_16"
+            app:layout_constraintTop_toBottomOf="@id/editTextSSID"
+            app:layout_constraintStart_toStartOf="parent"
+            android:inputType="text"/>
+        <TextView
+            android:id="@+id/clientLog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editTextIP"
+            android:layout_marginTop="@dimen/dp_16"
+            android:text="Click here to send the logs"
+            android:autoLink="all"
+
+            />
+
+        <Button
+            android:id="@+id/butttonSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/SubmitButtonStyle"
+            android:layout_marginTop="@dimen/dp_16"
+            app:layout_constraintTop_toBottomOf="@id/clientLog"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="SAVE"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

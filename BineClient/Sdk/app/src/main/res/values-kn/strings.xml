@@ -1,0 +1,182 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">ಮಿಶ್ಟು</string>
+    <string name="menu_home">ಹೋಮ್</string>
+    <string name="menu_downloads">ಡೌನ್‌ಲೋಡ್‌ಗಳು</string>
+    <string name="button_title_download">ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ</string>
+    <string name="button_title_play">ಪ್ಲೇ ಮಾಡಿ</string>
+    <string name="text_download_status">ಪೂರ್ಣಗೊಂಡಿದೆ… %d%s</string>
+    <string name="button_verify_number">ಸಂಖ್ಯೆಯನ್ನು ಪರಿಶೀಲಿಸಿ</string>
+    <string name="login_enter_otp_text">6-ಅಂಕಿಯ ಪಿನ್ ಹೊಂದಿರುವ ಸಂದೇಶವನ್ನು %s ಗೆ ಕಳುಹಿಸಲಾಗಿದೆ</string>
+    <string name="login_enter_phone_number">00000 00000</string>
+    <string name="phone_code_91">+91</string>
+    <string name="button_resend_otp">ಒಟಿಪಿಯನ್ನು ಮತ್ತೆ ಕಳುಹಿಸಿ</string>
+    <string name="error_invalid_phone_number">ಅಮಾನ್ಯ ಫೋನ್ ಸಂಖ್ಯೆ</string>
+    <string name="error_required">ಫೋನ್ ಸಂಖ್ಯೆಯನ್ನು ಪರಿಶೀಲಿಸಿ. ಸರಿಯಾದ 10 ಅಂಕಿಯ ಸಂಖ್ಯೆಯನ್ನು ನಮೂದಿಸಿ.</string>
+    <string name="otp_wrong">ತಪ್ಪಾದ ಪಿನ್. ದಯವಿಟ್ಟು ಸರಿಯಾದ ಪಿನ್ ನಮೂದಿಸಿ</string>
+    <string name="otp_expired">ಒಟಿಪಿ ಅವಧಿ ಮೀರಿದೆ. ದಯವಿಟ್ಟು ಒಟಿಪಿಯನ್ನು ಮತ್ತೆ ಕಳುಹಿಸಿ.</string>
+    <string name="error_no_network">ದಯವಿಟ್ಟು ನಿಮ್ಮ ಇಂಟರ್ನೆಟ್ ಸಂಪರ್ಕವನ್ನು ಪರಿಶೀಲಿಸಿ ಮತ್ತು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.</string>
+    <string name="error_unknown_error">ಸೇವೆ ಲಭ್ಯವಿಲ್ಲ. ದಯವಿಟ್ಟು ನಂತರ ಪ್ರಯತ್ನಿಸಿ.</string>
+    <string name="error_invalid_otp">ಅಮಾನ್ಯ ಒಟಿಪಿ</string>
+    <string name="resend_otp_confirm">ಆರು ಅಂಕಿಗಳ ಕೋಡ್ ಅನ್ನು\nನಿಮ್ಮ ಮೊಬೈಲ್‌ಗೆ ಕಳುಹಿಸಲಾಗಿದೆ</string>
+    <string name="button_delete">ಅಳಿಸಿ</string>
+    <string name="empty_string"> </string>
+    <string name="give_permission">ಅನುಮತಿ ನೀಡಿ</string>
+    <string name="permission_denied">ಅನುಮತಿಯನ್ನು ನಿರಾಕರಿಸಲಾಗಿದೆ, ನೀವು ಸ್ಥಳ ಡೇಟಾ ಮತ್ತು ಸಂಗ್ರಹಣೆಯನ್ನು ಪ್ರವೇಶಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ.</string>
+    <string name="location_permission_denied">ಸ್ಥಳ ಅನುಮತಿಯನ್ನು ನಿರಾಕರಿಸಲಾಗಿದೆ, ನಿಮ್ಮ ಸ್ಥಳವು ಚಲನಚಿತ್ರ ಬೂತ್‌ಗಳನ್ನು ಹುಡುಕಲು ಅನುಮತಿಸುತ್ತದೆ.</string>
+    <string name="settings">ಸೆಟ್ಟಿಂಗ್ಗಳು</string>
+    <string name="permission_needed">ಅನುಮತಿ ಅಗತ್ಯವಿದೆ</string>
+    <string name="storage">ಸಂಗ್ರಹಣೆ</string>
+    <string name="strStrogeDesc">ನಿಮಗೆ ಸಾಕಷ್ಟು ಸ್ಥಳವಿದೆಯೇ ಎಂದು ಪರಿಶೀಲಿಸಲು ಮತ್ತು ಡೌನ್‌ಲೋಡ್ ಮಾಡಿದ ವಿಷಯವನ್ನು ಸಂಗ್ರಹಿಸಲು ನಾವು ಸಂಗ್ರಹಣೆಯನ್ನು ಬಳಸುತ್ತೇವೆ</string>
+    <string name="location">ಸ್ಥಳ</string>
+    <string name="strLocationDesc">ನಿಮ್ಮನ್ನು ಪತ್ತೆ ಮಾಡಲು ಮತ್ತು ನಿಮ್ಮ ಹತ್ತಿರ ಡೌನ್‌ಲೋಡ್ ಮೂವಿ ಬೂತ್‌ಗಳನ್ನು ತೋರಿಸಲು ನಾವು ಸ್ಥಳವನ್ನು ಬಳಸುತ್ತೇವೆ</string>
+    <string name="profile">ಪ್ರೊಫೈಲ್</string>
+    <string name="search">ಹುಡುಕು</string>
+    <string name="find_on_hub">ಮೂವಿ ಬೂತ್ ಹುಡುಕಿ</string>
+
+    <string name="login_age_consent">ನನ್ನ ವಯಸ್ಸು 18 ಮತ್ತು ಅದಕ್ಕಿಂತ ಹೆಚ್ಚಿನದು ಎಂದು ನಾನು ಖಚಿತಪಡಿಸುತ್ತೇನೆ</string>
+    <string name="hublist_title">ಮೂವಿ ಬೂತ್‌ಗಳು</string>
+    <string name="settings_title">ಸೆಟ್ಟಿಂಗ್ಗಳು</string>
+    <string name="start_navigation">ನ್ಯಾವಿಗೇಷನ್ ಪ್ರಾರಂಭಿಸಿ</string>
+
+    <string name="category_all">ಎಲ್ಲಾ</string>
+    <string name="category_english">ಆಂಗ್ಲ</string>
+    <string name="category_kannada">ಕನ್ನಡ</string>
+    <string name="category_tamil">ತಮಿಳು</string>
+    <string name="category_hindi">ಹಿಂದಿ</string>
+    <string name="category_bhojpuri">ಭೋಜ್‌ಪುರಿ</string>
+    <string name="category_telugu">ತೆಲುಗು</string>
+
+    <string-array name="category_filters">
+        <item>@string/category_all</item>
+        <item>@string/category_hindi</item>
+        <item>@string/category_kannada</item>
+        <item>@string/category_tamil</item>
+        <item>@string/category_english</item>
+        <item>@string/category_bhojpuri</item>
+        <item>@string/category_telugu</item>
+    </string-array>
+    <string name="remove_location_updates">ನವೀಕರಿಸುವುದನ್ನು ನಿಲ್ಲಿಸಿ</string>
+    <string name="search_hint">ಬೂತ್ ಹುಡುಕಿ</string>
+    <string name="payment_options">ಪಾವತಿಯ ವಿಧಗಳು</string>
+    <string name="cash">ನಗದು</string>
+    <string name="enter_phone_number">ಫೋನ್ ಸಂಖ್ಯೆಯನ್ನು ನಮೂದಿಸಿ</string>
+    <string name="enter_4_digit_pin">6-ಅಂಕಿಯ ಪಿನ್ ನಮೂದಿಸಿ</string>
+    <string name="verify_pin">ಪಿನ್ ಪರಿಶೀಲಿಸಿ</string>
+    <string name="didn_t_recieve_otp">ಒಟಿಪಿ ಸ್ವೀಕರಿಸಲಿಲ್ಲವೇ?</string>
+    <string name="connection_active">ಸಂಪರ್ಕ ಸಕ್ರಿಯವಾಗಿದೆ</string>
+    <string name="not_enough_space">ಸಾಕಷ್ಟು ಸ್ಥಳವಿಲ್ಲ</string>
+    <string name="low_storage_desc">ನಿಮ್ಮ ಫೋನ್‌ನಲ್ಲಿ ಸಾಕಷ್ಟು ಸ್ಥಳವಿಲ್ಲ. ಡೌನ್‌ಲೋಡ್‌ನೊಂದಿಗೆ ಮುಂದುವರಿಯಲು ಕೆಲವು ಫೈಲ್‌ಗಳನ್ನು ಅಳಿಸಿ.</string>
+    <string name="later">ನಂತರ</string>
+    <string name="delete">ಅಳಿಸಿ</string>
+    <string name="congratulation">ಅಭಿನಂದನೆಗಳು!</string>
+    <string name="cancel">ರದ್ದುಗೊಳಿಸಿ</string>
+    <string name="str_coupon_desc">ಫೋನ್ ರೀಚಾರ್ಜ್ ಅಥವಾ 1 ತಿಂಗಳ ವೈದ್ಯರ ಸಮಾಲೋಚನೆಗಾಗಿ ನೀವು ₹ 100 ಚೀಟಿ ಪಡೆಯಲು ಅರ್ಹರಾಗಿದ್ದೀರಿ. ರಿಡೀಮ್ ಮಾಡಲು ಕೋಡ್ ಅನ್ನು ಚಿಲ್ಲರೆ ವ್ಯಾಪಾರಿಗಳೊಂದಿಗೆ ಹಂಚಿಕೊಳ್ಳಿ. ಪ್ರತಿ ಬಳಕೆದಾರರಿಗೆ ಒಮ್ಮೆ ಮಾನ್ಯವಾಗಿರುತ್ತದೆ.</string>
+    <string name="download_failed">ಡೌನ್‌ಲೋಡ್ ವಿಫಲವಾಗಿದೆ</string>
+    <string name="download_queued">ಸರದಿಯಲ್ಲಿ…</string>
+    <string name="delete_confirmation">ಅಳಿಸಲು ನೀವು ಖಚಿತವಾಗಿ ಬಯಸುವಿರಾ?</string>
+    <string name="delete_confirm_text">ಇದು ನಿಮ್ಮ ಫೋನ್‌ನಿಂದ ಫೈಲ್ ಅನ್ನು ಶಾಶ್ವತವಾಗಿ ಅಳಿಸುತ್ತದೆ.</string>
+    <string name="connect_confirmation">ಬೂತ್ ಸಂಪರ್ಕ\nವಿನಂತಿ</string>
+    <string name="connect_confirm_text">ನೀವು ಈಗ ಬೂತ್ ವೈಫೈ ಪ್ರದೇಶವನ್ನು ತಲುಪಿದ್ದೀರಿ, ಡೌನ್‌ಲೋಡ್ ಮಾಡಲು ಸಂಪರ್ಕವನ್ನು ಒತ್ತಿರಿ.</string>
+    <string name="coupon">ಕೂಪನ್</string>
+    <string name="logout">ಲಾಗ್ ಔಟ್</string>
+    <string name="hub_details_title">ಚಲನಚಿತ್ರ ಬೂತ್ ವಿವರ</string>
+    <string name="hub_distance">Approx %d km</string>
+    <string name="hub_distance_meters">Approx %d m</string>
+    <string name="movie_size">%.2f ಫ್ ಎಂಬಿ</string>
+    <string name="moview_duration">%d ಎಸ್ ನಿಮಿಷ</string>
+    <string name="resend_code_timer_text">%02d:%02d ನಲ್ಲಿ ಕೋಡ್ ಅನ್ನು ಮರುಕಳುಹಿಸಿ</string>
+    <string name="hub_content_fetch_error">ಬೂತ್‌ನಿಂದ ವಿಷಯವನ್ನು ಪಡೆಯುವಲ್ಲಿ ದೋಷ</string>
+    <string name="connect_to_hub">ದಯವಿಟ್ಟು ಬೂತ್‌ಗೆ ಸಂಪರ್ಕಪಡಿಸಿ</string>
+    <string name="download_start_error">ಡೌನ್‌ಲೋಡ್ ದೋಷ</string>
+    <string name="track_selection_title">ಟ್ರ್ಯಾಕ್ ಆಯ್ಕೆ</string>
+
+    <string name="error_generic">ಪ್ಲೇಬ್ಯಾಕ್ ವಿಫಲವಾಗಿದೆ</string>
+    <string name="error_no_decoder">ಈ ಸಾಧನವು ಡಿಕೋಡರ್ ಅನ್ನು ಒದಗಿಸುವುದಿಲ್ಲ <xliff:g id="mime_type">%1$s</xliff:g></string>
+    <string name="error_no_secure_decoder">ಈ ಸಾಧನವು ಸುರಕ್ಷಿತ ಡಿಕೋಡರ್ ಅನ್ನು ಒದಗಿಸುವುದಿಲ್ಲ <xliff:g id="mime_type">%1$s</xliff:g></string>
+    <string name="error_querying_decoders">ಸಾಧನ ಡಿಕೋಡರ್ಗಳನ್ನು ಪ್ರಶ್ನಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ</string>
+    <string name="error_instantiating_decoder">ಡಿಕೋಡರ್ ಅನ್ನು ತ್ವರಿತಗೊಳಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ<xliff:g id="decoder_name">%1$s</xliff:g></string>
+    <string name="select_your_language">ನಿಮ್ಮ ಭಾಷೆಯನ್ನು ಆಯ್ಕೆಮಾಡಿ&#160;</string>
+    <string name="downloading_now">ಈಗ ಡೌನ್‌ಲೋಡ್ ಮಾಡಲಾಗುತ್ತಿದೆ</string>
+    <string name="file_deleted">ಫೈಲ್ ಅಳಿಸಲಾಗಿದೆ!</string>
+    <string name="now_playing">ಈಗ ಪ್ರದರ್ಶಿಸಲ್ಪಡುತ್ತಿದೆ</string>
+    <string name="connect">ಸಂಪರ್ಕಿಸಿ</string>
+    <string name="connect_to_boot_wifi">ಬೂತ್ ವೈಫೈಗೆ ಸಂಪರ್ಕಪಡಿಸಿ</string>
+    <string name="you_have_you_reached_the_boot_to_start_download_get_connected_to_wifi">ಡೌನ್‌ಲೋಡ್ ಪ್ರಾರಂಭಿಸಲು ನೀವು ವೈಫ್‌ಗೆ ಸಂಪರ್ಕ ಹೊಂದಲು ಬೂತ್ ತಲುಪಿದ್ದೀರಿ</string>
+    <string name="download_done">ಡೌನ್‌ಲೋಡ್ ಮುಗಿದಿದೆ!</string>
+    <string name="title_activity_settings">ಸೆಟ್ಟಿಂಗ್‌ಗಳ ಚಟುವಟಿಕೆ</string>
+
+    <string name="app_version">ಆವೃತ್ತಿ</string>
+    <string name="select_language">ಭಾಷೆ&#160;</string>
+    <string name="str_save_changes">ಬದಲಾವಣೆಗಳನ್ನು ಉಳಿಸು</string>
+    <string name="str_change_language">ಭಾಷೆ ಬದಲಾಯಿಸಿ</string>
+
+    <string name="str_english">English</string>
+    <string name="str_hindi">हिन्दी</string>
+    <string name="str_kannada">ಕನ್ನಡ</string>
+    <string name="ok">ಸರಿ</string>
+    <string name="save">ಉಳಿಸಿ</string>
+    <string name="no_downloads_found">ಯಾವುದೇ ಡೌನ್‌ಲೋಡ್ ದೊರಕಿಲ್ಲ!</string>
+    <string name="version">ಆವೃತ್ತಿ&#160;</string>
+    <string name="ip_address">ಐಪಿ ವಿಳಾಸ</string>
+    <string name="ssid">SSID</string>
+    <string name="language">ಭಾಷೆ</string>
+    <string name="SSID">SSID</string>
+    <string name="watch_anytime_offline">ಯಾವುದೇ ಸಮಯದಲ್ಲಿ ಆಫ್‌ಲೈನ್‌ನಲ್ಲಿ ವೀಕ್ಷಿಸಿ</string>
+    <string name="download_movie_without_any_data_for_free"> ಯಾವುದೇ ಡೇಟಾ ಇಲ್ಲದೆ ಚಲನಚಿತ್ರವನ್ನು\nಉಚಿತವಾಗಿ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ</string>
+    <string name="search_content">ಚಲನಚಿತ್ರದ ಹೆಸರು, ಪಾತ್ರವರ್ಗ, ಬಿಡುಗಡೆಯಾದ ವರ್ಷದಿಂದ ಹುಡುಕಿ ..</string>
+    <string name="logout_title">ಲಾಗ್ ಔಟ್?</string>
+    <string name="logout_desc">ಇದು ನಿಮ್ಮ ಎಲ್ಲಾ ಡೌನ್‌ಲೋಡ್‌ಗಳನ್ನು ಸಾಧನದಿಂದ ತೆಗೆದುಹಾಕುತ್ತದೆ.</string>
+
+    <string name="button_accept">ಒಪ್ಪಿಕೊಳ್ಳಿ</string>
+    <string name="button_reject">ತಿರಸ್ಕರಿಸಿ</string>
+    <string name="terms_description">ದಯವಿಟ್ಟು ಎಚ್ಚರಿಕೆಯಿಂದ ಓದಿ ನಂತರ ಸ್ವೀಕರಿಸಿ</string>
+    <string name="terms_title">ನಿಯಮಗಳು ಮತ್ತು ಷರತ್ತುಗಳು</string>
+    <string name="important_information_title">ಪ್ರಮುಖ ಮಾಹಿತಿ</string>
+    <string name="referral_code_optional">ಉಲ್ಲೇಖಿತ  ಕೋಡ್ (ಐಚ್ಛಿಕ)</string>
+    <string name="referral_code">ಉಲ್ಲೇಖಿತ  ಕೋಡ್</string>
+    <string name="enter_referral_code">ಉಲ್ಲೇಖಿತ ಕೋಡ್ ನಮೂದಿಸಿ</string>
+    <string name="share">ಹಂಚಿಕೊಳ್ಳಿ</string>
+    <string name="your_referral_code">ನಿಮ್ಮ ಉಲ್ಲೇಖಿತ ಕೋಡ್</string>
+
+    <string name="reject_title">ತಿರಸ್ಕರಿಸುವುದರಿಂದ ಅಪ್ಲಿಕೇಶನ್ ಬಳಸಲು ನಿಮಗೆ ಅನುಮತಿಸುವುದಿಲ್ಲ. ನೀವು ಮುಂದುವರಿಯಲು ಬಯಸುವಿರಾ?</string>
+    <string name="reject_desc">ನಿಯಮಗಳು ಮತ್ತು ಷರತ್ತುಗಳನ್ನು ಓದದೆ ಮತ್ತು ಸ್ವೀಕರಿಸದೆ ಮುಂದುವರಿಯಲು ಸಾಧ್ಯವಿಲ್ಲ.</string>
+    <string name="invalid_referral_code">ಅಮಾನ್ಯ ರೆಫರಲ್ ಕೋಡ್!</string>
+    <string name="the_referral_code_is_invalid_would_you_like_to_proceed_to_login">ಉಲ್ಲೇಖಿತ ಕೋಡ್ ಅಮಾನ್ಯವಾಗಿದೆ. ನೀವು ಲಾಗಿನ್ ಮಾಡಲು ಮುಂದುವರಿಯಲು ಬಯಸುವಿರಾ?</string>
+
+    <string name="enter">ನಮೂದಿಸು</string>
+    <string name="str_success_referral">ಯಶಸ್ವಿಯಾಗಿ ಸೇರಿಸಲಾಗಿದೆ</string>
+    <string name="privacy_policy">ಗೌಪ್ಯತೆ ನೀತಿ</string>
+    <string name="button_skip">ಬಿಟ್ಟುಬಿಡು</string>
+    <string name="terms_of_use">ಬಳಕೆಯ ನಿಯಮಗಳು</string>
+
+    <string name="str_coupon_title">ನೀವು ರಿಚಾರ್ಜ್ ಕೂಪನ್ ಗೆದ್ದ ಅಭಿನಂದನೆಗಳು</string>
+    <string name="claim">ಹಕ್ಕು</string>
+    <string name="str_promocode_desc_notification">&#160;ರಿಚಾರ್ಜ್ ಮಾಡಲು ಸ್ಟೋರ್ ಮಾಲೀಕರಿಗೆ ಈ ಕೋಡ್ ಅನ್ನು ತೋರಿಸಿ</string>
+    <string name="user_referred_already">ಈ ಮೊದಲು ನಿಮ್ಮನ್ನು ರೆಫರ್ ಮಾಡಲಾಗಿದೆ.</string>
+    <string name="no_maps_found">ಕ್ಷಮಿಸಿ, ನಾವು ನ್ಯಾವಿಗೇಷನ್‌ನೊಂದಿಗೆ ಮುಂದುವರಿಯಲು ಸಾಧ್ಯವಿಲ್ಲ. ನಿಮ್ಮ ಸಾಧನದಲ್ಲಿ ಯಾವುದೇ ನಕ್ಷೆ ಅಪ್ಲಿಕೇಶನ್ ಇಲ್ಲ</string>
+    <string name="no_search_found">ಯಾವುದೇ ಚಲನಚಿತ್ರಗಳು ಕಂಡುಬಂದಿಲ್ಲ…!</string>
+    <string name="install">ಸ್ಥಾಪಿಸಿ</string>
+
+    <string name="terms_condition_text">The Mishtu Movie Booth App would like to collect and use the following information:
+        \n\t\t\u2022\tPhone Model
+        \n\t\t\u2022\tPhone Device Id
+        \n\t\t\u2022\tOS version
+        \n\nThe app would also capture the following events with timestamps:
+        \n\t\t\u2022\tApp installation/ uninstall
+        \n\t\t\u2022\tUser login/ logout
+        \n\t\t\u2022\tLanguage selected
+        \n\t\t\u2022\tApp started/ closed
+        \n\t\t\u2022\tHub connected/ disconnected
+        \n\t\t\u2022\tDownload/ delete movie
+        \n\t\t\u2022\tPlay/pause movie
+        \n\t\t\u2022\tMovie download time
+        \n\t\t\u2022\tGeneration of voucher code
+        \n\nThe Mishtu Movie Booth app does not store any personal identifiers, and all data that is collected is fully anonymized. This is a limited duration research project and the data collected is to primarily understand and improve user experience. Read more in our
+        <a href="http://go.microsoft.com/fwlink/?LinkID=530144">Terms of Use</a> and
+        <a href="https://privacy.microsoft.com/en-us/privacystatement/">Privacy Policy</a>.
+        \n\nAccepting these permissions means that you give consent to this app to use data as specified above. You can review the terms of use and consent in the app Settings and may choose to logout/ uninstall the app at any time.\n\n
+    </string>
+    <string name="screen_recording">Screen Recording</string>
+    <string name="enable_or_disable_screen_recording">Enable or Disable screen recording..</string>
+    <string name="movies_coming_soon">%s movies coming soon</string>
+</resources>

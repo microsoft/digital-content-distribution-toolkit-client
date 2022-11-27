@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <include
+            android:id="@+id/close"
+            layout="@layout/textview_close_bottom_sheet" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_marginTop="@dimen/dp_24"
+            android:id="@+id/listContainer"
+            android:background="@drawable/bn_bg_bottom_sheet_language"
+            app:layout_constraintTop_toBottomOf="@id/close"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="42dp"
+                style="@style/BodyText16sp"
+                android:gravity="center"
+                android:id="@+id/title"
+                android:textColor="#101010"
+                android:text="@string/about_us"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:id="@+id/term_of_use"
+                style="@style/BnProfileTextTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_16"
+                android:drawablePadding="@dimen/dp_16"
+                android:paddingStart="@dimen/dp_16"
+                android:paddingTop="@dimen/dp_10"
+                android:paddingEnd="@dimen/dp_16"
+                android:paddingBottom="@dimen/dp_10"
+                android:text="@string/term_of_use"
+                app:layout_constraintTop_toBottomOf="@id/title"
+                app:drawableStartCompat="@drawable/ic_term_of_use"
+                app:drawableEndCompat="@drawable/bn_ic_right_arrow" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_marginStart="@dimen/dp_20"
+                android:layout_marginEnd="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_12"
+                android:background="@color/bn_divider_color"
+                app:layout_constraintTop_toBottomOf="@id/term_of_use"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <TextView
+                android:id="@+id/privacy_policy"
+                style="@style/BnProfileTextTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_16"
+                android:drawablePadding="@dimen/dp_10"
+                android:paddingStart="@dimen/dp_13"
+                android:paddingTop="@dimen/dp_10"
+                android:paddingEnd="@dimen/dp_16"
+                android:paddingBottom="@dimen/dp_10"
+                android:text="@string/privacy_policy"
+                app:layout_constraintTop_toBottomOf="@id/term_of_use"
+                app:drawableStartCompat="@drawable/ic_lock_svg"
+                app:drawableEndCompat="@drawable/bn_ic_right_arrow" />
+
+            <View
+                android:layout_marginStart="@dimen/dp_20"
+                android:layout_marginEnd="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_12"
+                android:background="@color/bn_divider_color"
+                app:layout_constraintTop_toBottomOf="@id/privacy_policy"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <TextView
+                android:id="@+id/app_availability"
+                style="@style/BnProfileTextTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_16"
+                android:drawablePadding="@dimen/dp_14"
+                android:paddingStart="@dimen/dp_16"
+                android:paddingTop="@dimen/dp_10"
+                android:paddingEnd="@dimen/dp_16"
+                android:paddingBottom="@dimen/dp_10"
+                android:visibility="gone"
+                android:text="@string/app_availability"
+                app:layout_constraintTop_toBottomOf="@id/privacy_policy"
+                app:drawableStartCompat="@drawable/ic_check_black"
+                app:drawableEndCompat="@drawable/bn_ic_right_arrow" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="83dp"
+                android:layout_marginTop="@dimen/dp_16"
+                android:background="@drawable/bg_splash_gradient"
+                app:layout_constraintTop_toBottomOf="@id/app_availability">
+
+                <TextView
+                    android:id="@+id/company_name"
+                    style="@style/BodyText14sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_16"
+                    android:gravity="center"
+                    android:text="@string/microsoft_corporation__all_rights_reserved"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/all_right_received"
+                    style="@style/BodyText14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/all_rights_reserved"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@id/version"
+                    app:layout_constraintHorizontal_chainStyle="packed"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/company_name" />
+
+                <TextView
+                    android:id="@+id/version"
+                    style="@style/BodyText14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_marginStart="@dimen/dp_4"
+                    android:text="@string/bn_version"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/all_right_received"
+                    app:layout_constraintTop_toBottomOf="@id/company_name" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:padding="@dimen/dp_20"
+            android:src="@drawable/bn_ic_app_logo"
+            android:background="@drawable/bn_bg_btn_round"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/close"
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="@dimen/dp_60"
+            android:contentDescription="@string/bn_image_description"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

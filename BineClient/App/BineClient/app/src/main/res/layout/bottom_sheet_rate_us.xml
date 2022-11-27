@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent">
+
+        <include
+            android:id="@+id/dialog_close"
+            layout="@layout/textview_close_bottom_sheet" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_24"
+            android:background="@drawable/bn_bg_bottom_sheet_language"
+            app:layout_constraintTop_toBottomOf="@id/dialog_close"
+            android:paddingBottom="@dimen/dp_30">
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="@dimen/dp_24"
+                android:text="@string/title_rate_us"
+                android:textColor="@color/black"
+                style="@style/HeadingText"
+                android:gravity="center"
+                android:textSize="@dimen/sp_24"
+                android:paddingStart="@dimen/dp_24"
+                android:paddingEnd="@dimen/dp_24"/>
+
+            <ImageView
+                android:id="@+id/centerImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/title"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:src="@drawable/ic_rate_us_image"
+                android:layout_marginTop="@dimen/dp_16"/>
+
+            <Button
+                android:id="@+id/btn_rate_us"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/botton_rate_on_playstore"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                style="@style/SubmitButtonStyle"
+                app:layout_constraintTop_toBottomOf="@id/centerImage"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/btn_rate_later"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bn_bg_btn_buy_pack"
+                android:text="@string/button_rate_later"
+                android:textAllCaps="false"
+                android:textColor="@color/button_color"
+                style="@style/SubmitButtonStyle"
+                app:layout_constraintTop_toBottomOf="@id/btn_rate_us"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

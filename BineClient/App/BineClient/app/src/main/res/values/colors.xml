@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary_500_dark">#004D78</color>
+    <color name="primary_400_dark">#0078D4</color>
+    <color name="primary_300_dark">#00A1FF</color>
+    <color name="primary_200_dark">#C1D9EB</color>
+    <color name="primary_100_dark">#BFE8FF</color>
+    <color name="surface_dark">#212121</color>
+    <!--Background color-->
+    <color name="background_dark">#000000</color>
+
+    <!--Background color-->
+    <color name="background_light">#F4F4F4</color>
+
+    <color name="bn_terms_condition">#0054C5</color>
+    <color name="button_color">#0054C5</color>
+    <color name="offline_highlighted_color">#D78306</color>
+    <color name="languageSelected">#80B7C3CD</color>
+    <!--Transparent color-->
+    <color name="transparent_light">#00FFFFFF</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <color name="tab_unselected_color">#5D6973</color>
+    <color name="tab_selected_color">#101010</color>
+    <color name="surface_light">#FFFFFF</color>
+    <color name="bn_divider_color">#F7FBFE</color>
+    <color name="bn_divider_color_grey">#D4E5F1</color>
+
+    <color name="scratch_start_gradient">#D86CAD</color>
+    <color name="scratch_end_gradient">#D86CAD</color>
+    <color name="dark_text_color">#101010</color>
+
+    <color name="text_color_grey">#28AC6D</color>
+    <color name="color_rewards">#FFB22C</color>
+    <color name="color_downloads">#5EBCBC</color>
+    <color name="color_profile">#6866AE</color>
+    <color name="light_text_color">#606060</color>
+    <color name="profile_light_text">#B7C3CD</color>
+    <color name="tooltip_color">#0054C5</color>
+    <color name="pack_promo_background">#F0010521</color>
+    <color name="snack_bar_background">#259837</color>
+    <color name="pack_expired_color">#F85D5D</color>
+</resources>
