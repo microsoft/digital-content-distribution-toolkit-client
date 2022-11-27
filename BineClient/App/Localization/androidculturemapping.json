@@ -1,0 +1,16 @@
+{
+	"cultures": {
+		"as-IN": "values-as",
+		"bn-IN": "values-bn",
+		"gu-IN": "values-gu",
+		"hi-IN": "values-hi",
+		"kn-IN": "values-kn",
+		"kok-IN": "values-kok",
+		"ml-IN": "values-ml",
+		"mr-IN": "values-mr",
+		"or-IN": "values-or",
+		"pa-IN": "values-pa",
+		"ta-IN": "values-ta",
+		"te-IN": "values-te"
+	}
+}

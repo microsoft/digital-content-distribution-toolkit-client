@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <include
+            android:id="@+id/close"
+            layout="@layout/textview_close_bottom_sheet" />
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/dp_24"
+            android:id="@+id/listContainer"
+            android:background="@drawable/bn_bg_bottom_sheet_language"
+            android:layout_below="@id/close"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/avatar_heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/choose_your_avatar"
+                android:gravity="center"
+                style="@style/HeadingText"
+                android:layout_marginTop="@dimen/dp_24"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/avatar_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_80"
+                android:padding="@dimen/dp_16"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:spanCount="3"
+                tools:itemCount="30"
+                tools:listitem="@layout/list_item_avatar_list" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/avatar_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/update_photo"
+            style="@style/SubmitButtonStyle"
+            android:layout_alignBottom="@id/listContainer"/>
+    </RelativeLayout>
+</layout>

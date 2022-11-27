@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/dp_8"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_margin="@dimen/dp_12"
+            app:cardCornerRadius="@dimen/dp_8"
+
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+            <com.microsoft.mobile.polymer.mishtu.ui.views.AutoScrollContentView
+                android:id="@+id/subscription_movies_autoscroll"
+                android:layout_width="match_parent"
+                android:layout_height="174dp"
+                android:background="#010521"
+                android:contentDescription="@string/bn_image_description"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/subscription_title"
+                app:viewMargin="@dimen/dp_20" />
+
+            <ImageView
+                android:id="@+id/subscription_icon"
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
+                android:layout_marginTop="@dimen/dp_16"
+                android:layout_marginEnd="@dimen/dp_16"
+                android:contentDescription="@string/bn_image_description"
+                android:src="@drawable/bn_ic_eros_squre"
+                app:layout_constraintEnd_toEndOf="@id/subscription_movies_autoscroll"
+                app:layout_constraintTop_toTopOf="@id/subscription_movies_autoscroll" />
+
+            <TextView
+                android:id="@+id/subscription_title"
+                style="@style/BodyText14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_16"
+                android:layout_marginBottom="@dimen/dp_5"
+                android:textColor="@color/dark_text_color"
+                android:textSize="@dimen/sp_18"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/subscription_movies_autoscroll" />
+
+            <TextView
+                android:id="@+id/subscription_subTitle"
+                style="@style/BodyText14sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dp_20"
+                android:textAlignment="textStart"
+                android:textColor="@color/dark_text_color"
+                android:textSize="@dimen/sp_18"
+                app:layout_constraintBottom_toTopOf="@id/button_select_pack"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/subscription_title" />
+
+            <Button
+                android:id="@+id/button_select_pack"
+                style="@style/SubmitButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginBottom="@dimen/dp_16"
+                android:background="@drawable/bn_bg_btn"
+                android:text="@string/bn_select_pack"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/subscription_subTitle"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_20"
+        android:background="@color/bn_divider_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout></layout>

@@ -1,0 +1,40 @@
+{
+	"project_info": {
+		"project_number": "678141556178",
+		"firebase_url": "REPLACE_ME",
+		"project_id": "REPLACE_ME",
+		"storage_bucket": "REPLACE_ME"
+	},
+	"client": [
+		{
+			"client_info": {
+				"mobilesdk_app_id": "1:678141556178:android:bd5e947591e6da13e7440b",
+				"android_client_info": {
+					"package_name": "com.msr.mishtu"
+				}
+			},
+			"oauth_client": [
+				{
+					"client_id": "REPLACE_ME_5",
+					"client_type": 3
+				}
+			],
+			"api_key": [
+				{
+					"current_key": "REPLACE_ME"
+				}
+			],
+			"services": {
+				"appinvite_service": {
+					"other_platform_oauth_client": [
+						{
+							"client_id": "REPLACE_ME_5",
+							"client_type": 3
+						}
+					]
+				}
+			}
+		}
+	],
+	"configuration_version": "1"
+}

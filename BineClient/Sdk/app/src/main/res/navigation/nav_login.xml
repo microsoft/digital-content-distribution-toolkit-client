@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/login_home_fragment">
+
+    <fragment
+        android:id="@+id/login_home_fragment"
+        android:name="com.msr.bine_android.fragments.LoginHomeFragment"
+        tools:layout="@layout/fragment_login_home">
+
+        <action
+                android:id="@+id/action_login_otp_fragment"
+                app:destination="@id/login_otp_fragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/login_otp_fragment"
+        android:name="com.msr.bine_android.fragments.LoginOTPFragment"
+        tools:layout="@layout/fragment_login_otp">
+        <argument
+            android:name="phoneNumber"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_otp_login_fragment"
+            app:destination="@id/login_home_fragment"
+            app:popUpTo="@id/login_home_fragment"
+            app:popUpToInclusive="false"/>
+    </fragment>
+</navigation>

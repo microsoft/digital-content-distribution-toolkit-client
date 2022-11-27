@@ -1,0 +1,113 @@
+# Build your Android project with Gradle.
+# Add steps that test, sign, and distribute the APK, save build artifacts, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/android
+
+trigger:
+    - master
+
+pool:
+    vmImage: "macOS-10.14"
+
+steps:
+    # Android
+    - task: Gradle@2
+      displayName: Running Unit Tests
+      inputs:
+          workingDirectory: ""
+          gradleWrapperFile: "gradlew"
+          gradleOptions: "-Xmx3072m"
+          publishJUnitResults: true
+          testResultsFiles: "**/TEST-*.xml"
+          tasks: ":app:testReleaseUnitTest"
+
+    - task: CacheBeta@0
+      displayName: "Caching System Images for AVD"
+      inputs:
+          key: "AVD_IMAGES_PIXEL_28"
+          path: "$(ANDROID_HOME)/system-images"
+          cacheHitVar: "AVD_IMAGES_RESTORED"
+      continueOnError: true
+      condition: succeededOrFailed()
+    - bash: |
+          echo "y" | $ANDROID_HOME/tools/bin/sdkmanager --install 'system-images;android-30;google_apis;x86'
+      displayName: "Download and install emulator image"
+      condition: ne(variables.AVD_IMAGES_RESTORED, 'true')
+    - bash: |
+          echo "no" | $ANDROID_HOME/tools/bin/avdmanager create avd -n xamarin_android_emulator -k 'system-images;android-30;google_apis;x86' --force
+          echo "Emulator created successfully $(ANDROID_HOME/emulator/emulator -list-avds), launching it"
+          nohup $ANDROID_HOME/emulator/emulator -avd xamarin_android_emulator -no-snapshot > /dev/null 2>&1 &
+          $ANDROID_HOME/platform-tools/adb wait-for-device shell 'while [[ -z $(getprop sys.boot_completed | tr -d '\r') ]]; do sleep 1; done; input keyevent 82'
+          $ANDROID_HOME/platform-tools/adb devices
+          echo "Emulator started"
+      displayName: "Create and start emulator"
+    - bash: |
+          chmod +x gradlew
+          ./gradlew assembleDebug
+          ./gradlew assembleAndroidTest
+          adb install ./app/build/outputs/apk/debug/app-arm64-v8a-debug.apk  
+          adb install ./app/build/outputs/apk/debug/app-armeabi-v7a-debug.apk  
+          adb install ./app/build/outputs/apk/debug/app-x86_64-debug.apk  
+          adb install ./app/build/outputs/apk/debug/app-x86-debug.apk  
+          adb install ./app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk
+          adb shell pm list instrumentation
+          adb shell am instrument -w -m    -e debug false com.msr.bine_android.test/.Instrumentation
+      displayName: "Run Instrumented Tests"
+      continueOnError: true
+
+    - task: Gradle@2
+      displayName: Generating .aab file
+      inputs:
+          workingDirectory: ""
+          gradleWrapperFile: "gradlew"
+          gradleOptions: "-Xmx3072m"
+          publishJUnitResults: true
+          testResultsFiles: "**/TEST-*.xml"
+          tasks: "bundleRelease"
+
+    - task: DownloadSecureFile@1
+      displayName: Downloading keystore
+      name: keystoreFile # The name with which to reference the secure file's path on the agent, like $(mySecureFile.secureFilePath)
+      inputs:
+          secureFile: "mishtu_v1_2020.jks"
+
+    - task: Bash@3
+      displayName: Signing .aab
+      inputs:
+          targetType: "inline"
+          script: jarsigner -verbose -sigalg SHA256withRSA -digestalg SHA-256 -keystore $(keystoreFile.secureFilePath) -storepass 'REPLACE_ME' -keypass 'REPLACE_ME' $(build.SourcesDirectory)/app/build/outputs/bundle/release/app-release.aab mishtu_dev
+
+    - task: Bash@3
+      displayName: Verifying signed .aab
+      inputs:
+          targetType: "inline"
+          script: jarsigner -verify -verbose -certs $(build.SourcesDirectory)/app/build/outputs/bundle/release/app-release.aab
+
+    - task: CopyFiles@2
+      displayName: Copying bundle to artifacts
+      inputs:
+          SourceFolder: $(Build.SourcesDirectory)
+          contents: "app/build/outputs/bundle/release/app-release.aab"
+          targetFolder: "$(build.artifactStagingDirectory)"
+          overWrite: true
+
+    - task: PublishBuildArtifacts@1
+      displayName: Publishing artifacts
+      inputs:
+          pathtoPublish: "$(build.artifactStagingDirectory)"
+          artifactName: "outputs"
+          publishLocation: "container"
+
+    - task: DownloadSecureFile@1
+      displayName: Downloading Service Account Key
+      name: ServiceAccountKey
+      inputs:
+          secureFile: "GooglePlayConsole_apikey.json"
+
+    - task: GooglePlayReleaseBundle@3
+      displayName: Publishing to Google Play
+      inputs:
+          authType: "JsonFile"
+          serviceAccountKey: $(ServiceAccountKey.secureFilePath)
+          applicationId: "com.msr.mishtu"
+          bundleFile: "app/build/outputs/bundle/release/app-release.aab"
+          track: "alpha"

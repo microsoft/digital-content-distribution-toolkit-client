@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bn_ic_subscription_expired_bg"
+    android:paddingTop="@dimen/dp_20"
+    android:paddingStart="@dimen/dp_20"
+    android:paddingEnd="@dimen/dp_20"
+    android:paddingBottom="@dimen/dp_30">
+
+
+    <TextView
+        android:id="@+id/subscription_active_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bn_pack_expired_title"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/white"
+        style="@style/SubHeadingText"/>
+
+
+    <RelativeLayout
+        android:id="@+id/subscription_pack_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corners_shape"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/subscription_active_title"
+        android:layout_marginTop="@dimen/dp_5"
+        android:clipChildren="true">
+
+        <ImageView
+            android:id="@+id/subscription_active_logo"
+            android:layout_width="@dimen/dp_44"
+            android:layout_height="@dimen/dp_44"
+            android:src="@drawable/bn_ic_eros_squre"
+            android:layout_margin="@dimen/dp_10"
+            android:contentDescription="@string/bn_image_description"/>
+
+        <TextView
+            android:id="@+id/subscription_active_pack_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            style="@style/BodyText16sp"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_toEndOf="@id/subscription_active_logo"/>
+
+        <TextView
+            android:id="@+id/subscription_active_pack_description"
+            style="@style/BodyText14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/subscription_active_pack_title"
+            android:layout_toEndOf="@id/subscription_active_logo"
+            android:text="@string/bn_pack_description" />
+
+        <Button
+            style="@style/BodyText16sp"
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="@dimen/dp_25"
+            android:layout_alignEnd="@id/subscription_active_pack_description"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:background="@drawable/bn_subscription_expired"
+            android:padding="@dimen/dp_2"
+            android:text="@string/bn_pack_expired"
+            android:textAllCaps="false"
+            android:textColor="@color/pack_expired_color" />
+
+        <View
+            android:id="@+id/subscription_expired_band"
+            style="@style/BodyText16sp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fw_padding_32"
+            android:layout_below="@id/subscription_active_logo"
+            android:background="#F3F6F8"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/dp_10"
+            android:paddingEnd="@dimen/dp_10"/>
+
+        <TextView
+            android:id="@+id/subscription_expired_buy_pack"
+            style="@style/BodyText14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/subscription_expired_band"
+            android:layout_alignBottom="@id/subscription_expired_band"
+            android:paddingStart="@dimen/dp_12"
+            android:paddingBottom="@dimen/dp_4"
+            android:text="@string/bn_buy_a_pack"
+            android:textColor="@color/button_color"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

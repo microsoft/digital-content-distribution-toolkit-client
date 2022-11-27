@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.activity.LocationCaptureActivity"
+        android:orientation="vertical"
+        android:focusable="true"
+        android:clickable="true"
+        android:background="#F2000000">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_offline_download_promo_confetti"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <ImageView
+            android:id="@+id/card_smiley_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_smiley_sad_uh_no"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.25"
+            android:contentDescription="@string/bn_image_description"/>
+
+        <TextView
+            android:id="@+id/card_info_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card_smiley_image"
+            style="@style/HeadingText"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:textSize="28sp"
+            android:padding="@dimen/dp_10"
+            android:text="Uh-oh!"/>
+
+        <TextView
+            android:id="@+id/card_info_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card_info_title"
+            style="@style/HeadingText"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:paddingStart="@dimen/dp_20"
+            android:paddingEnd="@dimen/dp_20"
+            android:text="@string/free_download_not_available"/>
+
+        <Button
+            android:id="@+id/location_capture_proceed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/SubmitButtonStyle"
+            app:layout_constraintBottom_toTopOf="@id/location_capture_cancel"
+            android:text="@string/yes_i_am_interested"
+            android:layout_marginTop="@dimen/dp_40"/>
+
+        <Button
+            android:id="@+id/location_capture_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bn_bg_btn_buy_pack"
+            android:textColor="@color/button_color"
+            style="@style/SubmitButtonStyle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:text="@string/btn_no"
+            android:layout_marginTop="@dimen/dp_8"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

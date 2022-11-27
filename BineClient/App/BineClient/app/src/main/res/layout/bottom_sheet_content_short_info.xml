@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/dialog_close"
+            layout="@layout/textview_close_bottom_sheet" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/coin_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dialog_close"
+        android:background="@drawable/bn_bg_bottom_sheet_language">
+        >
+
+        <TextView
+            android:id="@+id/content_details_coins"
+            style="@style/SubHeadingText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/dp_8"
+            android:textAlignment="center"
+            android:textColor="@color/dark_text_color"
+            android:textSize="@dimen/sp_16"
+            android:layout_marginTop="@dimen/dp_16"
+            android:layout_marginEnd="@dimen/dp_16"
+            android:visibility="gone"
+            app:drawableStartCompat="@drawable/ic_coin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/content_title"/>
+
+
+        <TextView
+            android:id="@+id/content_title"
+            style="@style/SubHeadingText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/dp_8"
+            android:textAlignment="center"
+            android:textColor="@color/dark_text_color"
+            android:layout_marginStart="@dimen/dp_16"
+            android:textSize="@dimen/sp_16"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/dp_24"
+            android:layout_marginBottom="-4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/content_details_coins"
+            app:layout_constraintBottom_toTopOf="@id/nested_scroll"/>
+
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nested_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/content_title">
+
+
+
+                <include
+                    android:id="@+id/content_info"
+                    layout="@layout/layout_content_info" />
+        </androidx.core.widget.NestedScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

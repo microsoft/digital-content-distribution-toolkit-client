@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        >
+
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="@dimen/dp_16"
+            android:layout_height="@dimen/dp_14"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_20"
+            android:src="@drawable/bn_back"
+            />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/back_button"
+            style="@style/HeadingText"
+            android:text="@string/bn_other_packs"
+            android:layout_marginTop="@dimen/dp_16"
+            android:layout_marginStart="@dimen/dp_16"/>
+
+       <com.microsoft.mobile.polymer.mishtu.ui.views.SearchView
+           android:id="@+id/search_container"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           app:layout_constraintTop_toBottomOf="@id/title"
+           android:layout_marginVertical="@dimen/dp_9"
+           />
+        <TextView
+            android:layout_marginHorizontal="@dimen/dp_16"
+            android:layout_marginBottom="@dimen/dp_16"
+            android:textColor="@color/black"
+            android:lineSpacingExtra="2sp"
+            android:id="@+id/titleResults"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@id/search_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/BodyText14sp"/>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/change_content_provider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@color/bn_divider_color"
+            app:layout_constraintTop_toBottomOf="@id/titleResults">
+
+            <ImageView
+                android:id="@+id/cp_imageview"
+                android:layout_width="@dimen/dp_70"
+                android:layout_height="@dimen/dp_70"
+                android:paddingVertical="6dp"
+                android:layout_marginStart="@dimen/dp_16"
+                android:src="@drawable/bn_ic_eros_squre"
+                app:layout_constraintEnd_toStartOf="@id/selected_content_provider"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/selected_content_provider"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/dp_8"
+                android:paddingEnd="@dimen/dp_20"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/selected_cp_change"
+                app:layout_constraintStart_toEndOf="@id/cp_imageview"
+                app:layout_constraintTop_toTopOf="@id/cp_imageview" />
+
+            <TextView
+                android:id="@+id/selected_cp_change"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_right_arrow_blue"
+                android:drawablePadding="10dp"
+                android:paddingEnd="@dimen/dp_20"
+                android:text="@string/change"
+                android:textColor="@color/color_link_blue"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/selected_content_provider"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        <TextView
+            android:id="@+id/pack_list_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_12"
+            android:layout_marginStart="@dimen/dp_16"
+            style="@style/BodyText16sp"
+            android:textSize="@dimen/dp_24"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/change_content_provider"
+            android:text="Select pack "
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/subscription_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/dp_18"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pack_list_title"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

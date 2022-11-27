@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minHeight="50dp"
+    android:padding="@dimen/dp_8"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/quicktip"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:textColor="@android:color/white"
+        android:textStyle="normal"
+        style="@style/BodyText14sp"
+        android:text="@string/quick_tip"
+        android:drawablePadding="@dimen/dp_4"
+        app:drawableStartCompat="@drawable/info_icon"
+        android:visibility="gone"/>
+
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:includeFontPadding="false"
+        android:lineSpacingExtra="0dp"
+        android:visibility="gone"
+        style="@style/SubHeadingText"/>
+
+    <TextView
+        android:id="@+id/subheading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        style="@style/BodyText14sp"
+        android:layout_marginTop="@dimen/dp_10"/>
+
+</LinearLayout>

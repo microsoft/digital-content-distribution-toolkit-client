@@ -1,0 +1,383 @@
+{
+	"project_info": {
+		"project_number": "170810768960",
+		"firebase_url": "REPLACE_ME",
+		"project_id": "REPLACE_ME",
+		"storage_bucket": "REPLACE_ME"
+	},
+	"client": [
+		{
+			"client_info": {
+				"mobilesdk_app_id": "1:170810768960:android:55d7e63290216db81b69a5",
+				"android_client_info": {
+					"package_name": "com.example.cpaas_demo"
+				}
+			},
+			"oauth_client": [
+				{
+					"client_id": "REPLACE_ME_0",
+					"client_type": 1,
+					"android_info": {
+						"package_name": "com.example.cpaas_demo",
+						"certificate_hash": "6b97ab0ea8d163307a8688440b1204fd1c5534af"
+					}
+				},
+				{
+					"client_id": "REPLACE_ME_1",
+					"client_type": 3
+				}
+			],
+			"api_key": [
+				{
+					"current_key": "REPLACE_ME"
+				}
+			],
+			"services": {
+				"appinvite_service": {
+					"other_platform_oauth_client": [
+						{
+							"client_id": "REPLACE_ME_1",
+							"client_type": 3
+						}
+					]
+				}
+			}
+		},
+		{
+			"client_info": {
+				"mobilesdk_app_id": "1:170810768960:android:ffdc33d7cc06c5b91b69a5",
+				"android_client_info": {
+					"package_name": "com.microsoft.kzsdk.chatapp"
+				}
+			},
+			"oauth_client": [
+				{
+					"client_id": "REPLACE_ME_1",
+					"client_type": 3
+				}
+			],
+			"api_key": [
+				{
+					"current_key": "REPLACE_ME"
+				}
+			],
+			"services": {
+				"appinvite_service": {
+					"other_platform_oauth_client": [
+						{
+							"client_id": "REPLACE_ME_1",
+							"client_type": 3
+						}
+					]
+				}
+			}
+		},
+		{
+			"client_info": {
+				"mobilesdk_app_id": "1:170810768960:android:d01c1e66ee838593",
+				"android_client_info": {
+					"package_name": "com.microsoft.mobile.k3"
+				}
+			},
+			"oauth_client": [
+				{
+					"client_id": "REPLACE_ME_1",
+					"client_type": 3
+				}
+			],
+			"api_key": [
+				{
+					"current_key": "REPLACE_ME"
+				}
+			],
+			"services": {
+				"appinvite_service": {
+					"other_platform_oauth_client": [
+						{
+							"client_id": "REPLACE_ME_1",
+							"client_type": 3
+						}
+					]
+				}
+			}
+		},
+		{
+			"client_info": {
+				"mobilesdk_app_id": "1:170810768960:android:23238e570c7b4458",
+				"android_client_info": {
+					"package_name": "com.microsoft.mobile.k3.dev1"
+				}
+			},
+			"oauth_client": [
+				{
+					"client_id": "REPLACE_ME_1",
+					"client_type": 3
+				}
+			],
+			"api_key": [
+				{
+					"current_key": "REPLACE_ME"
+				}
+			],
+			"services": {
+				"appinvite_service": {
+					"other_platform_oauth_client": [
+						{
+							"client_id": "REPLACE_ME_1",
+							"client_type": 3
+						}
+					]
+				}
+			}
+		},
+		{
+			"client_info": {
+				"mobilesdk_app_id": "1:170810768960:android:45d237abdc22cf5d",
+				"android_client_info": {
+					"package_name": "com.microsoft.mobile.polymer"
+				}
+			},
+			"oauth_client": [
+				{
+					"client_id": "REPLACE_ME_2",
+					"client_type": 1,
+					"android_info": {
+						"package_name": "com.microsoft.mobile.polymer",
+						"certificate_hash": "22040e94eb363245327f3143d4052faf8466ac02"
+					}
+				},
+				{
+					"client_id": "REPLACE_ME_1",
+					"client_type": 3
+				}
+			],
+			"api_key": [
+				{
+					"current_key": "REPLACE_ME"
+				}
+			],
+			"services": {
+				"appinvite_service": {
+					"other_platform_oauth_client": [
+						{
+							"client_id": "REPLACE_ME_1",
+							"client_type": 3
+						}
+					]
+				}
+			}
+		},
+		{
+			"client_info": {
+				"mobilesdk_app_id": "1:170810768960:android:3499723139e84acf",
+				"android_client_info": {
+					"package_name": "com.microsoft.mobile.polymer.dev1"
+				}
+			},
+			"oauth_client": [
+				{
+					"client_id": "REPLACE_ME_3",
+					"client_type": 1,
+					"android_info": {
+						"package_name": "com.microsoft.mobile.polymer.dev1",
+						"certificate_hash": "60b415b6fd49d241e0ccf84d361caf5f62a5a70d"
+					}
+				},
+				{
+					"client_id": "REPLACE_ME_1",
+					"client_type": 3
+				}
+			],
+			"api_key": [
+				{
+					"current_key": "REPLACE_ME"
+				}
+			],
+			"services": {
+				"appinvite_service": {
+					"other_platform_oauth_client": [
+						{
+							"client_id": "REPLACE_ME_1",
+							"client_type": 3
+						}
+					]
+				}
+			}
+		},
+		{
+			"client_info": {
+				"mobilesdk_app_id": "1:170810768960:android:97b7d0db620fdec51b69a5",
+				"android_client_info": {
+					"package_name": "com.microsoft.mobile.polymer.meramishtu"
+				}
+			},
+			"oauth_client": [
+				{
+					"client_id": "REPLACE_ME_1",
+					"client_type": 3
+				}
+			],
+			"api_key": [
+				{
+					"current_key": "REPLACE_ME"
+				}
+			],
+			"services": {
+				"appinvite_service": {
+					"other_platform_oauth_client": [
+						{
+							"client_id": "REPLACE_ME_1",
+							"client_type": 3
+						}
+					]
+				}
+			}
+		},
+		{
+			"client_info": {
+				"mobilesdk_app_id": "1:170810768960:android:5cb2c6382d1e7ea21b69a5",
+				"android_client_info": {
+					"package_name": "com.microsoft.mobile.polymer.mishtu"
+				}
+			},
+			"oauth_client": [
+				{
+					"client_id": "REPLACE_ME_1",
+					"client_type": 3
+				}
+			],
+			"api_key": [
+				{
+					"current_key": "REPLACE_ME"
+				}
+			],
+			"services": {
+				"appinvite_service": {
+					"other_platform_oauth_client": [
+						{
+							"client_id": "REPLACE_ME_1",
+							"client_type": 3
+						}
+					]
+				}
+			}
+		},
+		{
+			"client_info": {
+				"mobilesdk_app_id": "1:170810768960:android:12bc436a6a03c95d1b69a5",
+				"android_client_info": {
+					"package_name": "com.microsoft.mobile.polymer.mishtu.dev"
+				}
+			},
+			"oauth_client": [
+				{
+					"client_id": "REPLACE_ME_1",
+					"client_type": 3
+				}
+			],
+			"api_key": [
+				{
+					"current_key": "REPLACE_ME"
+				}
+			],
+			"services": {
+				"appinvite_service": {
+					"other_platform_oauth_client": [
+						{
+							"client_id": "REPLACE_ME_1",
+							"client_type": 3
+						}
+					]
+				}
+			}
+		},
+		{
+			"client_info": {
+				"mobilesdk_app_id": "1:170810768960:android:6461eb6d4a4d94881b69a5",
+				"android_client_info": {
+					"package_name": "com.microsoft.mobile.polymer.mishtu.isv"
+				}
+			},
+			"oauth_client": [
+				{
+					"client_id": "REPLACE_ME_1",
+					"client_type": 3
+				}
+			],
+			"api_key": [
+				{
+					"current_key": "REPLACE_ME"
+				}
+			],
+			"services": {
+				"appinvite_service": {
+					"other_platform_oauth_client": [
+						{
+							"client_id": "REPLACE_ME_1",
+							"client_type": 3
+						}
+					]
+				}
+			}
+		},
+		{
+			"client_info": {
+				"mobilesdk_app_id": "1:170810768960:android:9c6211d23d66288f1b69a5",
+				"android_client_info": {
+					"package_name": "com.microsoft.mobile.polymer.wl"
+				}
+			},
+			"oauth_client": [
+				{
+					"client_id": "REPLACE_ME_1",
+					"client_type": 3
+				}
+			],
+			"api_key": [
+				{
+					"current_key": "REPLACE_ME"
+				}
+			],
+			"services": {
+				"appinvite_service": {
+					"other_platform_oauth_client": [
+						{
+							"client_id": "REPLACE_ME_1",
+							"client_type": 3
+						}
+					]
+				}
+			}
+		},
+		{
+			"client_info": {
+				"mobilesdk_app_id": "1:170810768960:android:9b089ef1be7af3491b69a5",
+				"android_client_info": {
+					"package_name": "com.microsoft.mobile.polymer.wl.dev"
+				}
+			},
+			"oauth_client": [
+				{
+					"client_id": "REPLACE_ME_1",
+					"client_type": 3
+				}
+			],
+			"api_key": [
+				{
+					"current_key": "REPLACE_ME"
+				}
+			],
+			"services": {
+				"appinvite_service": {
+					"other_platform_oauth_client": [
+						{
+							"client_id": "REPLACE_ME_1",
+							"client_type": 3
+						}
+					]
+				}
+			}
+		}
+	],
+	"configuration_version": "1"
+}

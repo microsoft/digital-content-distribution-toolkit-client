@@ -1,0 +1,5 @@
+rootProject.name='bine-android'
+include ':app'
+include ':bine-sdk'
+
+

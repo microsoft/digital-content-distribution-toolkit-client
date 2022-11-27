@@ -1,0 +1,482 @@
+<resources>
+    <string name="app_name" translatable="false">Mera Mishtu</string>
+
+    <string name="bn_service_entertainment" comment="Title text shown on discover services">Entertainment</string>
+    <string name="bn_service_jobs" comment="Title text shown on discover services">Skilling</string>
+    <string name="bn_service_offers" comment="Title text shown on discover services">Deals Near You</string>
+    <string name="bn_service_entertainment_desc" comment="Description text shown for entertainment service">Enjoy a world of movies, series and short clips</string>
+    <string name="bn_service_jobs_desc" comment="Description text shown for jobs service">Find local jobs around you</string>
+    <string name="bn_service_offers_desc" comment="Description text shown for offers">Check nearby offers &amp; discounts</string>
+    <string name="bn_service_government" comment="Title text shown on discover services">Government\nServices</string>
+    <string name="tab_downloads" comment="Title text shown on bottom bar">Downloads</string>
+    <string name="discover_page_title" comment="Requesting user to select a service">Pick a Service</string>
+    <string name="bn_search_by_name_actor_year" comment="Hint text for search criteria">Search by name, actor, year…</string>
+    <string name="bn_all" comment="tab title for all content">All</string>
+    <string name="bn_clips" comment="tab title for clips content">Short Videos</string>
+    <string name="bn_movies" comment="tab title for movies content">Films</string>
+    <string name="bn_series" comment="tab title for series content">Series</string>
+    <string name="bn_fresh_arrivals" comment="section title for new arrived content">Fresh Arrivals</string>
+    <string name="bn_more_short_clips" comment="section title for short form content">Popular short videos</string>
+    <string name="bn_mishtu_short_clips" comment="section title for mishtu short form content">Latest Movies on Mera Mishtu</string>
+    <string name="bn_languages" comment="section title for language filter">Languages</string>
+    <string name="bn_Genres" comment="section title for genre filter">Genres</string>
+    <string name="bn_search" comment="search button title">Search</string>
+    <string name="bn_search_by_title_actor_genres" comment="Hint text for search criteria">Search by title, actor, genres…</string>
+    <string name="bn_search_by_actor_movie" comment="Hint text for search criteria in subscription screen">Search by actor, genres, movie name</string>
+    <string name="bn_hindi_english_kannada_and_more" comment="Description text for language search">Hindi, English, Kannada and more</string>
+    <string name="bn_trending_searches" comment="Section title for trending searches">Trending searches</string>
+    <string name="ln_language" comment="Screen title for language">Language</string>
+    <string name="bn_movie_details" comment="Screen title for movie details">Movie Details</string>
+    <string name="bn_trending_content" comment="Section title for trending all content">Trending Content</string>
+    <string name="bn_trending_movies" comment="Section title for trending movies">Trending Movies</string>
+    <string name="bn_trending_series" comment="Section title for trending series">Trending Series</string>
+    <string name="bn_recommended_movies" comment="Section title for recommended movies">Recommended Movies</string>
+    <string name="bn_recommended_series" comment="Section title for trending series">Recommended Series</string>
+    <string name="bn_free_movies" comment="Section title for free movies">Free Movies</string>
+    <string name="bn_paid_movies" comment="Section title for paid movies">Paid Films</string>
+    <string name="bn_paid_series" comment="Section title for paid movies">Paid Series</string>
+
+
+    <!--<string name="bn_ln_english" comment="Language filter title">English</string>
+    <string name="bn_ln_hindi" comment="Language filter title">हिंदी</string>
+    <string name="bn_ln_telugu" comment="Language filter title">తెలుగు</string>
+    <string name="bn_ln_tamil" comment="Language filter title">தமிழ்</string>
+    <string name="bn_ln_malayalam" comment="Language filter title">മലയാളം</string>
+    <string name="bn_ln_gujarathi" comment="Language filter title">ગુજરાતી</string>
+    <string name="bn_ln_kohinoor" comment="Language filter title">বাঙ্গালী</string>
+    <string name="bn_ln_marathi" comment="Language filter title">मराठी</string>
+    <string name="bn_ln_mukta" comment="Language filter title">ਪੰਜਾਬੀ</string>
+    <string name="bn_ln_kannada" comment="Language filter title">ಕನ್ನಡ</string>
+    <string name="bn_ln_oriya" comment="Language filter title">ଓଡ଼ିଆ</string>
+    <string name="bn_ln_assame" comment="Language filter title">অসমীয়া</string>-->
+
+    <string name="bn_gn_drama" comment="Genre filter title">Drama</string>
+    <string name="bn_gn_family" comment="Genre filter title">Family</string>
+    <string name="bn_gn_reality" comment="Genre filter title">Reality</string>
+    <string name="bn_gn_crime" comment="Genre filter title">Crime</string>
+    <string name="bn_gn_romance" comment="Genre filter title">Romance</string>
+    <string name="bn_gn_mythology" comment="Genre filter title">Mythology</string>
+    <string name="bn_gn_action" comment="Genre filter title">Action</string>
+    <string name="bn_gn_fantasy" comment="Genre filter title">Fantasy</string>
+    <string name="bn_gn_thriller" comment="Genre filter title">Thriller</string>
+
+
+    <string name="genre" comment="Genre filter">Genre</string>
+    <string name="comedy_horror_thriller_and_more" comment="Hint text for genre filter">Comedy, Horror, Thriller and more</string>
+    <string name="bn_search_genre" comment="Hint text for genre filter">Search Genre</string>
+    <string name="_results" comment="Text for result count">\"%d\" results</string>
+    <string name="bn_results_sub_text" comment="Text for no result count">&#160;for \"%s\". Sharing the content you might be interested in. </string>
+
+    <string name="bn_fw_categories" comment="Section title for short form categories">Categories</string>
+    <string name="bn_fw_travel" comment="Short form video category title">Travel</string>
+    <string name="bn_fw_food" comment="Short form video category title">Food</string>
+    <string name="bn_fw_comedy" comment="Short form video category title">Comedy</string>
+    <string name="bn_fw_news" comment="Short form video category title">News</string>
+    <string name="bn_fw_fitness" comment="Short form video category title">Fitness</string>
+    <string name="bn_fw_fashion" comment="Short form video category title">Fashion</string>
+    <string name="bn_fw_movie" comment="Short form video category title">Movies and TV</string>
+    <string name="bn_fw_celebrity" comment="Short form video category title">Celebrity</string>
+
+    <string name="bn_help_support" comment="Profile section help and support">Help &amp; Support</string>
+    <string name="bn_referral_code" comment="Profile section referral code">Referral Code</string>
+    <string name="bn_order_history" comment="Profile section order history">Order History</string>
+    <string name="bn_support" comment="Profile section support">Support</string>
+    <string name="bn_dark_mode" comment="Profile section dark mode">Dark Mode</string>
+    <string name="bn_app_language" comment="Profile section language">App Language</string>
+    <string name="bn_preference" comment="Profile section preference">Preference</string>
+    <string name="bn_job_types" comment="Profile section job type">Job Types</string>
+    <string name="bn_jobs" comment="Profile section jobs">Jobs</string>
+    <string name="bn_downloads" comment="Profile section downloads">Downloads</string>
+    <string name="bn_download" comment="Profile section downloads">Download</string>
+    <string name="bn_subscriptions" comment="Profile section subscriptions">Subscriptions</string>
+    <string name="bn_subscription" comment="title subscription">Subscription</string>
+    <string name="bn_content" comment="Profile section content">Content</string>
+    <string name="bn_set_app_language" comment="Instruction text to select language">Set App Language</string>
+    <string name="bn_search_order_hint" comment="Hint text to filter orders">Search by pack, movie, date, order ID</string>
+    <string name="bn_search_topics" comment="Hint text to filter support topics">Search Topics</string>
+    <string name="bn_refresh" comment="Button title to refresh content">Refresh</string>
+    <string name="bn_retry" comment="Button title to retry fetch content">Retry</string>
+    <string name="bn_no_internet_connection" comment="Error message when no internet connection">No Internet Connection</string>
+    <string name="bn_server_error" comment="Error message when service error received">Oops. Something went wrong.\n Please retry or come again later.</string>
+    <string name="bn_something_went_wrong" comment="Error message when service error received">Oops. Something went wrong</string>
+    <string name="bn_we_were_unable_to_fetch_the_content" comment="Error message when content refresh failed">We were unable to fetch the content.</string>
+    <string name="bn_no_internet_subtitle" comment="Error message when no internet connection">Please check internet connection and try again.</string>
+
+    <string name="bn_image_description" comment="Default description for image">Image here…</string>
+    <string name="bn_pack_description" comment="Default description for image">All movies and series for %d Days</string>
+    <string name="bn_buy_pack_title" comment="Button title to buy pack">Buy Rs %d pack</string>
+    <string name="bn_pack_active" comment="Button title for active pack">Active</string>
+    <string name="bn_pack_expire_disclaimer" comment="Disclaimer for one active pack">You can only buy pack after the first pack expires</string>
+    <string name="bn_view_other_packs" comment="Title to browse more back">View Other Packs</string>
+    <string name="bn_other_packs" comment="Title to browse more back">Other Packs</string>
+    <string name="bn_previous_subscriptions" comment="Section title previous subscription">Previous Subscriptions</string>
+    <string name="bn_thank_you_for_subscribing" comment="Message after buying subscription">Thank You For Subscribing!</string>
+    <string name="bn_subscription_hint" comment="Hint text for searching packs">Search by pack name, date</string>
+    <string name="bn_select_a_pack_and_pay" comment="Instruction text to select pack">Select a pack and pay at the nearby shop</string>
+    <string name="bn_select_a_pack" comment="Instruction text to select pack">Select A Pack</string>
+    <string name="bn_select_pack" comment="Instruction text to select pack">Select pack</string>
+    <string name="bn_renew_pack" comment="Button title to renew pack">Renew Pack</string>
+    <string name="bn_find_a_store" comment="Button title to find stores">Find A Shop</string>
+    <string name="bn_buy_a_pack" comment="Button title to buy pack">Buy A Pack ></string>
+    <string name="bn_buy_this_pack" comment="Button title to buy pack">Buy This Pack</string>
+    <string name="bn_pack_expired" comment="Title to indicate expired pack">Expired</string>
+    <string name="bn_pack_expired_title" comment="Title to indicate expired pack">Pack Expired!</string>
+    <string name="bn_pack_rs" comment="Pack price text">Rs.%d/-</string>
+    <string name="bn_rs" comment="Pack price text">₹ %d</string>
+    <string name="bn_pack_duration" comment="Pack duration text">For %d days</string>
+    <string name="bn_pack_distance" comment="Store distance text">%d m Away</string>
+
+    <string name="bn_found_stores_near_you" comment="Stores result">%d stores near you</string>
+    <string name="bn_nostore_subtitle" comment="Stores not found">Explore our other content available for you</string>
+    <string name="bn_no_stores_nearby_download" comment="Stores not found">Uh-oh! No shops are available nearby to download</string>
+    <string name="bn_no_stores_nearby" comment="Stores not found">Uh-oh! no shops are available nearby to buy a pack</string>
+    <string name="bn_finding_store" comment="Loading text while finding stores">Finding Store Nearby…</string>
+    <string name="bn_continue" comment="Button continue">Continue</string>
+    <string name="bn_order_placed_successfully" comment="Notify order places">Yayyy! Order Successful</string>
+    <string name="bn_go_to_store" comment="Button title select store">Select Shop</string>
+    <string name="bn_take_me_to_store" comment="Button title select store">Take Me To Store</string>
+    <string name="bn_pack_details" comment="Text for pack details">Pack Details</string>
+    <string name="bn_order_id" comment="Field order id">Order Id</string>
+    <string name="bn_order_time" comment="Field order time">Order Time</string>
+    <string name="bn_enjoy_all_movies" comment="Description for what a pack holds">Enjoy all movies and series for %d Days.</string>
+    <string name="bn_view_all_packs" comment="Button title view all packs">View All Packs</string>
+    <string name="bn_next_steps" comment="Instruction post order complete">Next Steps</string>
+    <string name="bn_look_for_nearby_stores" comment="Instruction post order complete">Look for nearby stores by clicking “Select A Store”</string>
+    <string name="bn_go_to_store_add" comment="Instruction post order complete">Go to store and share your mobile number</string>
+    <string name="bn_pay_the_retailer" comment="Instruction post order complete">Pay the retailer to complete the payment</string>
+    <string name="bn_rewards" comment="Title rewards">Bonus</string>
+    <string name="bn_yor_duration" comment="Content year of release and duration. %1s is param for YOR, %2s is param for duration">%1$s • %2$s Mins</string>
+
+    <string name="bn_sorry_you_do_not_have_any_orders" comment="No orders message">Sorry! you do not have any orders</string>
+    <string name="bn_pack_name" comment="Field pack name">Pack Name</string>
+    <string name="bn_order_date" comment="Field order placed date">Order Date</string>
+    <string name="bn_listen_to_it" comment="Listen to screen details">Listen To it</string>
+    <string name="bn_episodes" comment="Movie details field for list of episode">Episodes</string>
+    <string name="bn_movie_story" comment="Movie details field description">Movie Story</string>
+    <string name="bn_view_more" comment="Button link to expand description">\nView More</string>
+    <string name="bn_view_less" comment="Button link to collapse description">\nView Less</string>
+    <string name="bn_expire_in_x_days" comment="Pack expires description">Your pack will expire in %d days</string>
+    <string name="bn_expire_today" comment="Pack expires today description">Your pack will expire today</string>
+
+    <string name="bn_version" comment="Profile section app version">Version - %s</string>
+    <string name="bn_welcome_screen_1" comment="Welcome screen instructions">Watch your favorite films, series and short videos from anywhere</string>
+    <string name="bn_welcome_screen_2" comment="Welcome screen instructions">Get help from your nearby stores to complete the payment</string>
+    <string name="bn_welcome_screen_3" comment="Welcome screen instructions">Buy small entertainment packs and watch your favorite content</string>
+    <string name="bn_let_s_get_started" comment="Button title get started">Let\'s Get Started</string>
+    <string name="bn_proceed" comment="Button title proceed">Proceed</string>
+    <string name="bn_enter_phone_number" comment="Instruction to enter phone number">Enter Phone Number</string>
+    <string name="bn_accept_the" comment="Check box to accept terms and conditions, ^ is for TNC link and ^ is for privacy link">I accept the ^1 and\n ^2</string>
+    <string name="bn_terms_conditions" comment="Title terms and conditions">Terms &amp; Conditions</string>
+    <string name="bn_privacy_policy" comment="Title privacy link">Privacy Policy</string>
+    <string name="bn_terms_conditions_error" comment="Error when condition not accepted">You must accept terms &amp; conditions to proceed</string>
+    <string name="bn_confirm_age_error" comment="Error when age consent not provided">You must confirm your age is 18 and above </string>
+    <string name="bn_introduction" comment="Terms and conditions title">Introduction</string>
+    <string name="bn_terms_and_condition" comment="Terms and conditions title">Terms and Conditions</string>
+    <string name="bn_intellectual_property_rights" comment="Terms and conditions title">Intellectual Property Rights</string>
+    <string name="bn_instructions_desc" comment="Terms and conditions text">Other than the content you own, under these Terms, Company Name and/or its licensors own all the intellectual property rights and materials contained in this Website. You are granted limited license only for purposes of viewing the material contained on this Website.</string>
+    <string name="bn_right_desc" comment="Terms and conditions text">These Terms will be applied fully and affect to your use of this Website. By using this Website, you agreed to accept all terms and conditions written in here. You must not use this Website if you disagree with any of these Website Standard Terms and Conditions.\nMinors or people below 18 years old are not allowed to use this Website.</string>
+    <string name="bn_enter_6_digits_otp" comment="Instruction to enter pin">Enter 6 Digit OTP</string>
+    <string name="bn_i_confirm_my_age_is_18_and_above" comment="Check box for age consent">I confirm my age is 18 and above</string>
+    <string name="bn_verify_pin" comment="Button title to validate pin">Verify Pin</string>
+    <string name="bn_otp_has_been_sent" comment="Notify pin has been sent via SMS">OTP has been sent to &#160;</string>
+    <string name="bn_give_permission" comment="Button title to give permissions">Give Permission</string>
+    <string name="bn_permission_needed" comment="Instruction permission needed">Permissions needed</string>
+    <string name="permission_denied" comment="Error when permission is denied">Permission denied</string>
+    <string name="bn_didnt_receive_otp" comment="Option when OTP not received">Didn\'t receive OTP&#160;</string>
+    <string name="bn_resend_otp" comment="Button title resend OTP">Resend OTP</string>
+    <string name="bn_location" comment="Permission title location">Location</string>
+    <string name="bn_contact" comment="Permission title contact">Contact</string>
+    <string name="bn_storage" comment="Permission title storage">Storage</string>
+    <string name="bn_messages" comment="Permission title messages">Messages</string>
+    <string name="bn_app" comment="Profile section app">App</string>
+    <string name="bn_logout" comment="Profile section logout">Log Out</string>
+    <string name="bn_cancel" comment="Button title cancel">Cancel</string>
+    <string name="bn_logout_title" comment="Confirmation message to logout">Are you sure you want to exit?</string>
+    <string name="bn_help_support_title" comment="Confirmation message to logout">Send us your feedback</string>
+    <string name="bn_help_support_message" comment="Message to submit feedback">You can help Mera Mishtu improve by providing feedback on any issues you\'re facing. Please write to us at <a href="mishtu@cloudpoint.co.in">mishtu@cloudpoint.co.in</a>.</string>
+    <string name="bn_order_listen" comment="Order placed details, %1s is param for order date, %2s is param for pack name, %3s is param for price">Order placed on %1$s for %2$s pack of Rs %3$s</string>
+    <string name="lbl_error_valid_mobile" comment="Instruction to enter phone number">Enter valid mobile number</string>
+    <string name="bn_profile_title" comment="Tab title profile">Me</string>
+    <string name="bn_home_title" comment="Tab title home">Home</string>
+
+    <string name="bn_notification" comment="Button title notifications">Notification</string>
+    <string name="bn_no_notifications" comment="No notifications found">You do not have any notifications to show.</string>
+    <string name="buy_pack" comment="Button title buy pack">Buy Pack</string>
+    <string name="bn_continue_watching" comment="Section title continue watching">Continue Watching</string>
+    <string name="bn_trending_trailers" comment="Section title trending trailers">Trending Trailers</string>
+
+    <string-array name="help_support" comment="Help topics">
+        <item>I have an issue with the content</item>
+        <item>I have a feedback for the retailer</item>
+        <item>I have a payment related query</item>
+        <item>Random Technical issue 1</item>
+        <item>Terms &amp; Privacy Policy</item>
+    </string-array>
+
+    <string name="enter_the_code_shared_by_the_retailer" comment="Message to share Pin">Enter the code shared by the retailer</string>
+    <string name="bn_enter_referral_code" comment="Instruction to enter referral code">Enter referral code</string>
+    <string name="enter_code" comment="Hint text to enter code">Enter Code</string>
+    <string name="skip" comment="Button title skip">Skip</string>
+
+    <string name="please_wait" comment="Progress dialog wait">Please wait…</string>
+    <string name="permission_storage" comment="Permission title storage">We use storage to check if you have enough space to store the content</string>
+    <string name="permission_contact" comment="Permission title contact">We use storage to check if you have enough space to store the content</string>
+    <string name="permission_location" comment="Permission title location">We use location to locate you and show stores near you. Please grant permission to proceed.</string>
+    <string name="country_code_91" comment="India country code" translatable="false">+91</string>
+    <string name="permission_loc_desc" comment="Permission description location">We use storage to check if you have enough\n space to store downloaded content</string>
+    <string name="permission_storage_desc" comment="Permission description storage">We use storage to check if you have enough\n space to store downloaded content</string>
+    <string name="here_is_your_daily_reward" comment="Message daily rewards">Here is your Daily Reward!</string>
+
+    <string name="view_all" comment="View all content button">View All</string>
+    <string name="order_id" comment="Field title order id">Order ID</string>
+    <string name="retailer" comment="Field title retailer">Retailer</string>
+    <string name="chat_with_us" comment="Chat for support button">Chat With Us</string>
+    <string name="rate_us" comment="Profile section rate us">Rate Us</string>
+    <string name="about_us" comment="Profile section about us">About Us</string>
+    <string name="term_of_use" comment="Profile section term of use">Terms of Use</string>
+    <string name="privacy_policy" comment="Profile section privacy policy">Privacy Policy</string>
+    <string name="app_availability" comment="Profile section app availability">App Availability</string>
+    <string name="microsoft_corporation__all_rights_reserved" comment="Profile section, Company Name">Cloudpoint Technologies Pvt. Ltd.</string>
+    <string name="all_rights_reserved" comment="Profile section, Microsoft Corporation. All rights reserved">All rights reserved.</string>
+    <string name="share_with_friends" comment="Profile section share with friends">Share With Friends</string>
+    <string name="share_text" comment="Share message">To watch latest movies and series in high quality download the Mera Mishtu Application from playstore: https://play.google.com/store/apps/details?id=</string>
+    <string name="share_movie_text" comment="Share message">Hey I am watching %s on Mera Mishtu. To enjoy more than 100+ films and series download Mera Mishtu Application from playstore: https://play.google.com/store/apps/details?id=</string>
+    <string name="rs_10_pack" comment="Static text 10 rs pack">Rs 10 pack</string>
+    <string name="eros_now_pack" comment="Static text EROS now">Eros Now Pack</string>
+    <string name="content_provider_pack" comment="Static text Content Provider name">%s Pack</string>
+    <string name="data_fetch_error" comment="Error fetching content from server">Oops. Unable to fetch data. Please check your network connection.</string>
+
+    <string name="content_messages_channel_title" comment="channel title content">Content Messages</string>
+    <string name="offer_messages_channel_title" comment="channel title offer">Offer Messages</string>
+    <string name="text_free" comment="Text free content">Free</string>
+    <string name="text_free_movies" comment="Text free content">Free films</string>
+    <string name="text_free_series" comment="Text free content">Free series</string>
+    <string name="no_subscription_found" comment="No subscription message">"No subscription found"</string>
+    <string name="coming_soon" comment="Coming soon message">Coming Soon</string>
+    <string name="settings" comment="Dialog title settings">Settings</string>
+    <string name="pack_expired_title" comment="Title to notify pack expiry">Your pack is expired</string>
+    <string name="pack_expired_description" comment="Title to notify pack expiry">To continue watching Eros Now movies and series, please renew your pack</string>
+    <string name="button_view_subscription" comment="Button title to view active subscription">View Subscription</string>
+    <string name="button_renew_pack" comment="Button title to renew pack">Renew Pack</string>
+    <string name="button_watch_now" comment="Button title to watch content now">Watch Now</string>
+    <string name="button_view_offers" comment="Button title to view offers">View Offers</string>
+    <string name="error_no_subscriptions" comment="Error no subscriptions found">No Subscription packs available.</string>
+    <string name="userName_is_empty" comment="Validation of Profile name while updating">Profile name is empty.</string>
+    <string name="profile_name_updated" comment="Toast while updating profile name">Profile name updated.</string>
+    <string name="enter_name" comment="Hint text to enter profile name">Enter name</string>
+    <string name="no_notification" comment="Message showing no notification">You do not have any notifications to show.</string>
+
+    <string name="offers" comment="Screen title offers">Offers</string>
+    <string name="rewards_offers" comment="Screen title rewards">Rewards &amp; Offers</string>
+    <string name="you_won" comment="Message on card on winning coins">You Won</string>
+    <string name="congratulations_exclamantion" comment="Message on card on winning coins">Congratulations !!!</string>
+    <string name="congratulations" comment="Message on card on winning coins">Congratulations</string>
+    <string name="available" comment="Text listing coins">Available</string>
+    <string name="redeem_now" comment="Button title to redeem offer">Redeem Now</string>
+    <string name="n_days_pack" comment="Pack days %d is param for pack duration">%d Days Pack</string>
+    <string name="watch_100s_of_movies_amp_serials" comment="Message on what pack offers">Watch 100s of movies &amp; series.</string>
+    <string name="watch_100s_of_movies_amp_serials_and" comment="Message on what pack offers">Watch 100s of movies &amp; series</string>
+    <string name="terms_of_service" comment="Message for packs terms and conditions, %d is param for number of days validity">This pack is valid for %1$s days. Enjoy watching all movies and series available in this pack only on Mera Mishtu app.</string>
+    <string name="pack_terms_of_service" comment="Message for packs terms and conditions, %d is param for number of days validity">This pack is valid for %1$s days. Enjoy watching all movies and series available in this pack only on Mera Mishtu app.</string>
+    <string name="redeem_with" comment="Button title to redeem offer">Redeem with</string>
+    <string name="select_offer" comment="Section title for offer list">Select Offer</string>
+    <string name="offer_redeemed_message" comment="Toast message after offer redeemed">Offer Redeemed!!</string>
+
+    <string name="rewards_app_install" comment="Rewards title on app installed">Welcome Bonus</string>
+    <string name="rewards_daily_open" comment="Rewards title on daily app open">Daily Bonus</string>
+    <string name="rewards_content_streamed" comment="Rewards title on content streamed">Daily Watch Bonus</string>
+    <string name="rewards_retailer_rating" comment="Rewards title on rating retailer">Retailer Rating Bonus</string>
+    <string name="rewards_order_complete" comment="Rewards title on order complere">New Order Bonus</string>
+    <string name="rewards_download_complete" comment="Rewards title on download complere">Download Bonus</string>
+    <string name="rewards_coins" comment="Rewards title on mishtu coins">Mishtu Coins</string>
+    <string name="about_this_pack" comment="Title about the pack">About This pack</string>
+    <string name="subscription_exist_error" comment="You have active subscription.">Sorry, you can redeem this offer after your active pack expires.</string>
+    <string name="watch_for_free" comment="watch for free">Watch For Free</string>
+    <string name="watch_episode1" comment="watch episode 1">Watch Episode1</string>
+    <string name="explore_content" comment="Descriptive text to direct user to explore other content">Explore our other content available for you</string>
+    <string name="watch_clips" comment="Button title watch short videos">Watch Short Videos</string>
+    <string name="watch_other_films" comment="Button title watch other films">Watch Other Films</string>
+    <string name="finding_stores_nearby" comment="Progress indicating store locator">Finding stores nearby</string>
+    <string name="buy_a_pack_and_earn" comment="Rewards info on buying pack">Buy a pack and earn upto %d coins</string>
+    <string name="watch_movie_and_earn" comment="Rewards info on watching a movie">Watch a movie and earn upto %d coins</string>
+    <string name="watch_series_and_earn" comment="Rewards info on watching a movie">Watch a episode and earn upto %d coins</string>
+    <string name="quick_tip" comment="Tool tips">Quick tip</string>
+    <string name="tooltip_top_nav_title" comment="Tool tips top navigation title">Top Navigation</string>
+    <string name="tooltip_top_nav_description" comment="Tool tips top navigation desc">Click here to view your favourite short videos</string>
+    <string name="tooltip_top_nav_films_description" comment="Tool tips top navigation films desc">Click here to view your favourite films</string>
+    <string name="tooltip_top_nav_series_description" comment="Tool tips top navigation series desc">Click here to view latest series</string>
+    <string name="tooltip_home_description" comment="Tool tips home tab desc">Click here to see your favourite content</string>
+    <string name="tooltip_rewards_description" comment="Tool tips rewards tab desc">Click here to win daily rewards, check available coins and get great offers.</string>
+    <string name="tooltip_profile_description" comment="Tool tips profile tab desc">Click here to see your information</string>
+    <string name="tooltip_buy_pack_description" comment="Tool tips buy pack desc">Click here to select a pack</string>
+    <string name="tooltip_search_mic_title" comment="Tool tips voice search title">Search Screen: Mic icon</string>
+    <string name="tooltip_search_mic_description" comment="Tool tips voice search desc">Click here to search by voice</string>
+    <string name="tooltip_available_coins_title" comment="Tool tips available coins title">Available Coins</string>
+    <string name="tooltip_available_coins_description" comment="Tool tips available coins desc">These are your total available coins. All collected coins will be updated here.</string>
+    <string name="tooltip_order_pending_title" comment="Tool tips available coins title">Order pending card</string>
+    <string name="tooltip_order_pending_description" comment="Tool tips available coins desc">Click on the card to complete your pending order.</string>
+    <string name="cancel_order_confirm" comment="Confirmation message for cancelling order">Do you want to cancel your ₹ %d/- pack?</string>
+    <string name="btn_yes" comment="yes">Yes</string>
+    <string name="btn_yes_proceed" comment="yes proceed">Yes, Proceed</string>
+    <string name="btn_no" comment="No">No</string>
+    <string name="btn_pay_at_store" comment="Button title pay at the store">Pay At The Store</string>
+    <string name="pending_pack_payment" comment="Instructions to inform order pending, param for pending amount">You have a ₹%d pack payment pending</string>
+    <string name="btn_cancel_pack" comment="Button title to cancel pack">Cancel the Pack</string>
+    <string name="btn_subscription_info" comment="Text showing subscription pack info, %1d is duration in days, %2d is price">₹%2$d/- pack for %1$d days</string>
+    <string name="btn_subscription_desc" comment="Text showing pack description">Watch 100+ Films and latest series</string>
+    <string name="btn_subscription_desc_with_duration" comment="Text showing pack description">Watch more than 100+ films and latest series\nfor %d days</string>
+    <string name="nearest" comment="Nearest store text">Nearest</string>
+    <string name="btn_play" comment="Play button">Play</string>
+    <string name="order_pending" comment="Text showing order pending">Order Placed. Payment Pending</string>
+    <string name="order_complete" comment="Text showing order complete with date">Bought on %s</string>
+    <string name="order_cancelled" comment="Text showing order cancelled">Order Cancelled</string>
+    <string name="app_cutoff_date" comment="Text indicating app would stop on cut-off date">This app will expire on %s</string>
+    <string name="app_force_stop_message" comment="Text indicating app would stopped due to cut-off date">Thank you for using Mera Mishtu. This App version is no longer available. Hope to see you soon.</string>
+    <string name="app_force_stop_rooted_device" comment="Text indicating app would stopped due to rooted device">Thank you for installing Mera Mishtu. We do not support Mera Mishtu on a rooted device.</string>
+    <string name="button_ok" comment="Button title ok">OK</string>
+    <string name="more_than_100" comment="Text giving details on pack">Watch more than 100 films</string>
+    <string name="more_than_100_series" comment="Text giving details on pack">Watch more than 100 series</string>
+    <string name="watch_more_movies" comment="Text giving details on available_movies with count">Watch more than %d films</string>
+    <string name="available_movies" comment="Text giving details on available_movies at Hub">100+ films and latest series available</string>
+    <string name="content_advisory" comment="Text giving details content advisory">Content Advisory</string>
+    <string name="content_advisory_na" comment="Text giving N/A content advisory">N/A</string>
+    <string name="director" comment="Content director details">Director</string>
+    <string name="cast" comment="Content cast details">Cast</string>
+    <string name="minutes" comment="Content duration minutes">Mins</string>
+    <string name="delete_account" comment="delete account in profile screen">Delete Account</string>
+    <string name="download_data" comment="download data in profile screen">Download Data</string>
+    <string name="account_settings" comment="account settings in profile screen">Account Settings</string>
+    <string name="download_your_data" comment="Text showing download data">Download Your Data</string>
+    <string name="download_dialog_text" comment="Text for download data dialog">Your data will contain your Profile Information, Transactions, Activity History etc.</string>
+    <string name="bn_okay" comment="Button OK">Okay</string>
+    <string name="place_new_request" comment="Export data place new request">Place New Request</string>
+    <string name="request_submitted" comment="Text for request submitted">Request Submitted</string>
+    <string name="download_data_response" comment="download data request response">A link will be sent for you to download your data within %d days through in-app notification. </string>
+    <string name="export_data_ready" comment="download data ready to download">Your data is ready to download and is valid till %s </string>
+    <string name="delete_account_confirm" comment="confirm text before delete data">This will delete your account, transaction data, pending requests and profile information permanently.</string>
+    <string name="about_movie" comment="Content detail bottom sheet in full screen player">Movie\'s Story</string>
+    <string name="story" comment="Content detail for series bottom sheet in full screen player">Story</string>
+    <string name="save_data_dialog_text" comment="Save data dialog text in Full screen player">Go to any near by Shop to download for free and save your data</string>
+    <string name="go_to_shop_now" comment="Save data dialog button in Full screen player">Go to Shop now</string>
+    <string name="free_download_available" comment="Text saying free download available at retailer">Download for free</string>
+    <string name="grinning_face_emoji" comment="Emoji code for grinning face"> &#128512;</string>
+    <string name="movies_available_at_this_store" comment="text to display available movies at hub">Movies and series available at this store</string>
+
+    <string name="button_close" comment="Button close">Close</string>
+    <string name="downloading_movies" comment="List of films downloading">These films and series are downloading</string>
+    <string name="downloaded_movies" comment="List of films downloading">Downloaded Films and series</string>
+    <string name="your_downloads" comment="Your downloads">Your Downloads</string>
+    <string name="queued" comment="Queued downloads">Queued</string>
+    <string name="share_location" comment="Text asking for sharing location">Share location</string>
+    \
+    <string name="confirm_delete" comment="Text showing confirmation before deleting content">Delete this movie/episode?</string>
+    <string name="confirm_delete_series" comment="Text showing confirmation before deleting content">Delete all the episodes of this series?</string>
+    <string name="confirm_cancel" comment="Text showing confirmation before cancelling download">Cancel the download?</string>
+    <string name="steps_to_download_offline" comment="Steps to follow offline download">Steps to download offline</string>
+    <string name="turn_on_wifi" comment="Step 2 - Download Offline">Start your WiFi</string>
+    <string name="phone_wifi" comment="Step 2 - Download Offline">WiFi</string>
+    <string name="_2" comment="Step 2">2.</string>
+    <string name="_3" comment="Step 3">3.</string>
+    <string name="_4" comment="Step 4">4.</string>
+    <string name="_1" comment="Step 1">1.</string>
+    <string name="download_films_for_free_at_the_store" comment="Step 4 - Download Offline for free">Go to the shop and download films and series for free</string>
+    <string name="download" comment="Step 4 - Download Offline for free">download</string>
+    <string name="join_a_network_with_name_nearme_xxxxxx" comment="Step 3 - Join network">Join the hotspot of the shop by name- \"meramishtu\"</string>
+    <string name="nearme_xxxxxx" comment="Step 3 - Join network" translatable="false">\"meramishtu\"</string>
+    <string name="go_to_nearby_store_and_take_assistance" comment="Step 2 - Visit nearby store">Go to a nearby shop and take help</string>
+    <string name="go_to_nearby_store" comment="Step 1 - Visit nearby store">nearby shop</string>
+    <string name="device_connection_failed" comment="Error when device connection failed">Please check your connection with the device.</string>
+    <string name="directions" comment="dircetions for retailer">Directions</string>
+    <string name="select_shop_to_download_for_free" comment="Selecting a shop in retailer screen">Select a shop to download the films and series for free</string>
+    <string name="select_shop_to_buy_pack" comment="Shop selection text in near by retailer screen">Select a shop to buy the pack</string>
+    <string name="share" comment="Button title share">Share</string>
+    <string name="text_download_status">%d\%s</string>
+    <string name="button_play_now" comment="Button title play now">Play now</string>
+    <string name="find_a_nearest_shop_and_save_data" comment="Instruction promoting offline download">Find a nearest shop and save data up to 100% by downloading films and series for free</string>
+    <string name="up_to_100" comment="Instruction promoting offline download">up to 100%</string>
+    <string name="dont_forget_to_recharge" comment="Instruction on pack expired">Dont forget to recharge to enjoy films/series and downloads</string>
+    <string name="expired" comment="Expired label">Expired</string>
+    <string name="pack_expired" comment="Expired label">Pack Expired</string>
+    <string name="connection_active_with_retailer_name">Now you can download all these films and series of %s</string>
+    <string name="connection_active">Now you can download all these films and series</string>
+    <string name="use_shop_data_to_download">Now you can use shop’s data to download the films and series</string>
+    <string name="order_complete_dialog_title" comment="Order complete congratulation dialog title">Congratulations!</string>
+    <string name="order_complete_pack_details" comment="Order complete congratulation dialog pack details">₹%1$d/- pack is active now\nfor next %2$d day(s)</string>
+    <string name="order_complete_pack_price" comment="Order complete congratulation dialog pack price">₹%d/- pack</string>
+    <string name="order_complete_pack_duration" comment="Order complete congratulation dialog pack duration">%d day(s)</string>
+    <string name="watch_film_and_serials" comment="Order complete congratulation button text">Watch films and series</string>
+    <string name="pack_promo_active_pack">Films from the pack</string>
+    <string name="pack_promo_active_pack_series">Series from the pack</string>
+    <string name="pack_starts_from" comment="View all content screen pack starts from">Pack Starts From ₹10/-</string>
+    <string name="movies_and_serial_in_pack" comment="View all content screen movies and serials in this pack">Movies in this pack</string>
+    <string name="serial_in_pack" comment="View all content screen serials in this pack">Series in this pack</string>
+    <string name="search_language" comment="Hint text search language">Search Language</string>
+    <string name="buy_rs_pack" comment="button to buy pack">Buy ₹%d Pack</string>
+    <string name="whatsapp" comment="Whatsapp button text in retailer screen">Whatsapp</string>
+    <string name="whatsapp_not_installed" comment="Error saying whatsapp not installed in the device">Whatsapp is not installed in this device</string>
+    <string name="key_expired_error" comment="Error when license key expires">Please come online and refresh your account to watch movies. Don\'t worry this will not use your data.</string>
+    <string name="confirm_redeem_order" comment="Confirmation text before redeem order">Would you like to proceed buying %d days pack?</string>
+    <string name="account_deletion_in_progress" comment="Blocker when user requested account deletion">Account deletion in progress</string>
+    <string name="user_delete_description" comment="Blocker when user requested account deletion">Please wait for deletion request to complete.</string>
+    <string name="account_delete_alert_title" comment="Alert user on account deletion">Sad to see you go!</string>
+    <string name="delete_account_alert_desc" comment="Alert user on account deletion">Request is submitted. Your account will be deleted within 21 days.</string>
+    <string name="pay_with_coins" comment="Redeem offer text %1d is param for coin count">Pay with %1$d Coins</string>
+    <string name="app_tag_line" comment="App tag line">Ab har dukaan, kare kaam aasan</string>
+    <string name="pack_active" comment="Text indicating pack is active">Active</string>
+    <string name="pack_expires_on" comment="Text indicating pack expiry">Expires on %s</string>
+    <string name="choose_your_avatar" comment="Screen title to choose avatar">Choose your avatar</string>
+    <string name="update_photo" comment="Button title to update photo">Update Photo</string>
+    <string name="storage_almost_full" comment="Storage full dialog">Storage is almost full</string>
+    <string name="free_storage_to_download" comment="Storage full dialog text to free space">Please free up some space in order to download more movies.</string>
+    <string name="voice_input_not_supported" comment="Error saying voice input is not supported in the device">Voice input is not supported in this device</string>
+    <string name="title_rate_us" comment="Rate us alert title">Are you enjoying the app?</string>
+    <string name="botton_rate_on_playstore" comment="Rate now button title">Rate On Play Store</string>
+    <string name="button_rate_later" comment="Rate later alert title">I\'ll Do It Later</string>
+    <string name="button_title_mobile_data" comment="Button title switch on mobile data">Switch on Mobile Data</string>
+    <string name="add_photo" comment="Button title to add photo">Add Photo</string>
+    <string name="request_share_location" comment="Text requesting user to give location">Share your location to avail great services like download films and series for free from the shops near you!</string>
+    <string name="download_films_free" comment="Text free download">download films/series for free</string>
+    <string name="yes_i_am_interested" comment="Interested in offline download">Yes, I Am Interested</string>
+    <string name="free_download_is_available" comment="Text notifying hubs are available">Free download is available in your city. Please visit the nearest shop to download and save your 100% data</string>
+    <string name="free_download" comment="Text free download">Free download</string>
+    <string name="percent_data_download" comment="Text free download">100% data</string>
+    <string name="free_download_not_available" comment="Text notifying hubs are not available">Free download from the nearest shop is not available in your city. Would you like to use this service in future?</string>
+    <string name="free_download_not_available_watch_films" comment="Text notifying hubs are not available">Free download from the nearest shop is not available in your city. Continue watching films and series online.</string>
+    <string name="skip_for_now" comment="Button text skip">Skip For Now</string>
+    <string name="location_permission_denied" comment="Message to show when location permission">It looks like you have turned off permissions required for this feature. It can be enabled under phone settings > Apps > Mera Mishtu > Permissions</string>
+    <string name="location_scan_denied" comment="Message to show when location permission">If you wish to change you location in future, it can be done under the section Me > Location > Refresh</string>
+    <string name="location_scan_denied_steps" comment="Steps to refresh location">Me > Location > Refresh</string>
+    <string name="location_permission_steps" comment="Steps to allow location permission">phone settings > Apps > Mera Mishtu > Permissions</string>
+    <string name="go_to_settings" comment="Button go to settings">Go To Settings</string>
+    <string name="uh_oh" comment="Text notifying hubs are not available">Uh-oh!</string>
+    <string name="thank_you_for_interest" comment="Interested in offline download">Thank you for showing interest.</string>
+    <string name="watch_film" comment="No download, hence stream films">Watch Films</string>
+    <string name="referral_code_saved_already" comment="error duplicate referral code">Referral code already saved</string>
+    <string name="invalid_referral_code" comment="error invalid referral code">Invalid referral code</string>
+    <string name="referral_code_saved" comment="error code saved">Referral code saved</string>
+    <string name="error_no_incentive_plan" comment="Error no incentive plan">No incentive plan set by content provider</string>
+    <string name="app_update_failed" comment="App update failed to install">Update not installed, try again later.</string>
+    <string name="create_duplicate_order_error" comment="Create order error when pack is already active">User already holds order for same content provider</string>
+    <string name="change" comment="text to change the content provider in films/series tab">Change</string>
+    <string name="change_content_provider" comment="static text to change the content provider in films/series tab">Please choose and click on the channel you would like to watch!</string>
+    <string name="you_are_watching" comment="static text to saying which content provider user watching">You are watching %s</string>
+    <string name="view_all_seasons" comment="description text for episode list">View All Seasons</string>
+    <string name="season_suffix" comment="suffix for season">S</string>
+    <string name="episode_suffix" comment="suffix for episodes">E</string>
+    <string name="season_listing">Season</string>
+    <string name="watch_movies" comment="watch x movies">Watch %s movies</string>
+    <string name="choose_pack_from" comment="choose pack from">Choose pack from %s</string>
+    <string name="includes_x_movies_series" comment="Includes x films and y series">Includes %1$d films and %2$d series </string>
+    <string name="watch_x_movies_series" comment="Watch %1$d films and %2$d series">Watch %1$d films and %2$d series </string>
+    <string name="includes_x_movies" comment="Includes s">Includes %d movies</string>
+    <string name="includes_x_series" comment="Includes s">Includes %d series</string>
+    <string name="watch_x_movies" comment="Watch s">Watch %d movies</string>
+    <string name="watch_x_series" comment="Watch s">Watch %d series</string>
+    <string name="select_pack_to_renew" comment="Select pack to renew in purchased subscription screen">Please select any one of the pack to renew</string>
+    <string name="pack_is_not_active" comment="Static text This pack is not available now. in purchased subscription screen">This pack is not available now.</string>
+    <string name="showing_result" comment="Search result title text for subscription list">Showing results for </string>
+    <string name="no_result" comment="No result title text for subscription list">No results found for </string>
+
+    <string name="bn_submit" comment="static text Submit">Submit</string>
+
+</resources>

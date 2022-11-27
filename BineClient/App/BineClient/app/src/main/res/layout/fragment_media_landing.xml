@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/media_landing_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:id="@+id/collapsing_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:elevation="@dimen/dp_2"
+                app:layout_scrollFlags="noScroll">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="start"
+                    android:padding="@dimen/dp_12">
+
+                    <ImageButton
+                        android:id="@+id/searchContainer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp_12"
+                        android:background="@drawable/ic_home_search"
+                        android:contentDescription="@string/bn_image_description" />
+
+                    <com.google.android.material.tabs.TabLayout
+                        android:id="@+id/tabLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/dp_16"
+                        app:layout_constraintStart_toEndOf="@id/searchContainer"
+                        app:layout_constraintEnd_toEndOf="parent"
+
+                        style="@style/TabStyle"
+                        app:tabMode="scrollable"
+                        android:theme="@style/Theme.MaterialComponents.Bridge">
+
+                        <com.google.android.material.tabs.TabItem
+                            android:id="@+id/tabAll"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/bn_all" />
+
+                        <com.google.android.material.tabs.TabItem
+                            android:id="@+id/tabClips"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/bn_clips"
+                            />
+
+                        <com.google.android.material.tabs.TabItem
+                            android:id="@+id/tabMovies"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/bn_movies"
+                            />
+
+                        <com.google.android.material.tabs.TabItem
+                            android:id="@+id/tabSeries"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/bn_series"
+                            />
+                    </com.google.android.material.tabs.TabLayout>
+                </LinearLayout>
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+        <ImageButton
+            android:id="@+id/content_down_button"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/dp_70"
+            android:background="@drawable/bn_ic_button_down"
+            android:contentDescription="@string/app_name"
+            android:padding="@dimen/dp_5"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

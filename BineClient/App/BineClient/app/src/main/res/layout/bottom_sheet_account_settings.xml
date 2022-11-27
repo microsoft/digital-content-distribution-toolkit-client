@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <include
+            android:id="@+id/close"
+            layout="@layout/textview_close_bottom_sheet" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_marginTop="@dimen/dp_24"
+            android:id="@+id/listContainer"
+            android:background="@drawable/bn_bg_bottom_sheet_language"
+            app:layout_constraintTop_toBottomOf="@id/close"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:layout_marginTop="42dp"
+                style="@style/SubHeadingText"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:id="@+id/title"
+                android:textColor="#101010"
+                android:text="@string/account_settings"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:id="@+id/delete_account"
+                style="@style/BodyText16sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_16"
+                android:drawablePadding="@dimen/dp_16"
+                android:paddingStart="@dimen/dp_16"
+                android:paddingTop="@dimen/dp_10"
+                android:paddingEnd="@dimen/dp_16"
+                android:paddingBottom="@dimen/dp_10"
+                android:text="@string/delete_account"
+                app:layout_constraintTop_toBottomOf="@id/title"
+                app:drawableStartCompat="@drawable/ic_delete"
+                app:drawableEndCompat="@drawable/bn_ic_right_arrow" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_marginStart="@dimen/dp_20"
+                android:layout_marginEnd="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_12"
+                android:background="@color/bn_divider_color"
+                app:layout_constraintTop_toBottomOf="@id/delete_account"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <TextView
+                android:id="@+id/download_data"
+                style="@style/BodyText16sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_16"
+                android:drawablePadding="@dimen/dp_16"
+                android:paddingStart="@dimen/dp_13"
+                android:paddingTop="@dimen/dp_10"
+                android:paddingEnd="@dimen/dp_16"
+                android:paddingBottom="@dimen/dp_10"
+                android:text="@string/download_data"
+                app:layout_constraintTop_toBottomOf="@id/delete_account"
+                app:drawableStartCompat="@drawable/bn_ic_tab_download"
+                app:drawableEndCompat="@drawable/bn_ic_right_arrow" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_30"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/download_data"
+                >
+            </View>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:padding="@dimen/dp_8"
+            android:src="@drawable/ic_settings"
+            android:background="@drawable/bn_bg_btn_round"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/close"
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="@dimen/dp_60"
+            android:contentDescription="@string/bn_image_description"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

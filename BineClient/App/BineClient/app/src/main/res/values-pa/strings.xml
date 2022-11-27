@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?><resources>
+
+    <string name="bn_service_entertainment" comment="Title text shown on discover services">ਮਨੋਰੰਜਨ</string>
+    <string name="bn_service_jobs" comment="Title text shown on discover services">ਕੁਸ਼ਲਤਾ</string>
+    <string name="bn_service_offers" comment="Title text shown on discover services">ਤੁਹਾਡੇ ਨੇੜੇ ਦੀ ਡੀਲ</string>
+    <string name="bn_service_entertainment_desc" comment="Description text shown for entertainment service">ਮੂਵੀਜ਼, ਸੀਰੀਜ਼ ਅਤੇ ਛੋਟੀ ਕਲਿਪਸ ਦੀ ਦੁਨੀਆ ਦਾ ਆਨੰਦ ਲਓ।</string>
+    <string name="bn_service_jobs_desc" comment="Description text shown for jobs service">ਤੁਹਾਡੇ ਆਲੇ-ਦੁਆਲੇ ਸਥਾਨਿਕ ਕੰਮ ਲੱਭੋ</string>
+    <string name="bn_service_offers_desc" comment="Description text shown for offers">ਨੇੜਲੀ ਪੇਸ਼ਕਸ਼ &amp; ਛੋਟਾਂ ਦੀ ਜਾਂਚ ਕਰੋ</string>
+    <string name="bn_service_government" comment="Title text shown on discover services">ਸਰਕਾਰੀ\nਸੇਵਾਵਾਂ</string>
+    <string name="tab_downloads" comment="Title text shown on bottom bar">ਡਾਉਨਲੋਡਸ</string>
+    <string name="discover_page_title" comment="Requesting user to select a service">ਕੋਈ ਸੇਵਾ ਚੁਣੋ</string>
+    <string name="bn_search_by_name_actor_year" comment="Hint text for search criteria">ਨਾਮ, ਅਭਿਨੇਤਾ, ਸਾਲ ਦੁਆਰਾ ਖੋਜ ਕਰੋ…</string>
+    <string name="bn_all" comment="tab title for all content">ਸਾਰੇ</string>
+    <string name="bn_clips" comment="tab title for clips content">ਛੋਟੀ ਵੀਡੀਓਜ਼</string>
+    <string name="bn_movies" comment="tab title for movies content">ਫਿਲਮਾਂ</string>
+    <string name="bn_series" comment="tab title for series content">ਸੀਰੀਜ਼</string>
+    <string name="bn_fresh_arrivals" comment="section title for new arrived content">ਨਵੇਂ ਆਏ ਹੋਏ</string>
+    <string name="bn_more_short_clips" comment="section title for short form content">ਪ੍ਰਸਿੱਧ ਛੋਟੀ ਵੀਡੀਓਜ਼</string>
+    <string name="bn_languages" comment="section title for language filter">ਭਾਸ਼ਾਵਾਂ</string>
+    <string name="bn_Genres" comment="section title for genre filter">ਵੰਨਗੀ</string>
+    <string name="bn_search" comment="search button title">ਖੋਜ ਕਰੋ</string>
+    <string name="bn_search_by_title_actor_genres" comment="Hint text for search criteria">ਸਿਰਲੇਖ, ਅਭਿਨੇਤਾ, ਵੰਨਗੀ ਦੁਆਰਾ ਖੋਜ ਕਰੋ…</string>
+    <string name="bn_hindi_english_kannada_and_more" comment="Description text for language search">ਹਿੰਦੀ, ਅੰਗਰੇਜ਼ੀ, ਕੰਨੜ ਅਤੇ ਹੋਰ</string>
+    <string name="bn_trending_searches" comment="Section title for trending searches">ਪ੍ਰਚਲਿਤ ਖੋਜਾਂ</string>
+    <string name="ln_language" comment="Screen title for language">ਭਾਸ਼ਾ</string>
+    <string name="bn_movie_details" comment="Screen title for movie details">ਮੂਵੀ ਦੇ ਵੇਰਵੇ</string>
+    <string name="bn_trending_content" comment="Section title for trending all content">ਪ੍ਰਚਲਿਤ ਤਤਕਰਾ</string>
+    <string name="bn_trending_movies" comment="Section title for trending movies">ਪ੍ਰਚਲਿਤ ਮੂਵੀਜ਼</string>
+    <string name="bn_trending_series" comment="Section title for trending series">ਪ੍ਰਚਲਿਤ ਸੀਰੀਜ਼</string>
+    <string name="bn_recommended_movies" comment="Section title for recommended movies">ਪ੍ਰਸਤਾਵਿਤ ਮੂਵੀਆਂ</string>
+    <string name="bn_recommended_series" comment="Section title for trending series">ਸਿਫਾਰਿਸ਼ ਕੀਤੀ ਗਈ ਸੀਰੀਜ਼</string>
+    <string name="bn_free_movies" comment="Section title for free movies">ਮੁਫ਼ਤ ਮੂਵੀਜ਼</string>
+    <string name="bn_paid_movies" comment="Section title for paid movies">ਭੁਗਤਾਨ ਕੀਤੀਆਂ ਫਿਲਮਾਂ</string>
+    <string name="bn_paid_series" comment="Section title for paid movies">ਭੁਗਤਾਨਸ਼ੁਦਾ ਸੀਰੀਜ਼</string>
+
+
+    <!--<string name="bn_ln_english" comment="Language filter title">English</string>
+    <string name="bn_ln_hindi" comment="Language filter title">हिंदी</string>
+    <string name="bn_ln_telugu" comment="Language filter title">తెలుగు</string>
+    <string name="bn_ln_tamil" comment="Language filter title">தமிழ்</string>
+    <string name="bn_ln_malayalam" comment="Language filter title">മലയാളം</string>
+    <string name="bn_ln_gujarathi" comment="Language filter title">ગુજરાતી</string>
+    <string name="bn_ln_kohinoor" comment="Language filter title">বাঙ্গালী</string>
+    <string name="bn_ln_marathi" comment="Language filter title">मराठी</string>
+    <string name="bn_ln_mukta" comment="Language filter title">ਪੰਜਾਬੀ</string>
+    <string name="bn_ln_kannada" comment="Language filter title">ಕನ್ನಡ</string>
+    <string name="bn_ln_oriya" comment="Language filter title">ଓଡ଼ିଆ</string>
+    <string name="bn_ln_assame" comment="Language filter title">অসমীয়া</string>-->
+
+    <string name="bn_gn_drama" comment="Genre filter title">ਡ੍ਰਾਮਾ</string>
+    <string name="bn_gn_family" comment="Genre filter title">ਪਰਿਵਾਰ</string>
+    <string name="bn_gn_reality" comment="Genre filter title">ਰਿਐਲਿਟੀ</string>
+    <string name="bn_gn_crime" comment="Genre filter title">ਅਪਰਾਧ</string>
+    <string name="bn_gn_romance" comment="Genre filter title">ਰੋਮਾਂਸ</string>
+    <string name="bn_gn_mythology" comment="Genre filter title">ਮਿਥਿਹਾਸ</string>
+    <string name="bn_gn_action" comment="Genre filter title">ਐਕਸ਼ਨ</string>
+    <string name="bn_gn_fantasy" comment="Genre filter title">ਫੈਂਟਸੀ</string>
+    <string name="bn_gn_thriller" comment="Genre filter title">ਥ੍ਰਿਲਰ</string>
+
+
+    <string name="genre" comment="Genre filter">ਵੰਨਗੀ</string>
+    <string name="comedy_horror_thriller_and_more" comment="Hint text for genre filter">ਕਾਮੇਡੀ, ਹਾਰਰ, ਥ੍ਰਿਲਰ ਅਤੇ ਹੋਰ</string>
+    <string name="bn_search_genre" comment="Hint text for genre filter">ਵੰਨਗੀ ਦੀ ਖੋਜ ਕਰੋ</string>
+    <string name="_results" comment="Text for result count">\"%d\" ਪਰਿਣਾਮ</string>
+    <string name="bn_results_sub_text" comment="Text for no result count"> \"%s\" ਲਈ। ਉਹ ਤਤਕਰਾ ਸਾਂਝਾ ਕਰ ਰਹੇ ਹਾਂ ਸ਼ਾਇਦ ਜਿਸ ਵਿੱਚ ਤੁਹਾਡੀ ਦਿਲਚਸਪੀ ਹੋ ਸਕਦੀ ਹੈ। </string>
+
+    <string name="bn_fw_categories" comment="Section title for short form categories">ਸ਼੍ਰੇਣੀਆਂ</string>
+    <string name="bn_fw_travel" comment="Short form video category title">ਯਾਤਰਾ</string>
+    <string name="bn_fw_food" comment="Short form video category title">ਭੋਜਨ</string>
+    <string name="bn_fw_comedy" comment="Short form video category title">ਕਾਮੇਡੀ</string>
+    <string name="bn_fw_news" comment="Short form video category title">ਖਬਰਾਂ</string>
+    <string name="bn_fw_fitness" comment="Short form video category title">ਫਿੱਟਨੈਸ</string>
+    <string name="bn_fw_fashion" comment="Short form video category title">ਫੈਸ਼ਨ</string>
+    <string name="bn_fw_movie" comment="Short form video category title">ਮੂਵੀਜ਼ ਅਤੇ TV</string>
+    <string name="bn_fw_celebrity" comment="Short form video category title">ਸੈਲੀਬ੍ਰਿਟੀ</string>
+
+    <string name="bn_help_support" comment="Profile section help and support">ਮਦਦ &amp; ਸਮਰਥਨ</string>
+    <string name="bn_referral_code" comment="Profile section referral code">ਹਵਾਲਾ ਕੋਡ</string>
+    <string name="bn_order_history" comment="Profile section order history">ਆਰਡਰ ਇਤਿਹਾਸ</string>
+    <string name="bn_support" comment="Profile section support">ਸਮਰਥਨ</string>
+    <string name="bn_dark_mode" comment="Profile section dark mode">ਡਾਰਕ ਮੋਡ</string>
+    <string name="bn_app_language" comment="Profile section language">ਐਪਲੀਕੇਸ਼ਨ ਭਾਸ਼ਾ</string>
+    <string name="bn_preference" comment="Profile section preference">ਤਰਜੀਹ</string>
+    <string name="bn_job_types" comment="Profile section job type">ਕੰਮ ਦੀਆਂ ਕਿਸਮਾਂ</string>
+    <string name="bn_jobs" comment="Profile section jobs">ਕੰਮ</string>
+    <string name="bn_downloads" comment="Profile section downloads">ਡਾਉਨਲੋਡਸ</string>
+    <string name="bn_download" comment="Profile section downloads">ਡਾਉਨਲੋਡ ਕਰੋ</string>
+    <string name="bn_subscriptions" comment="Profile section subscriptions">ਸਬਸਕ੍ਰਿਪਸ਼ਨਾਂ</string>
+    <string name="bn_subscription" comment="title subscription">ਸਬਸਕ੍ਰਿਪਸ਼ਨ</string>
+    <string name="bn_content" comment="Profile section content">ਤਤਕਰਾ</string>
+    <string name="bn_set_app_language" comment="Instruction text to select language">ਐਪਲੀਕੇਸ਼ਨ ਭਾਸ਼ਾ ਸੈਟ ਕਰੋ</string>
+    <string name="bn_search_order_hint" comment="Hint text to filter orders">ਪੈਕ, ਮੂਵੀ, ਮਿਤੀ, ਆਰਡਰ ID ਦੁਆਰਾ ਖੋਜ ਕਰੋ</string>
+    <string name="bn_search_topics" comment="Hint text to filter support topics">ਵਿਸ਼ਿਆਂ ਦੀ ਖੋਜ ਕਰੋ</string>
+    <string name="bn_refresh" comment="Button title to refresh content">ਤਾਜ਼ਾ ਕਰੋ</string>
+    <string name="bn_retry" comment="Button title to retry fetch content">ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ</string>
+    <string name="bn_no_internet_connection" comment="Error message when no internet connection">ਕੋਈ ਇੰਟਰਨੈਟ ਕਨੈਕਸ਼ਨ ਨਹੀਂ</string>
+    <string name="bn_server_error" comment="Error message when service error received">ਉਹੋ। ਕੁਝ ਗ਼ਲਤ ਹੋ ਗਿਆ।\n ਕਿਰਪਾ ਕਰਕੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ ਜਾਂ ਬਾਅਦ ਵਿੱਚ ਦੁਬਾਰਾ ਆਓ।</string>
+    <string name="bn_something_went_wrong" comment="Error message when service error received">ਉਹੋ, ਕੁਝ ਗਲਤ ਹੋ ਗਿਆ</string>
+    <string name="bn_we_were_unable_to_fetch_the_content" comment="Error message when content refresh failed">ਅਸੀਂ ਤਤਕਰੇ ਨੂੰ ਪ੍ਰਾਪਤ ਕਰਨ ਵਿੱਚ ਅਸਮਰੱਥ ਸੀ।</string>
+    <string name="bn_no_internet_subtitle" comment="Error message when no internet connection">ਕਿਰਪਾ ਕਰਕੇ ਇੰਟਰਨੈਟ ਕਨੈਕਸ਼ਨ ਦੀ ਜਾਂਚ ਕਰੋ ਅਤੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।</string>
+
+    <string name="bn_image_description" comment="Default description for image">ਇੱਥੇ ਪ੍ਰਤੀਬਿੰਬ…</string>
+    <string name="bn_pack_description" comment="Default description for image">%d ਦਿਨਾਂ ਦੇ ਲਈ ਸਾਰੀ ਮੂਵੀਜ਼ ਅਤੇ ਸੀਰੀਜ਼</string>
+    <string name="bn_buy_pack_title" comment="Button title to buy pack">ਰੁ. %d ਵਿੱਚ ਪੈਕ ਖਰੀਦੋ</string>
+    <string name="bn_pack_active" comment="Button title for active pack">ਕਿਰਿਆਸ਼ੀਲ</string>
+    <string name="bn_pack_expire_disclaimer" comment="Disclaimer for one active pack">ਤੁਸੀਂ ਕੇਵਲ ਪਹਿਲੇ ਪੈਕ ਦੀ ਮਿਆਦ ਸਮਾਪਤ ਹੋਣ ਤੋਂ ਬਾਅਦ ਇਸ ਪੈਕ ਨੂੰ ਖਰੀਦ ਸਕਦੇ ਹੋ</string>
+    <string name="bn_view_other_packs" comment="Title to browse more back">ਹੋਰ ਪੈਕ ਦੇਖੋ</string>
+    <string name="bn_previous_subscriptions" comment="Section title previous subscription">ਪਿਛਲੀਆਂ ਸਬਸਕ੍ਰਿਪਸ਼ਨਾਂ</string>
+    <string name="bn_thank_you_for_subscribing" comment="Message after buying subscription">ਸਬਸਕ੍ਰਾਈਬ ਕਰਨ ਲਈ ਤੁਹਾਡਾ ਧੰਨਵਾਦ!</string>
+    <string name="bn_subscription_hint" comment="Hint text for searching packs">ਪੈਕ ਦੇ ਨਾਮ, ਮਿਤੀ ਦੁਆਰਾ ਖੋਜ ਕਰੋ</string>
+    <string name="bn_select_a_pack_and_pay" comment="Instruction text to select pack">ਕੋਈ ਪੈਕ ਚੁਣੋੋ ਅਤੇ ਨੇੜਲੀ ਦੁਕਾਨ \'ਤੇ ਭੁਗਤਾਨ ਕਰੋ</string>
+    <string name="bn_select_a_pack" comment="Instruction text to select pack">ਇੱਕ ਪੈਕ ਚੁਣੋ</string>
+    <string name="bn_select_pack" comment="Instruction text to select pack">ਪੈਕ ਚੁਣੋ</string>
+    <string name="bn_renew_pack" comment="Button title to renew pack">ਪੈਕ ਦਾ ਮੁੜ ਨਵੀਨੀਕਰਨ ਕਰੋ</string>
+    <string name="bn_find_a_store" comment="Button title to find stores">ਇੱਕ ਦੁਕਾਨ ਲੱਭੋ</string>
+    <string name="bn_buy_a_pack" comment="Button title to buy pack">ਇੱਕ ਪੈਕ ਖਰੀਦੋ &gt;</string>
+    <string name="bn_buy_this_pack" comment="Button title to buy pack">ਇਸ ਪੈਕ ਨੂੰ ਖਰੀਦੋ</string>
+    <string name="bn_pack_expired" comment="Title to indicate expired pack">ਮਿਆਦ ਸਮਾਪਤ ਹੋਈ</string>
+    <string name="bn_pack_expired_title" comment="Title to indicate expired pack">ਪੈਕ ਦੀ ਮਿਆਦ ਸਮਾਪਤ ਹੋਈ!</string>
+    <string name="bn_pack_rs" comment="Pack price text">ਰੁਪਏ %d/-</string>
+    <string name="bn_rs" comment="Pack price text">₹ %d</string>
+    <string name="bn_pack_duration" comment="Pack duration text">%d ਦਿਨਾਂ ਲਈ</string>
+    <string name="bn_pack_distance" comment="Store distance text">%d ਮੀਟਰ ਦੂਰ</string>
+
+    <string name="bn_found_stores_near_you" comment="Stores result">ਤੁਹਾਡੇ ਨੇੜੇ %d ਸਟੋਰ</string>
+    <string name="bn_nostore_subtitle" comment="Stores not found">ਤੁਹਾਡੇ ਲਈ ਉਪਲਬਧ ਸਾਡੇ ਹੋਰ ਤਤਕਰੇ ਨੂੰ ਐਕਸਪਲੋਰ ਕਰੋ</string>
+    <string name="bn_no_stores_nearby_download" comment="Stores not found">ਓਹੋ! ਡਾਉਨਲੋਡ ਕਰਨ ਲਈ ਕੋਈ ਵੀ ਨੇੜਲੀ ਦੁਕਾਨ ਉਪਲਬਧ ਨਹੀਂ ਹੈ</string>
+    <string name="bn_no_stores_nearby" comment="Stores not found">ਓਹੋ! ਇੱਕ ਪੈਕ ਖਰੀਦਣ ਲਈ ਕੋਈ ਵੀ ਨੇੜਲੀ ਦੁਕਾਨ ਉਪਲਬਧ ਨਹੀਂ ਹੈ</string>
+    <string name="bn_finding_store" comment="Loading text while finding stores">ਨੇੜਲੇ ਸਟੋਰ ਲੱਭ ਰਹੇ ਹਾਂ…</string>
+    <string name="bn_continue" comment="Button continue">ਜਾਰੀ ਰੱਖੋ</string>
+    <string name="bn_order_placed_successfully" comment="Notify order places">ਹਾਂ! ਆਰਡਰ ਸਫਲ ਹੋਇਆ</string>
+    <string name="bn_go_to_store" comment="Button title select store">ਦੁਕਾਨ ਚੁਣੋ</string>
+    <string name="bn_take_me_to_store" comment="Button title select store">ਮੈਨੂੰ Microsoft Store \'ਤੇ ਲੈ ਜਾਓ</string>
+    <string name="bn_pack_details" comment="Text for pack details">ਪੈਕ ਦੇ ਵੇਰਵੇ</string>
+    <string name="bn_order_id" comment="Field order id">ਆਰਡਰ ID</string>
+    <string name="bn_order_time" comment="Field order time">ਆਰਡਰ ਸਮਾਂ</string>
+    <string name="bn_enjoy_all_movies" comment="Description for what a pack holds">%d ਦਿਨਾਂ ਦੇ ਲਈ ਸਾਰੀ ਮੂਵੀਜ਼ ਅਤੇ ਸੀਰੀਜ਼ ਦਾ ਆਨੰਦ ਲਓ।</string>
+    <string name="bn_view_all_packs" comment="Button title view all packs">ਸਾਰੇ ਪੈਕ ਦੇਖੋ</string>
+    <string name="bn_next_steps" comment="Instruction post order complete">ਅਗਲੇ ਚਰਣ</string>
+    <string name="bn_look_for_nearby_stores" comment="Instruction post order complete">“ਇੱਕ ਸਟੋਰ ਦੀ ਚੋਣ ਕਰੋ” ‘ਤੇ ਕਲਿੱਕ ਕਰਦੇ ਹੋਏ ਨੇੜਲੇ ਸਟੋਰਾਂ ਦੀ ਭਾਲ ਕਰੋ</string>
+    <string name="bn_go_to_store_add" comment="Instruction post order complete">ਸਟੋਰ ‘ਤੇ ਜਾਓ ਅਤੇ ਆਪਣਾ ਮੋਬਾਈਲ ਨੰਬਰ ਸਾਂਝਾ ਕਰੋ</string>
+    <string name="bn_pay_the_retailer" comment="Instruction post order complete">ਭੁਗਤਾਨ ਨੂੰ ਪੂਰਾ ਕਰਨ ਲਈ ਵਿਕਰੇਤਾ ਨੂੰ ਭੁਗਤਾਨ ਕਰੋ</string>
+    <string name="bn_rewards" comment="Title rewards">ਬੋਨਸ</string>
+    <string name="bn_yor_duration" comment="Content year of release and duration. %1s is param for YOR, %2s is param for duration">%1$s • %2$s ਮਿੰਟ</string>
+
+    <string name="bn_sorry_you_do_not_have_any_orders" comment="No orders message">ਮਾਫ਼ ਕਰਨਾ! ਤੁਹਾਡੇ ਕੋਲ ਕੋਈ ਵੀ ਆਰਡਰ ਨਹੀਂ ਹੈ</string>
+    <string name="bn_pack_name" comment="Field pack name">ਪੈਕ ਦਾ ਨਾਮ</string>
+    <string name="bn_order_date" comment="Field order placed date">ਆਰਡਰ ਦੀ ਮਿਤੀ</string>
+    <string name="bn_listen_to_it" comment="Listen to screen details">ਇਸ ਨੂੰ ਸੁਣੋ</string>
+    <string name="bn_episodes" comment="Movie details field for list of episode">ਐਪਿਸੋਡ</string>
+    <string name="bn_movie_story" comment="Movie details field description">ਮੂਵੀ ਦੀ ਕਹਾਣੀ</string>
+    <string name="bn_view_more" comment="Button link to expand description">\nਹੋਰ ਦੇਖੋ</string>
+    <string name="bn_view_less" comment="Button link to collapse description">\nਘੱਟ ਦੇਖੋ</string>
+    <string name="bn_expire_in_x_days" comment="Pack expires description">ਤੁਹਾਡੇ ਪੈਕ ਦੀ ਸਮਾਂ ਸੀਮਾ %d ਦਿਨਾਂ ਵਿੱਚ ਸਮਾਪਤ ਹੋ ਜਾਵੇਗੀ</string>
+    <string name="bn_expire_today" comment="Pack expires today description">ਤੁਹਾਡੇ ਪੈਕ ਦੀ ਸਮਾਂ ਸੀਮਾ ਅੱਜ ਸਮਾਪਤ ਹੋ ਜਾਵੇਗੀ</string>
+
+    <string name="bn_version" comment="Profile section app version">ਸੰਸਕਰਣ - %s</string>
+    <string name="bn_welcome_screen_1" comment="Welcome screen instructions">ਤੁਹਾਡੀ ਮਨਪਸੰਦ ਫਿਲਮਾਂ, ਸੀਰੀਜ਼ ਅਤੇ ਛੋਟੀ ਵੀਡੀਓਜ਼ ਨੂੰ ਕਿਸੇ ਵੀ ਥਾਂ ਤੋਂ ਦੇਖੋ</string>
+    <string name="bn_welcome_screen_2" comment="Welcome screen instructions">ਭੁਗਤਾਨ ਨੂੰ ਪੂਰਾ ਕਰਨ ਲਈ ਆਪਣੇੇ ਨਜ਼ਦੀਕੀ ਸਟੋਰਾਂ ਤੋਂ ਮਦਦ ਪ੍ਰਾਪਤ ਕਰੋ</string>
+    <string name="bn_welcome_screen_3" comment="Welcome screen instructions">ਛੋਟੇ ਮਨੋਰੰਜਨ ਪੈਕ ਖਰੀਦੋ ਅਤੇ ਆਪਣੇ ਮਨਪਸੰਦ ਤਤਕਰੇ ਨੂੰ ਦੇਖੋ</string>
+    <string name="bn_let_s_get_started" comment="Button title get started">ਆਉ ਸ਼ੁਰੂ ਕਰੀਏ</string>
+    <string name="bn_proceed" comment="Button title proceed">ਅੱਗੇ ਵੱਧੋ</string>
+    <string name="bn_enter_phone_number" comment="Instruction to enter phone number">ਫ਼ੋਨ ਨੰਬਰ ਦਾਖ਼ਲ ਕਰੋ</string>
+    <string name="bn_accept_the" comment="Check box to accept terms and conditions, ^ is for TNC link and ^ is for privacy link">ਮੈਂ ^1 ਅਤੇ\n ^2 ਨੂੰ ਸਵੀਕਾਰ ਕਰਦਾ/ਦੀ ਹਾਂ</string>
+    <string name="bn_terms_conditions" comment="Title terms and conditions">ਨਿਯਮ &amp; ਸ਼ਰਤਾਂ</string>
+    <string name="bn_privacy_policy" comment="Title privacy link">ਗੋਪਨੀਯਤਾ ਨੀਤੀ</string>
+    <string name="bn_terms_conditions_error" comment="Error when condition not accepted">ਤੁਹਾਨੂੰ ਅੱਗੇ ਵੱਧਣ ਲਈ ਨਿਯਮ &amp; ਸ਼ਰਤਾਂ ਨੂੰ ਸਵੀਕਾਰ ਕਰਨਾ ਚਾਹੀਦਾ ਹੈ</string>
+    <string name="bn_confirm_age_error" comment="Error when age consent not provided">ਤੁਹਾਨੂੰ ਪੁਸ਼ਟੀ ਕਰਨੀ ਹੋਵੇਗੀ ਕਿ ਤੁਹਾਡੀ ਉਮਰ 18 ਸਾਲ ਅਤੇ ਇਸ ਤੋਂ ਵੱਧ ਹੈ</string>
+    <string name="bn_introduction" comment="Terms and conditions title">ਭੂਮਿਕਾ</string>
+    <string name="bn_terms_and_condition" comment="Terms and conditions title">ਨਿਯਮ ਅਤੇ ਸ਼ਰਤਾਂ</string>
+    <string name="bn_intellectual_property_rights" comment="Terms and conditions title">ਬੌਧਿਕ ਸੰਪੱਤੀ ਦੇ ਅਧਿਕਾਰ</string>
+    <string name="bn_instructions_desc" comment="Terms and conditions text">ਤੁਹਾਡੀ ਹੱਕਦਾਰੀ ਦੇ ਤਤਕਰੇ ਤੋਂ ਇਲਾਵਾ, ਇਹਨਾਂ ਸ਼ਰਤਾਂ ਅਧੀਨ, ਕੰਪਨੀ ਨਾਮ ਅਤੇ/ਜਾਂ ਇਸਦੇ ਲਾਇਸੈਂਸਰ ਸਾਰੇ ਬੌਧਿਕ ਸੰਪੱਤੀ ਅਧਿਕਾਰ ਅਤੇ ਇਸ ਵੈਬਸਾਈਟ ਵਿੱਚ ਸ਼ਾਮਲ ਤਤਕਰੇ ਦੇ ਹੱਕਦਾਰ ਹਨ। ਤੁਹਾਨੂੰ ਸਿਰਫ ਇਸ ਵੈਬਸਾਈਟ ਵਿੱਚ ਸ਼ਾਮਲ ਸਮੱਗਰੀ ਨੂੰ ਦੇਖਣ ਦੇ ਮੰਤਵ ਲਈ ਸੀਮਿਤ ਲਾਇਸੈਂਸ ਦਿੱਤਾ ਗਿਆ ਹੈ।</string>
+    <string name="bn_right_desc" comment="Terms and conditions text">ਇਹ ਸ਼ਰਤਾਂ ਪੂਰੀ ਤਰ੍ਹਾਂ ਲਾਗੂ ਕੀਤੀਆਂ ਜਾਣਗੀਆਂ ਅਤੇ ਇਸ ਵੈਬਸਾਈਟ ਦੇ ਤੁਹਾਡੇ ਉਪਯੋਗ ਨੂੰ ਪ੍ਰਭਾਵਿਤ ਕਰਣਗੀਆਂ। ਇਸ ਵੈਬਸਾਈਟ ਦੀ ਵਰਤੋਂ ਕਰਦੇ ਹੋਏ ਤੁਸੀਂ ਇੱਥੇ ਲਿਖੀਆਂ ਸਾਰੀਆਂ ਨਿਯਮਾਂ ਅਤੇ ਸ਼ਰਤਾਂ ਨੂੰ ਸਵੀਕਾਰ ਕਰਨ ਲਈ ਰਾਜ਼ੀ ਹੋ ਗਏ ਹੋ। ਤੁਹਾਨੂੰ ਇਸ ਵੈਬਸਾਈਟ ਦੀ ਵਰਤੋਂ ਨਹੀਂ ਕਰਨੀ ਚਾਹੀਦੀ ਜੇਕਰ ਤੁਸੀਂ ਇਹਨਾਂ ਵੈਬਸਾਈਟਾਂ ਦੀਆਂ ਕਿਸੇ ਵੀ ਮਿਆਰੀ ਨਿਯਮਾਂ ਅਤੇ ਸ਼ਰਤਾਂ ਦੇ ਨਾਲ ਅਸਹਿਮਤ ਹੋ।\nਨਾਬਾਲਗਾਂ ਅਤੇ 18 ਸਾਲਾਂ ਤੋਂ ਘੱਟ ਉਮਰ ਦੇ ਵਿਅਕਤੀਆਂ ਨੂੰ ਇਸ ਵੈਬਸਾਈਟ ਦੀ ਵਰਤੋਂ ਕਰਨ ਦੀ ਇਜਾਜ਼ਤ ਨਹੀਂ ਹੈ।</string>
+    <string name="bn_enter_6_digits_otp" comment="Instruction to enter pin">6 ਅੰਕ ਦਾ OTP ਦਾਖਲ ਕਰੋ</string>
+    <string name="bn_i_confirm_my_age_is_18_and_above" comment="Check box for age consent">ਮੈਂ ਪੁਸ਼ਟੀ ਕਰਦਾ/ਦੀ ਹਾਂ ਕਿ ਮੇਰੀ ਉਮਰ 18 ਅਤੇ ਇਸ ਤੋਂ ਵੱਧ ਉਮਰ ਦੀ ਹੈ</string>
+    <string name="bn_verify_pin" comment="Button title to validate pin">ਪਿੰਨ ਦੀ ਤਸਦੀਕ ਕਰੋ</string>
+    <string name="bn_otp_has_been_sent" comment="Notify pin has been sent via SMS">  ਨੂੰ OTP ਭੇਜਿਆ ਗਿਆ ਹੈ</string>
+    <string name="bn_give_permission" comment="Button title to give permissions">ਆਗਿਆ ਦਿਓ</string>
+    <string name="bn_permission_needed" comment="Instruction permission needed">ਆਗਿਆਵਾਂ ਦੀ ਲੋੜ ਹੈ</string>
+    <string name="permission_denied" comment="Error when permission is denied">ਆਗਿਆ ਅਸਵੀਕਾਰ ਕੀਤੀ ਗਈ</string>
+    <string name="bn_didnt_receive_otp" comment="Option when OTP not received">  OTP ਪ੍ਰਾਪਤ ਨਹੀਂ ਹੋਇਆ</string>
+    <string name="bn_resend_otp" comment="Button title resend OTP">OTP ਦੁਬਾਰਾ ਭੇਜੋ</string>
+    <string name="bn_location" comment="Permission title location">ਸਥਾਨ</string>
+    <string name="bn_contact" comment="Permission title contact">ਸੰਪਰਕ</string>
+    <string name="bn_storage" comment="Permission title storage">ਸਟੋਰੇਜ</string>
+    <string name="bn_messages" comment="Permission title messages">ਸੁਨੇਹੇ</string>
+    <string name="bn_app" comment="Profile section app">ਐਪਲੀਕੇਸ਼ਨ</string>
+    <string name="bn_logout" comment="Profile section logout">ਲੌਗ ਆਉਟ ਕਰੋ</string>
+    <string name="bn_cancel" comment="Button title cancel">ਰੱਦ ਕਰੋ</string>
+    <string name="bn_logout_title" comment="Confirmation message to logout">ਕੀ ਤੁਸੀਂ ਵਾਕਈ ਨਿਕਾਸ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ?</string>
+    <string name="bn_help_support_title" comment="Confirmation message to logout">ਸਾਨੂੰ ਆਪਣੀ ਫੀਡਬੈਕ ਭੇਜੋ</string>
+    <string name="bn_help_support_message" comment="Message to submit feedback">ਤੁਸੀਂ ਜੋ ਵੀ ਸਮੱਸਿਆਵਾਂ ਦਾ ਸਾਹਮਣਾ ਕਰ ਰਹੇ ਹੋ, ਉਸ ਬਾਰੇ ਫੀਡਬੈਕ ਪ੍ਰਦਾਨ ਕਰਕੇ, ਤੁਸੀਂ Mera Mishtu ਨੂੰ ਸੁਧਾਰਨ ਵਿੱਚ ਮਦਦ ਕਰ ਸਕਦੇ ਹੋ। ਕਿਰਪਾ ਕਰਕੇ ਸਾਨੂੰ <a href="mishtu@cloudpoint.co.in">mishtu@cloudpoint.co.in</a> ਉੱਤੇ ਲਿਖੋ।</string>
+    <string name="bn_order_listen" comment="Order placed details, %1s is param for order date, %2s is param for pack name, %3s is param for price">%3$s ਰੁਪਿਆਂ ਦੇ %2$s ਪੈਕ ਦੇ ਲਈ %1$s ‘ਤੇ ਆਰਡਰ ਪਲੇਸ ਕੀਤਾ ਗਿਆ</string>
+    <string name="lbl_error_valid_mobile" comment="Instruction to enter phone number">ਯੋਗ ਮੋਬਾਈਲ ਨੰਬਰ ਦਾਖਲ ਕਰੋ</string>
+    <string name="bn_profile_title" comment="Tab title profile">ਮੇਰੇ ਬਾਰੇ</string>
+    <string name="bn_home_title" comment="Tab title home">ਮੁੱਖ ਪੰਨਾ</string>
+
+    <string name="bn_notification" comment="Button title notifications">ਸੂਚਨਾ</string>
+    <string name="bn_no_notifications" comment="No notifications found">ਤੁਹਾਡੇ ਕੋਲ ਦਿਖਾਉਣ ਦੇ ਲਈ ਕੋਈ ਸੂਚਨਾਵਾਂ ਨਹੀਂ ਹਨ।</string>
+    <string name="buy_pack" comment="Button title buy pack">ਪੈਕ ਖਰੀਦੋ</string>
+    <string name="bn_continue_watching" comment="Section title continue watching">ਦੇਖਣਾ ਜਾਰੀ ਰੱਖੋ</string>
+    <string name="bn_trending_trailers" comment="Section title trending trailers">ਪ੍ਰਚਲਿਤ ਟ੍ਰੇਲਰ</string>
+
+    <string-array name="help_support" comment="Help topics">
+        <item>ਮੇਰੇ ਕੋਲ ਤਤਕਰੇ ਸੰਬੰਧੀ ਇੱਕ ਸਮੱਸਿਆ ਹੈ</item>
+        <item>ਮੇਰੇ ਕੋਲ ਵਿਕਰੇਤਾ ਦੇ ਲਈ ਫੀਡਬੈਕ ਹੈ</item>
+        <item>ਮੇਰੇ ਕੋਲ ਇੱਕ ਭੁਗਤਾਨ ਸੰਬੰਧੀ ਪੁੱਛ-ਗਿੱਛ ਹੈ</item>
+        <item>ਬੇਤੁਕੀ ਤਕਨੀਕੀ ਸਮੱਸਿਆ 1</item>
+        <item>ਸ਼ਰਤਾਂ &amp; ਗੋਪਨੀਯਤਾ ਨੀਤੀ</item>
+    </string-array>
+
+    <string name="enter_the_code_shared_by_the_retailer" comment="Message to share Pin">ਵਿਕਰੇਤਾ ਦੁਆਰਾ ਸਾਂਝਾ ਕੀਤਾ ਗਿਆ ਕੋਡ ਦਾਖ਼ਲ ਕਰੋ</string>
+    <string name="bn_enter_referral_code" comment="Instruction to enter referral code">ਹਵਾਲਾ ਕੋਡ ਦਾਖਲ ਕਰੋ</string>
+    <string name="enter_code" comment="Hint text to enter code">ਕੋਡ ਦਾਖ਼ਲ ਕਰੋ</string>
+    <string name="skip" comment="Button title skip">ਛੱਡੋ</string>
+
+    <string name="please_wait" comment="Progress dialog wait">ਕਿਰਪਾ ਕਰਕੇ ਉਡੀਕ ਕਰੋ…</string>
+    <string name="permission_storage" comment="Permission title storage">ਅਸੀਂ ਇਹ ਜਾਂਚ ਕਰਨ ਲਈ ਸਟੋਰੇਜ ਦੀ ਵਰਤੋਂ ਕਰਦੇ ਹਾਂ ਕਿ ਕੀ ਤੁਹਾਡੇ ਕੋਲ ਤਤਕਰੇ ਨੂੰ ਸਟੋਰ ਕਰਨ ਲਈ ਕਾਫ਼ੀ ਥਾਂ ਹੈ</string>
+    <string name="permission_contact" comment="Permission title contact">ਅਸੀਂ ਇਹ ਜਾਂਚ ਕਰਨ ਲਈ ਸਟੋਰੇਜ ਦੀ ਵਰਤੋਂ ਕਰਦੇ ਹਾਂ ਕਿ ਕੀ ਤੁਹਾਡੇ ਕੋਲ ਤਤਕਰੇ ਨੂੰ ਸਟੋਰ ਕਰਨ ਲਈ ਕਾਫ਼ੀ ਥਾਂ ਹੈ</string>
+    <string name="permission_location" comment="Permission title location">ਅਸੀਂ ਤੁਹਾਨੂੰ ਲੱਭਣ ਲਈ ਅਤੇ ਤੁਹਾਡੇ ਨੇੜਲੇ ਸਟੋਰਾਂ ਨੂੰ ਦਿਖਾਉਣ ਲਈ ਸਥਾਨ ਦੀ ਵਰਤੋਂ ਕਰ ਕਰਦੇ ਹਾਂ। ਕਿਰਪਾ ਕਰਕੇ ਅੱਗੇ ਵੱਧਣ ਲਈ ਆਗਿਆ ਦਿਓ।</string>
+    <string name="permission_loc_desc" comment="Permission description location">ਅਸੀਂ ਇਹ ਜਾਂਚ ਕਰਨ ਲਈ ਸਟੋਰੇਜ ਦੀ ਵਰਤੋਂ ਕਰਦੇ ਹਾਂ ਕਿ ਕੀ ਤੁਹਾਡੇ ਕੋਲ ਡਾਉਨਲੋਡ ਕੀਤੇ ਗਏ ਤਤਕਰੇ ਨੂੰ ਸਟੋਰ ਕਰਨ ਲਈ ਕਾਫ਼ੀ\n ਥਾਂ ਹੈ</string>
+    <string name="permission_storage_desc" comment="Permission description storage">ਅਸੀਂ ਇਹ ਜਾਂਚ ਕਰਨ ਲਈ ਸਟੋਰੇਜ ਦੀ ਵਰਤੋਂ ਕਰਦੇ ਹਾਂ ਕਿ ਕੀ ਤੁਹਾਡੇ ਕੋਲ ਡਾਉਨਲੋਡ ਕੀਤੇ ਗਏ ਤਤਕਰੇ ਨੂੰ ਸਟੋਰ ਕਰਨ ਲਈ ਕਾਫ਼ੀ\n ਥਾਂ ਹੈ</string>
+    <string name="here_is_your_daily_reward" comment="Message daily rewards">ਇੱਥੇ ਤੁਹਾਡਾ ਰੋਜ਼ਾਨਾ ਦਾ ਇਨਾਮ ਹੈ!</string>
+
+    <string name="view_all" comment="View all content button">ਸਭ ਦੇਖੋ</string>
+    <string name="order_id" comment="Field title order id">ਆਰਡਰ ID</string>
+    <string name="retailer" comment="Field title retailer">ਵਿਕਰੇਤਾ</string>
+    <string name="chat_with_us" comment="Chat for support button">ਸਾਡੇ ਨਾਲ ਚੈਟ ਕਰੋ</string>
+    <string name="rate_us" comment="Profile section rate us">ਸਾਨੂੰ ਰੇਟ ਕਰੋ</string>
+    <string name="about_us" comment="Profile section about us">ਸਾਡੇ ਬਾਰੇ</string>
+    <string name="term_of_use" comment="Profile section term of use">ਉਪਯੋਗ ਦੀਆਂ ਸ਼ਰਤਾਂ</string>
+    <string name="privacy_policy" comment="Profile section privacy policy">ਗੋਪਨੀਯਤਾ ਨੀਤੀ</string>
+    <string name="app_availability" comment="Profile section app availability">ਐਪਲੀਕੇਸ਼ਨ ਦੀ ਉਪਲਬਧਤਾ</string>
+    <string name="microsoft_corporation__all_rights_reserved" comment="Profile section, Company Name">Cloudpoint Technologies Pvt. Ltd.</string>
+    <string name="all_rights_reserved" comment="Profile section, Microsoft Corporation. All rights reserved">ਸਾਰੇ ਅਧਿਕਾਰ ਰਾਖਵੇਂ ਹਨ।</string>
+    <string name="share_with_friends" comment="Profile section share with friends">ਮਿੱਤਰਾਂ ਨਾਲ ਸਾਂਝਾ ਕਰੋ</string>
+    <string name="share_text" comment="Share message">ਉੱਚ ਗੁਣਵੱਤਾ ਵਿੱਚ ਨਵੀਨਤਮ ਮੂਵੀਆਂ ਅਤੇ ਸੀਰੀਜ਼ ਦੇਖਣ ਲਈ Playstore ਤੋਂ Mera Mishtu ਐਪਲੀਕੇਸ਼ਨ ਨੂੰ ਡਾਉਨਲੋਡ ਕਰੋ: https://play.google.com/store/apps/details?id=</string>
+    <string name="share_movie_text" comment="Share message">ਹੈਲੋ, ਮੈਂ Mera Mishtu ਉੱਤੇ %s ਦੇਖ ਰਿਹਾ/ਰਹੀ ਹਾਂ। 100+ ਫਿਲਮਾਂ ਅਤੇ ਸੀਰੀਜ਼ ਦਾ ਅਨੰਦ ਮਾਣਨ ਲਈ Playstore ਤੋਂ Mera Mishtu ਐਪਲੀਕੇਸ਼ਨ ਡਾਉਨਲੋਡ ਕਰੋ: https://play.google.com/store/apps/details?id=</string>
+    <string name="rs_10_pack" comment="Static text 10 rs pack">ਰੁ.10 ਦਾ ਪੈਕ</string>
+    <string name="eros_now_pack" comment="Static text EROS now">Eros Now ਪੈਕ</string>
+    <string name="content_provider_pack" comment="Static text Content Provider name">%s ਪੈਕ</string>
+    <string name="data_fetch_error" comment="Error fetching content from server">ਉਹੋ। ਡੇਟਾ ਨੂੰ ਪ੍ਰਾਪਤ ਕਰਨ ਵਿੱਚ ਅਸਮਰੱਥ। ਕਿਰਪਾ ਕਰਕੇ ਆਪਣੇ ਨੈਟਵਰਕ ਕਨੈਕਸ਼ਨ ਦੀ ਜਾਂਚ ਕਰੋ।</string>
+
+    <string name="content_messages_channel_title" comment="channel title content">ਤਤਕਰਾ ਸੁਨੇਹੇ</string>
+    <string name="offer_messages_channel_title" comment="channel title offer">ਪੇਸ਼ਕਸ਼ ਦੇ ਸੁਨੇਹੇ</string>
+    <string name="text_free" comment="Text free content">ਫਰੀ</string>
+    <string name="text_free_movies" comment="Text free content">ਮੁਫ਼ਤ ਫਿਲਮਾਂ</string>
+    <string name="text_free_series" comment="Text free content">ਫਰੀ ਸੀਰੀਜ਼</string>
+    <string name="no_subscription_found" comment="No subscription message">"ਕੋਈ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਨਹੀਂ ਮਿਲੀ"</string>
+    <string name="coming_soon" comment="Coming soon message">ਛੇਤੀ ਆ ਰਿਹਾ ਹੈ</string>
+    <string name="settings" comment="Dialog title settings">ਸੈਟਿੰਗਾਂ</string>
+    <string name="pack_expired_title" comment="Title to notify pack expiry">ਤੁਹਾਡੇ ਪੈਕ ਦੀ ਮਿਆਦ ਖਤਮ ਹੋ ਗਈ ਹੈ</string>
+    <string name="pack_expired_description" comment="Title to notify pack expiry">Eros Now ਮੂਵੀਜ਼ ਅਤੇ ਸੀਰੀਜ਼ ਦੇਖਣਾ ਜਾਰੀ ਰੱਖਣ ਲਈ, ਕਿਰਪਾ ਕਰਕੇ ਆਪਣੇ ਪੈਕ ਨੂੰ ਨਵਿਆਓ</string>
+    <string name="button_view_subscription" comment="Button title to view active subscription">ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਦੇਖੋ</string>
+    <string name="button_renew_pack" comment="Button title to renew pack">ਪੈਕ ਦਾ ਮੁੜ ਨਵੀਨੀਕਰਨ ਕਰੋ</string>
+    <string name="button_watch_now" comment="Button title to watch content now">ਹੁਣੇ ਦੇਖੋ</string>
+    <string name="button_view_offers" comment="Button title to view offers">ਪੇਸ਼ਕਸ਼ਾਂ ਦੇਖੋ</string>
+    <string name="error_no_subscriptions" comment="Error no subscriptions found">ਕੋਈ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਪੈਕ ਉਪਲਬਧ ਨਹੀਂ ਹਨ।</string>
+    <string name="userName_is_empty" comment="Validation of Profile name while updating">ਪ੍ਰੋਫਾਈਲ ਨਾਮ ਖਾਲੀ ਹੈ।</string>
+    <string name="profile_name_updated" comment="Toast while updating profile name">ਪ੍ਰੋਫਾਈਲ ਨਾਮ ਅਪਡੇਟ ਕੀਤਾ ਗਿਆ।</string>
+    <string name="enter_name" comment="Hint text to enter profile name">ਨਾਮ ਦਾਖ਼ਲ ਕਰੋ</string>
+    <string name="no_notification" comment="Message showing no notification">ਤੁਹਾਡੇ ਕੋਲ ਨੂੰ ਦਿਖਾਉਣ ਦੇ ਲਈ ਕੋਈ ਸੂਚਨਾਵਾਂ ਨਹੀਂ ਹਨ।</string>
+
+    <string name="offers" comment="Screen title offers">ਪੇਸ਼ਕਸ਼ਾਂ</string>
+    <string name="rewards_offers" comment="Screen title rewards">ਇਨਾਮ &amp; ਪੇਸ਼ਕਸ਼ਾਂ</string>
+    <string name="you_won" comment="Message on card on winning coins">ਤੁਸੀਂ ਜਿੱਤੇ</string>
+    <string name="congratulations_exclamantion" comment="Message on card on winning coins">ਵਧਾਈਆਂ !!!</string>
+    <string name="congratulations" comment="Message on card on winning coins">ਵਧਾਈਆਂ</string>
+    <string name="available" comment="Text listing coins">ਉਪਲਬਧ</string>
+    <string name="redeem_now" comment="Button title to redeem offer">ਹੁਣੇ ਰਿਡੀਮ ਕਰੋ</string>
+    <string name="n_days_pack" comment="Pack days %d is param for pack duration">%d ਦਿਨਾਂ ਦਾ ਪੈਕ</string>
+    <string name="watch_100s_of_movies_amp_serials" comment="Message on what pack offers">100s ਮੂਵੀਜ਼ &amp; ਸੀਰੀਜ਼ ਦੇਖੋ।</string>
+    <string name="terms_of_service" comment="Message for packs terms and conditions, %d is param for number of days validity">ਇਹ ਪੈਕ %1$s ਦਿਨਾਂ ਲਈ ਯੋਗ ਹੈ। Mera Mishtu ਐਪਲੀਕੇਸ਼ਨ ‘ਤੇ ਉਪਲਬਧ ਸਾਰੀ %2$s ਮੂਵੀਜ਼ ਅਤੇ ਸੀਰੀਜ਼ ਨੂੰ ਔਨਲਾਈਨ ਸਟ੍ਰੀਮ ਕਰੋ।</string>
+    <string name="redeem_with" comment="Button title to redeem offer">ਇਸ ਨਾਲ ਰਿਡੀਮ ਕਰੋ</string>
+    <string name="select_offer" comment="Section title for offer list">ਪੇਸ਼ਕਸ਼ ਚੁਣੋ</string>
+    <string name="offer_redeemed_message" comment="Toast message after offer redeemed">ਪੇਸ਼ਕਸ਼ ਰਿਡੀਮ ਕੀਤੀ ਗਈ!</string>
+
+    <string name="rewards_app_install" comment="Rewards title on app installed">ਸੁਆਗਤੀ ਬੋਨਸ</string>
+    <string name="rewards_daily_open" comment="Rewards title on daily app open">ਰੋਜ਼ਾਨਾ ਬੋਨਸ</string>
+    <string name="rewards_content_streamed" comment="Rewards title on content streamed">ਰੋਜ਼ਾਨਾ ਦੇਖਣ ਦਾ ਬੋਨਸ</string>
+    <string name="rewards_retailer_rating" comment="Rewards title on rating retailer">ਰਿਟੇਲਰ ਰੇਟਿੰਗ ਬੋਨਸ</string>
+    <string name="rewards_order_complete" comment="Rewards title on order complere">ਨਵੇਂ ਆਰਡਰ ਦਾ ਬੋਨਸ</string>
+    <string name="rewards_coins" comment="Rewards title on mishtu coins">Mishtu ਸਿੱਕੇ</string>
+    <string name="about_this_pack" comment="Title about the pack">ਇਸ ਪੈਕ ਬਾਰੇ</string>
+    <string name="subscription_exist_error" comment="You have active subscription.">ਮੁਆਫ਼ ਕਰਨਾ, ਤੁਹਾਡੇ ਕ੍ਰਿਆਸ਼ੀਲ ਪੈਕ ਦੀ ਮਿਆਦ ਸਮਾਪਤ ਹੋਣ ਤੋਂ ਬਾਅਦ ਤੁਸੀਂ ਇਸ ਪੇਸ਼ਕਸ਼ ਨੂੰ ਰਿਡੀਮ ਕਰ ਸਕਦੇ ਹੋ।</string>
+    <string name="watch_for_free" comment="watch for free">ਮੁਫ਼ਤ ਵਿੱਚ ਦੇਖੋ</string>
+    <string name="watch_episode1" comment="watch episode 1">ਆਈਸੋਡ1 ਦੇਖੋ</string>
+    <string name="explore_content" comment="Descriptive text to direct user to explore other content">ਤੁਹਾਡੇ ਲਈ ਉਪਲਬਧ ਸਾਡੇ ਹੋਰ ਤਤਕਰੇ ਨੂੰ ਐਕਸਪਲੋਰ ਕਰੋ</string>
+    <string name="watch_clips" comment="Button title watch short videos">ਛੋਟੀ ਵੀਡੀਓਜ਼ ਦੇਖੋ</string>
+    <string name="watch_other_films" comment="Button title watch other films">ਹੋਰ ਫਿਲਮਾਂ ਦੇਖੋ</string>
+    <string name="finding_stores_nearby" comment="Progress indicating store locator">ਨੇੜਲੇ ਸਟੋਰਾਂ ਨੂੰ ਲੱਭ ਰਹੇ ਹਾਂ</string>
+    <string name="buy_a_pack_and_earn" comment="Rewards info on buying pack">ਇੱਕ ਪੈਕ ਖਰੀਦੋ ਅਤੇ %d ਸਿੱਕੇ ਤੱਕ ਕਮਾਓ</string>
+    <string name="watch_movie_and_earn" comment="Rewards info on watching a movie">ਕਿਸੇ ਮੂਵੀ ਨੂੰ ਦੇਖੋ ਅਤੇ %d ਸਿੱਕੇ ਤੱਕ ਕਮਾਓ</string>
+    <string name="watch_series_and_earn" comment="Rewards info on watching a movie">ਕਿਸੇ ਐਪਿਸੋਡ ਨੂੰ ਦੇਖੋ ਅਤੇ %d ਸਿੱਕੇ ਤੱਕ ਕਮਾਓ</string>
+    <string name="quick_tip" comment="Tool tips">ਤੁਰੰਤ ਟਿਪ</string>
+    <string name="tooltip_top_nav_title" comment="Tool tips top navigation title">ਸਿਖਰ ਦਾ ਨੈਵੀਗੇਸ਼ਨ</string>
+    <string name="tooltip_top_nav_description" comment="Tool tips top navigation desc">ਆਪਣੀ ਪਸੰਦੀਦਾ ਛੋਟੀ ਵੀਡੀਓਜ਼ ਨੂੰ ਦੇਖਣ ਲਈ ਇੱਥੇ ਕਲਿਕ ਕਰੋ</string>
+    <string name="tooltip_top_nav_films_description" comment="Tool tips top navigation films desc">ਆਪਣੀ ਪਸੰਦੀਦਾ ਫਿਲਮਾਂ ਨੂੰ ਦੇਖਣ ਲਈ ਇੱਥੇ ਕਲਿਕ ਕਰੋ</string>
+    <string name="tooltip_top_nav_series_description" comment="Tool tips top navigation series desc">ਨਵੀਨਤਮ ਸੀਰੀਜ਼ ਨੂੰ ਦੇਖਣ ਲਈ ਇੱਥੇ ਕਲਿਕ ਕਰੋ</string>
+    <string name="tooltip_home_description" comment="Tool tips home tab desc">ਆਪਣੇ ਮਨਪਸੰਦ ਤਤਕਰੇ ਨੂੰ ਦੇਖਣ ਲਈ ਇੱਥੇ ਕਲਿਕ ਕਰੋ</string>
+    <string name="tooltip_rewards_description" comment="Tool tips rewards tab desc">ਰੋਜ਼ਾਨਾ ਇਨਾਮ ਜਿੱਤਣ ਲਈ, ਉਪਲਬਧ ਸਿੱਕਿਆਂ ਦੀ ਜਾਂਚ ਕਰੋ ਅਤੇ ਸ਼ਾਨਦਾਰ ਪੇਸ਼ਕਸ਼ਾਂ ਪ੍ਰਾਪਤ ਕਰਨ ਲਈ ਇੱਥੇ ਕਲਿਕ ਕਰੋ।</string>
+    <string name="tooltip_profile_description" comment="Tool tips profile tab desc">ਆਪਣੀ ਜਾਣਕਾਰੀ ਨੂੰ ਦੇਖਣ ਲਈ ਇੱਥੇ ਕਲਿਕ ਕਰੋ</string>
+    <string name="tooltip_buy_pack_description" comment="Tool tips buy pack desc">ਇੱਕ ਪੈਕ ਦੀ ਚੋਣ ਕਰਨ ਲਈ ਇੱਥੇ ਕਲਿਕ ਕਰੋ</string>
+    <string name="tooltip_search_mic_title" comment="Tool tips voice search title">ਖੋਜ ਸਕ੍ਰੀਨ: ਮਾਈਕ ਆਈਕੋਨ</string>
+    <string name="tooltip_search_mic_description" comment="Tool tips voice search desc">ਆਵਾਜ਼ ਦੁਆਰਾ ਖੋਜ ਕਰਨ ਲਈ ਇੱਥੇ ਕਲਿਕ ਕਰੋ</string>
+    <string name="tooltip_available_coins_title" comment="Tool tips available coins title">ਉਪਲਬਧ ਸਿੱਕੇ</string>
+    <string name="tooltip_available_coins_description" comment="Tool tips available coins desc">ਇਹ ਤੁਹਾਡੇ ਕੁੱਲ ਉਪਲਬਧ ਸਿੱਕੇ ਹਨ। ਇਕੱਠੇ ਕੀਤੇ ਸਾਰੇ ਸਿੱਕੇ ਇੱਥੇ ਅਪਡੇਟ ਕੀਤੇ ਜਾਣਗੇ।</string>
+    <string name="tooltip_order_pending_title" comment="Tool tips available coins title">ਆਰਡਰ ਲੰਬਿਤ ਕਾਰਡ</string>
+    <string name="tooltip_order_pending_description" comment="Tool tips available coins desc">ਆਪਣੇ ਲੰਬਿਤ ਆਰਡਰ ਨੂੰ ਪੂਰਾ ਕਰਨ ਲਈ ਕਾਰਡ \'ਤੇ ਕਲਿਕ ਕਰੋ।</string>
+    <string name="cancel_order_confirm" comment="Confirmation message for cancelling order">ਕੀ ਤੁਸੀਂ ਆਪਣੇ ₹.%d/- ਦੇ ਪੈਕ ਨੂੰ ਰੱਦ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ?</string>
+    <string name="btn_yes" comment="yes">ਹਾਂ</string>
+    <string name="btn_yes_proceed" comment="yes proceed">ਹਾਂ, ਅੱਗੇ ਵਧੋ</string>
+    <string name="btn_no" comment="No">ਨਹੀਂ</string>
+    <string name="btn_pay_at_store" comment="Button title pay at the store">Store \'ਤੇ ਭੁਗਤਾਨ ਕਰੋ</string>
+    <string name="pending_pack_payment" comment="Instructions to inform order pending, param for pending amount">ਤੁਹਾਡਾ ₹%d ਪੈਕ ਦਾ ਭੁਗਤਾਨ ਲੰਬਿਤ ਹੈ</string>
+    <string name="btn_cancel_pack" comment="Button title to cancel pack">ਪੈਕ ਨੂੰ ਰੱਦ ਕਰੋ</string>
+    <string name="btn_subscription_info" comment="Text showing subscription pack info, %1d is duration in days, %2d is price">%1$d ਦਿਨਾਂ ਲਈ ₹%2$d/- ਪੈਕ</string>
+    <string name="btn_subscription_desc" comment="Text showing pack description">100+ ਫਿਲਮਾਂ ਅਤੇ ਨਵੀਨਤਮ ਸੀਰੀਜ਼ ਦੇਖੋ</string>
+    <string name="btn_subscription_desc_with_duration" comment="Text showing pack description">%d ਦਿਨਾਂ ਲਈ\n100+ ਫਿਲਮਾਂ ਅਤੇ ਨਵੀਨਤਮ ਸੀਰੀਜ਼ ਦੇਖੋ</string>
+    <string name="nearest" comment="Nearest store text">ਨਜ਼ਦੀਕੀ</string>
+    <string name="btn_play" comment="Play button">ਪਲੇ ਕਰੋ</string>
+    <string name="order_pending" comment="Text showing order pending">ਆਰਡਰ ਦਿੱਤਾ ਗਿਆ। ਭੁਗਤਾਨ ਲੰਬਿਤ ਹੈ</string>
+    <string name="order_complete" comment="Text showing order complete with date">%s \'ਤੇ ਖਰੀਦਿਆ ਗਿਆ</string>
+    <string name="order_cancelled" comment="Text showing order cancelled">ਆਰਡਰ ਰੱਦ ਕੀਤਾ ਗਿਆ</string>
+    <string name="app_cutoff_date" comment="Text indicating app would stop on cut-off date">ਇਸ ਐਪਲੀਕੇਸ਼ਨ ਦੀ ਸਮਾਂ ਸੀਮਾ %s ਨੂੰ ਸਮਾਪਤ ਹੋ ਜਾਵੇਗੀ</string>
+    <string name="app_force_stop_message" comment="Text indicating app would stopped due to cut-off date">Mera Mishtu ਦੀ ਵਰਤੋਂ ਕਰਨ ਲਈ ਤੁਹਾਡਾ ਧੰਨਵਾਦ। ਇਹ ਐਪਲੀਕੇਸ਼ਨ ਸੰਸਕਰਣ ਹੁਣ ਉਪਲਬਧ ਨਹੀਂ ਹੈ। ਉਮੀਦ ਹੈ ਤੁਹਾਨੂੰ ਜਲਦੀ ਹੀ ਮਿਲਾਂਗੇ।</string>
+    <string name="app_force_stop_rooted_device" comment="Text indicating app would stopped due to rooted device">Mera Mishtu ਨੂੰ ਸਥਾਪਿਤ ਕਰਨ ਲਈ ਤੁਹਾਡਾ ਧੰਨਵਾਦ। ਅਸੀਂ ਇੱਕ ਰੂਟ ਕੀਤੇ ਡਿਵਾਇਸ \'ਤੇ Mishtu ਦਾ ਸਮਰਥਨ ਨਹੀਂ ਕਰਦੇ।</string>
+    <string name="button_ok" comment="Button title ok">ਠੀਕ ਹੈ</string>
+    <string name="more_than_100" comment="Text giving details on pack">100 ਤੋਂ ਵੱਧ ਫ਼ਿਲਮਾਂ ਵੇਖੋ</string>
+    <string name="more_than_100_series" comment="Text giving details on pack">100 ਤੋਂ ਵੱਧ ਸੀਰੀਜ਼ ਵੇਖੋ</string>
+    <string name="watch_more_movies" comment="Text giving details on available_movies with count">%d ਤੋਂ ਜ਼ਿਆਦਾ ਫਿਲਮਾਂ ਦੇਖੋ</string>
+    <string name="available_movies" comment="Text giving details on available_movies at Hub">100+ ਫਿਲਮਾਂ ਅਤੇ ਨਵੀਨਤਮ ਸੀਰੀਜ਼ ਉਪਲਬਧ ਹੈ</string>
+    <string name="content_advisory" comment="Text giving details content advisory">ਤਤਕਰੇ ਬਾਰੇ ਸਲਾਹ</string>
+    <string name="content_advisory_na" comment="Text giving N/A content advisory">N/A</string>
+    <string name="director" comment="Content director details">ਨਿਰਦੇਸ਼ਕ</string>
+    <string name="cast" comment="Content cast details">ਪਾਤਰ-ਸਮੂਹ</string>
+    <string name="minutes" comment="Content duration minutes">ਮਿੰਟ</string>
+    <string name="delete_account" comment="delete account in profile screen">ਖ਼ਾਤਾ ਮਿਟਾਓ</string>
+    <string name="download_data" comment="download data in profile screen">ਡਾਊਨਲੋਡ ਦੀ ਮਿਤੀ</string>
+    <string name="account_settings" comment="account settings in profile screen">ਖ਼ਾਤਾ ਸੈਟਿੰਗਾਂ</string>
+    <string name="download_your_data" comment="Text showing download data">ਆਪਣਾ ਡੇਟਾ ਡਾਉਨਲੋਡ ਕਰੋ</string>
+    <string name="download_dialog_text" comment="Text for download data dialog">ਤੁਹਾਡੇ ਡੇਟਾ ਵਿੱਚ ਤੁਹਾਡੀ ਪ੍ਰੋਫਾਈਲ ਜਾਣਕਾਰੀ, ਲੈਣ-ਦੇਣ, ਗਤੀਵਿਧੀ ਇਤਿਹਾਸ ਆਦਿ ਸ਼ਾਮਲ ਹੋਣਗੇ।</string>
+    <string name="bn_okay" comment="Button OK">ਠੀਕ ਹੈ</string>
+    <string name="place_new_request" comment="Export data place new request">ਨਵੀਂ ਬੇਨਤੀ ਕਰੋ</string>
+    <string name="request_submitted" comment="Text for request submitted">ਬੇਨਤੀ ਸਬਮਿਟ ਹੋ ਗਈ</string>
+    <string name="download_data_response" comment="download data request response">ਤੁਹਾਡੇ ਲਈ ਇਨ-ਐਪ ਸੂਚਨਾ ਰਾਹੀਂ %d ਦਿਨਾਂ ਦੇ ਅੰਦਰ ਆਪਣੇ ਡੇਟਾ ਨੂੰ ਡਾਉਨਲੋਡ ਕਰਨ ਲਈ ਇੱਕ ਲਿੰਕ ਭੇਜਿਆ ਜਾਵੇਗਾ। </string>
+    <string name="export_data_ready" comment="download data ready to download">ਤੁਹਾਡਾ ਡੇਟਾ ਡਾਉਨਲੋਡ ਕਰਨ ਲਈ ਤਿਆਰ ਹੈ ਅਤੇ %s ਤੱਕ ਵੈਧ ਹੈ </string>
+    <string name="delete_account_confirm" comment="confirm text before delete data">ਇਸ ਨਾਲ ਤੁਹਾਡਾ ਖਾਤਾ, ਵਿਹਾਰ ਡੇਟਾ, ਲੰਬਿਤ ਬੇਨਤੀਆਂ ਅਤੇ ਪ੍ਰੋਫਾਈਲ ਜਾਣਕਾਰੀ ਸਥਾਈ ਤੌਰ \'ਤੇ ਮਿਟਾ ਦਿੱਤੀ ਜਾਵੇਗੀ।</string>
+    <string name="about_movie" comment="Content detail bottom sheet in full screen player">ਮੂਵੀ\’s ਦੀ ਕਹਾਣੀ</string>
+    <string name="story" comment="Content detail for series bottom sheet in full screen player">ਕਹਾਣੀ</string>
+    <string name="save_data_dialog_text" comment="Save data dialog text in Full screen player">ਮੁਫ਼ਤ ਵਿੱਚ ਡਾਉਨਲੋਡ ਕਰਨ ਲਈ ਅਤੇ ਆਪਣੇ ਡੇਟਾ ਨੂੰ ਸੁਰੱਖਿਅਤ ਕਰਨ ਲਈ ਕਿਸੇ ਵੀ ਨੇੜਲੀ ਦੁਕਾਨ \'ਤੇ ਜਾਓ</string>
+    <string name="go_to_shop_now" comment="Save data dialog button in Full screen player">ਹੁਣ ਦੁਕਾਨ \'ਤੇ ਜਾਓ</string>
+    <string name="free_download_available" comment="Text saying free download available at retailer">ਮੁਫ਼ਤ ਵਿੱਚ ਡਾਉਨਲੋਡ ਕਰੋ</string>
+    <string name="grinning_face_emoji" comment="Emoji code for grinning face"> 😀</string>
+    <string name="movies_available_at_this_store" comment="text to display available movies at hub">ਇਸ ਸਟੋਰ \'ਤੇ ਉਪਲਬਧ ਮੂਵੀਆਂ ਅਤੇ ਸੀਰੀਜ਼</string>
+
+    <string name="button_close" comment="Button close">ਬੰਦ ਕਰੋ</string>
+    <string name="downloading_movies" comment="List of films downloading">ਇਹ ਫ਼ਿਲਮਾਂ ਅਤੇ ਸੀਰੀਜ਼ ਡਾਉਨਲੋਡ ਹੋ ਰਹੀਆਂ ਹਨ</string>
+    <string name="downloaded_movies" comment="List of films downloading">ਡਾਉਨਲੋਡ ਕੀਤੀਆਂ ਗਈਆਂ ਫ਼ਿਲਮਾਂ ਅਤੇ ਸੀਰੀਜ਼</string>
+    <string name="your_downloads" comment="Your downloads">ਤੁਹਾਡੇ ਡਾਊਨਲੋਡਸ</string>
+    <string name="queued" comment="Queued downloads">ਕਤਾਰਬੱਧ</string>
+    <string name="share_location" comment="Text asking for sharing location">ਸਥਾਨ ਨੂੰ ਸਾਂਝਾ ਕਰੋ</string>
+    \
+    <string name="confirm_delete" comment="Text showing confirmation before deleting content">ਕੀ ਇਸ ਮੂਵੀ/ਐਪੀਸੋਡ ਨੂੰ ਮਿਟਾਉਣਾ ਹੈ?</string>
+    <string name="confirm_delete_series" comment="Text showing confirmation before deleting content">ਕੀ ਇਸ ਸੀਰੀਜ਼ ਦੇ ਸਾਰੇ ਐਪਿਸੋਡ ਮਿਟਾਉਣੇ ਹਨ?</string>
+    <string name="confirm_cancel" comment="Text showing confirmation before cancelling download">ਡਾਉਨਲੋਡ ਨੂੰ ਰੱਦ ਕਰਨਾ ਹੈ?</string>
+    <string name="steps_to_download_offline" comment="Steps to follow offline download">ਔਫਲਾਈਨ ਡਾਉਨਲੋਡ ਕਰਨ ਦੇ ਚਰਣ</string>
+    <string name="turn_on_wifi" comment="Step 2 - Download Offline">ਆਪਣੇ WiFi ਨੂੰ ਸ਼ੁਰੂ ਕਰੋ</string>
+    <string name="phone_wifi" comment="Step 2 - Download Offline">Wifi</string>
+    <string name="_2" comment="Step 2">2.</string>
+    <string name="_3" comment="Step 3">3.</string>
+    <string name="_4" comment="Step 4">4.</string>
+    <string name="_1" comment="Step 1">1.</string>
+    <string name="download_films_for_free_at_the_store" comment="Step 4 - Download Offline for free">ਦੁਕਾਨ \'ਤੇ ਜਾਓ ਅਤੇ ਮੁਫ਼ਤ ਵਿੱਚ ਫਿਲਮਾਂ ਅਤੇ ਸੀਰੀਜ਼ ਨੂੰ ਡਾਉਨਲੋਡ ਕਰੋ</string>
+    <string name="download" comment="Step 4 - Download Offline for free">ਡਾਉਨਲੋਡ ਕਰੋ</string>
+    <string name="join_a_network_with_name_nearme_xxxxxx" comment="Step 3 - Join network">ਨਾਮ ਨਾਲ ਦੁਕਾਨ ਦੇ ਹੌਟਸਪੌਟ ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਵੋ- \"meramishtu\"</string>
+    <string name="go_to_nearby_store_and_take_assistance" comment="Step 2 - Visit nearby store">ਨੇੜਲੀ ਦੁਕਾਨ \'ਤੇ ਜਾਓ ਅਤੇ ਮਦਦ ਲਓ</string>
+    <string name="go_to_nearby_store" comment="Step 1 - Visit nearby store">ਨੇੜਲੀ ਦੁਕਾਨ</string>
+    <string name="device_connection_failed" comment="Error when device connection failed">ਕਿਰਪਾ ਕਰਕੇ ਡਿਵਾਈਸ ਦੇ ਨਾਲ ਆਪਣੇ ਕਨੈਕਸ਼ਨ ਦੀ ਜਾਂਚ ਕਰੋ।</string>
+    <string name="directions" comment="dircetions for retailer">ਦਿਸ਼ਾਵਾਂ</string>
+    <string name="select_shop_to_download_for_free" comment="Selecting a shop in retailer screen">ਫਿਲਮਾਂ ਅਤੇ ਸੀਰੀਜ਼ ਨੂੰ ਮੁਫਤ ਵਿੱਚ ਡਾਉਨਲੋਡ ਕਰਨ ਲਈ ਇੱਕ ਦੁਕਾਨ ਦੀ ਚੋਣ ਕਰੋ</string>
+    <string name="select_shop_to_buy_pack" comment="Shop selection text in near by retailer screen">ਪੈਕ ਖਰੀਦਣ ਲਈ ਇੱਕ ਦੁਕਾਨ ਦੀ ਚੋਣ ਕਰੋ</string>
+    <string name="share" comment="Button title share">ਸਾਂਝਾ ਕਰੋ</string>
+    <string name="text_download_status">%d\%s</string>
+    <string name="button_play_now" comment="Button title play now">ਹੁਣੇ ਚਲਾਓ</string>
+    <string name="find_a_nearest_shop_and_save_data" comment="Instruction promoting offline download">ਇੱਕ ਨੇੜਲੀ ਦੁਕਾਨ ਲੱਭੋ ਅਤੇ ਮੁਫ਼ਤ ਵਿੱਚ ਫਿਲਮਾਂ ਅਤੇ ਸੀਰੀਜ਼ ਨੂੰ ਡਾਉਨਲੋਡ ਕਰਕੇ 100% ਤੱਕ ਡੇਟਾ ਬਚਾਓ</string>
+    <string name="up_to_100" comment="Instruction promoting offline download">100% ਤੱਕ</string>
+    <string name="dont_forget_to_recharge" comment="Instruction on pack expired">ਫਿਲਮਾਂ/ਸੀਰੀਜ਼ ਅਤੇ ਡਾਊਨਲੋਡਸ ਦਾ ਅਨੰਦ ਲੈਣ ਲਈ ਰੀਚਾਰਜ਼ ਕਰਨਾ ਨਾ ਭੁੱਲੋ</string>
+    <string name="expired" comment="Expired label">ਮਿਆਦ ਸਮਾਪਤ ਹੋਈ</string>
+    <string name="pack_expired" comment="Expired label">ਪੈਕ ਦੀ ਮਿਆਦ ਸਮਾਪਤ ਹੋਈ</string>
+    <string name="connection_active_with_retailer_name">ਹੁਣ ਤੁਸੀਂ %s ਦੀਆਂ ਇਨ੍ਹਾਂ ਸਾਰੀਆਂ ਫਿਲਮਾਂ ਅਤੇ ਸੀਰੀਜ਼ ਨੂੰ ਡਾਉਨਲੋਡ ਕਰ ਸਕਦੇ ਹੋ</string>
+    <string name="connection_active">ਹੁਣ ਤੁਸੀਂ ਇਨ੍ਹਾਂ ਸਾਰੀਆਂ ਫਿਲਮਾਂ ਅਤੇ ਸੀਰੀਜ਼ ਨੂੰ ਡਾਉਨਲੋਡ ਕਰ ਸਕਦੇ ਹੋ</string>
+    <string name="use_shop_data_to_download">ਹੁਣ ਤੁਸੀਂ ਫਿਲਮਾਂ ਅਤੇ ਸੀਰੀਜ਼ ਨੂੰ ਡਾਉਨਲੋਡ ਕਰਨ ਲਈ ਦੁਕਾਨ ਦੇ ਡੇਟਾ ਦੀ ਵਰਤੋਂ ਕਰ ਸਕਦੇ ਹੋ</string>
+    <string name="order_complete_dialog_title" comment="Order complete congratulation dialog title">ਵਧਾਈਆਂ!</string>
+    <string name="order_complete_pack_details" comment="Order complete congratulation dialog pack details">₹%1$d/- ਪੈਕ ਹੁਣ ਅਗਲੇ %2$d ਦਿਨ(ਨਾਂ) ਲਈ\n ਕਿਰਿਆਸ਼ੀਲ ਹੈ</string>
+    <string name="order_complete_pack_price" comment="Order complete congratulation dialog pack price">₹%d/- ਪੈਕ</string>
+    <string name="order_complete_pack_duration" comment="Order complete congratulation dialog pack duration">%d ਦਿਨ(ਨਾਂ)</string>
+    <string name="watch_film_and_serials" comment="Order complete congratulation button text">ਫਿਲਮਾਂ ਅਤੇ ਸੀਰੀਜ਼ ਦੇਖੋ</string>
+    <string name="pack_promo_active_pack">ਪੈਕ ਤੋਂ ਫਿਲਮਾਂ</string>
+    <string name="pack_promo_active_pack_series">ਪੈਕ ਤੋਂ ਸੀਰੀਜ਼</string>
+    <string name="pack_starts_from" comment="View all content screen pack starts from">ਪੈਕ ₹10/- ਤੋਂ ਸ਼ੁਰੂ ਹੁੰਦਾ ਹੈ</string>
+    <string name="movies_and_serial_in_pack" comment="View all content screen movies and serials in this pack">ਇਸ ਪੈਕ ਵਿੱਚ ਫਿਲਮਾਂ</string>
+    <string name="search_language" comment="Hint text search language">ਭਾਸ਼ਾ ਦੀ ਖੋਜ ਕਰੋ</string>
+    <string name="buy_rs_pack" comment="button to buy pack">₹%d ਪੈਕ ਖਰੀਦੋ</string>
+    <string name="whatsapp" comment="Whatsapp button text in retailer screen">WhatsApp</string>
+    <string name="whatsapp_not_installed" comment="Error saying whatsapp not installed in the device">ਇਸ ਡਿਵਾਇਸ ਵਿੱਚ WhatsApp ਸਥਾਪਿਤ ਨਹੀਂ ਹੈ</string>
+    <string name="key_expired_error" comment="Error when license key expires">ਕਿਰਪਾ ਕਰਕੇ ਔਨਲਾਈਨ ਆਓ ਅਤੇ ਮੂਵੀਆਂ ਦੇਖਣ ਲਈ ਆਪਣੇ ਖਾਤੇ ਨੂੰ ਤਾਜ਼ਾ ਕਰੋ। ਚਿੰਤਾ ਨਾ ਕਰੋ ਇਸ ਨਾਲ ਤੁਹਾਡੇ ਡੇਟਾ ਦੀ ਵਰਤੋਂ ਨਹੀਂ ਕੀਤੀ ਜਾਵੇਗੀ।</string>
+    <string name="confirm_redeem_order" comment="Confirmation text before redeem order">ਕੀ ਤੁਸੀਂ %d ਦਿਨਾਂ ਦਾ ਪੈਕ ਖਰੀਦਣਾ ਜਾਰੀ ਰੱਖਣਾ ਚਾਹੁੰਦੇ ਹੋ?</string>
+    <string name="account_deletion_in_progress" comment="Blocker when user requested account deletion">ਖਾਤਾ ਮਿਟਾਉਣਾ ਪ੍ਰਗਤੀ ਵਿੱਚ ਹੈ</string>
+    <string name="user_delete_description" comment="Blocker when user requested account deletion">ਕਿਰਪਾ ਕਰਕੇ ਮਿਟਾਉਣ ਦੀ ਬੇਨਤੀ ਦੇ ਪੂਰਾ ਹੋਣ ਦੀ ਉਡੀਕ ਕਰੋ।</string>
+    <string name="account_delete_alert_title" comment="Alert user on account deletion">ਤੁਹਾਨੂੰ ਜਾਂਦੇ ਦੇਖ ਕੇ ਦੁੱਖ ਹੋਇਆ!</string>
+    <string name="delete_account_alert_desc" comment="Alert user on account deletion">ਬੇਨਤੀ ਸਬਮਿਟ ਕੀਤੀ ਗਈ ਹੈ। ਤੁਹਾਡਾ ਖਾਤਾ 21 ਦਿਨਾਂ ਦੇ ਅੰਦਰ ਮਿਟਾ ਦਿੱਤਾ ਜਾਵੇਗਾ।</string>
+    <string name="pay_with_coins" comment="Redeem offer text %1d is param for coin count">%1$d ਸਿੱਕਿਆਂ ਨਾਲ ਭੁਗਤਾਨ ਕਰੋ</string>
+    <string name="app_tag_line" comment="App tag line">ਅਬ ਹਰ ਦੁਕਾਨ, ਕਰੇ ਕਾਮ ਆਸਾਨ</string>
+    <string name="pack_active" comment="Text indicating pack is active">ਕਿਰਿਆਸ਼ੀਲ</string>
+    <string name="pack_expires_on" comment="Text indicating pack expiry">%s ਨੂੰ ਮਿਆਦ ਸਮਾਪਤ ਹੋ ਰਹੀ ਹੈ</string>
+    <string name="choose_your_avatar" comment="Screen title to choose avatar">ਆਪਣਾ ਅਵਤਾਰ ਚੁਣੋ</string>
+    <string name="update_photo" comment="Button title to update photo">ਫੋਟੋ ਨੂੰ ਅਪਡੇਟ ਕਰੋ</string>
+    <string name="storage_almost_full" comment="Storage full dialog">ਸਟੋਰੇਜ ਲਗਭਗ ਪੂਰੀ ਭਰ ਗਈ ਹੈ</string>
+    <string name="free_storage_to_download" comment="Storage full dialog text to free space">ਹੋਰ ਫਿਲਮਾਂ ਨੂੰ ਡਾਉਨਲੋਡ ਕਰਨ ਲਈ ਕਿਰਪਾ ਕਰਕੇ ਕੁਝ ਥਾਂ ਖਾਲੀ ਕਰੋ।</string>
+    <string name="voice_input_not_supported" comment="Error saying voice input is not supported in the device">ਇਸ ਡਿਵਾਈਸ ਵਿੱਚ ਵੌਇਸ ਇਨਪੁਟ ਸਮਰਥਿਤ ਨਹੀਂ ਹੈ</string>
+    <string name="title_rate_us" comment="Rate us alert title">ਕੀ ਤੁਸੀਂ ਐਪਲੀਕੇਸ਼ਨ ਦਾ ਆਨੰਦ ਮਾਣ ਰਹੇ ਹੋ?</string>
+    <string name="botton_rate_on_playstore" comment="Rate now button title">Play ਸਟੋਰ ‘ਤੇ ਰੇਟ ਕਰੋ</string>
+    <string name="button_rate_later" comment="Rate later alert title">ਮੈਂ ਇਸ ਨੂੰ ਬਾਅਦ ਵਿੱਚ ਕਰਾਂਗਾ/ਕਰਾਂਗੀ</string>
+    <string name="button_title_mobile_data" comment="Button title switch on mobile data">ਮੋਬਾਈਲ ਡੇਟਾ \'ਤੇ ਸਵਿੱਚ ਕਰੋ</string>
+    <string name="add_photo" comment="Button title to add photo">ਫੋਟੋ ਜੋੜੋ</string>
+    <string name="request_share_location" comment="Text requesting user to give location">ਤੁਹਾਡੇ ਸ਼ਹਿਰ ਵਿੱਚ ਨੇੜਲੀ ਦੁਕਾਨ ਤੋਂ ਫਿਲਮਾਂ ਅਤੇ ਸੀਰੀਜ਼ ਮੁਫ਼ਤ ਡਾਉਨਲੋਡ ਕਰਨ ਵਰਗੀਆਂ ਬਹੁਤ ਸਾਰੀਆਂ ਸ਼ਾਨਦਾਰ ਸੇਵਾਵਾਂ ਨੂੰ ਪ੍ਰਾਪਤ ਕਰਨ ਲਈ ਆਪਣੇ ਸਥਾਨ ਨੂੰ ਸਾਂਝਾ ਕਰੋ।</string>
+    <string name="download_films_free" comment="Text free download">ਮੁਫ਼ਤ ਵਿੱਚ ਫਿਲਮਾਂ/ਸੀਰੀਜ਼ ਡਾਉਨਲੋਡ ਕਰੋ</string>
+    <string name="yes_i_am_interested" comment="Interested in offline download">ਹਾਂ, ਮੇਰੀ ਦਿਲਚਸਪੀ ਹੈ</string>
+    <string name="free_download_is_available" comment="Text notifying hubs are available">ਤੁਹਾਡੇ ਸ਼ਹਿਰ ਵਿੱਚ ਮੁਫ਼ਤ ਡਾਉਨਲੋਡ ਉਪਲਬਧ ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਆਪਣੇ 100% ਡੇਟਾ ਨੂੰ ਡਾਉਨਲੋਡ ਕਰਨ ਅਤੇ ਸੁਰੱਖਿਅਤ ਕਰਨ ਲਈ ਨਜ਼ਦੀਕੀ ਦੁਕਾਨ \'ਤੇ ਜਾਓ</string>
+    <string name="free_download" comment="Text free download">ਮੁਫ਼ਤ ਡਾਉਨਲੋਡ ਕਰੋ</string>
+    <string name="percent_data_download" comment="Text free download">100% ਡੇਟਾ</string>
+    <string name="free_download_not_available" comment="Text notifying hubs are not available">ਤੁਹਾਡੇ ਸ਼ਹਿਰ ਵਿੱਚ ਨੇੜਲੀ ਦੁਕਾਨ ਤੋਂ ਮੁਫ਼ਤ ਡਾਉਨਲੋਡ ਉਪਲਬਧ ਨਹੀਂ ਹੈ। ਕੀ ਤੁਸੀਂ ਭਵਿੱਖ ਵਿੱਚ ਇਸ ਸੇਵਾ ਦੀ ਵਰਤੋਂ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ?</string>
+    <string name="free_download_not_available_watch_films" comment="Text notifying hubs are not available">ਤੁਹਾਡੇ ਸ਼ਹਿਰ ਵਿੱਚ ਨੇੜਲੀ ਦੁਕਾਨ ਤੋਂ ਮੁਫ਼ਤ ਡਾਉਨਲੋਡ ਉਪਲਬਧ ਨਹੀਂ ਹੈ। ਫਿਲਮਾਂ ਅਤੇ ਸੀਰੀਜ਼ ਨੂੰ ਔਨਲਾਈਨ ਦੇਖਣਾ ਜਾਰੀ ਰੱਖੋ।</string>
+    <string name="skip_for_now" comment="Button text skip">ਹੁਣ ਲਈ ਛੱਡ ਦਿਓ</string>
+    <string name="location_permission_denied" comment="Message to show when location permission">ਇੰਝ ਲੱਗਦਾ ਹੈ ਕਿ ਤੁਸੀਂ ਇਸ ਵਿਸ਼ੇਸ਼ਤਾ ਲਈ ਲੋੜੀਂਦੀ ਆਗਿਆਵਾਂ ਨੂੰ ਬੰਦ ਕਰ ਦਿੱਤਾ ਹੈ। ਇਸ ਨੂੰ ਫ਼ੋਨ ਸੈਟਿੰਗਾਂ &gt; ਐਪਸ &gt; Mera Mishtu &gt; ਆਗਿਆਵਾਂ ਦੇ ਅਧੀਨ ਸਮਰੱਥ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ</string>
+    <string name="location_scan_denied" comment="Message to show when location permission">ਜੇ ਤੁਸੀਂ ਭਵਿੱਖ ਵਿੱਚ ਆਪਣੇ ਸਥਾਨ ਨੂੰ ਬਦਲਣਾ ਚਾਹੁੰਦੇ ਹੋ, ਤਾਂ ਇਸ ਨੂੰ ਮੇਰੇ ਬਾਰੇ &gt; ਸਥਾਨ &gt; ਤਾਜ਼ਾ ਕਰੋ ਵਿਭਾਗ ਦੇ ਅਧੀਨ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ</string>
+    <string name="location_scan_denied_steps" comment="Steps to refresh location">ਮੇਰੇ ਬਾਰੇ &gt; ਸਥਾਨ &gt; ਤਾਜ਼ਾ ਕਰੋ</string>
+    <string name="location_permission_steps" comment="Steps to allow location permission">ਫ਼ੋਨ ਸੈਟਿੰਗਾਂ &gt; ਐਪਸ &gt; Mera Mishtu &gt; ਆਗਿਆਵਾਂ</string>
+    <string name="go_to_settings" comment="Button go to settings">ਸੈਟਿੰਗਾਂ \'ਤੇ ਜਾਓ</string>
+    <string name="uh_oh" comment="Text notifying hubs are not available">ਔ-ਹੋ!</string>
+    <string name="thank_you_for_interest" comment="Interested in offline download">ਦਿਲਚਸਪੀ ਦਿਖਾਉਣ ਲਈ ਤੁਹਾਡਾ ਧੰਨਵਾਦ।</string>
+    <string name="watch_film" comment="No download, hence stream films">ਫਿਲਮਾਂ ਦੇਖੋ</string>
+    <string name="referral_code_saved_already" comment="error duplicate referral code">ਹਵਾਲਾ ਕੋਡ ਪਹਿਲਾਂ ਤੋਂ ਹੀ ਸੁਰੱਖਿਅਤ ਕੀਤਾ ਗਿਆ</string>
+    <string name="invalid_referral_code" comment="error invalid referral code">ਅਯੋਗ ਹਵਾਲਾ ਕੋਡ</string>
+    <string name="referral_code_saved" comment="error code saved">ਹਵਾਲਾ ਕੋਡ ਸੁਰੱਖਿਅਤ ਕੀਤਾ ਗਿਆ</string>
+    <string name="error_no_incentive_plan" comment="Error no incentive plan">ਤਤਕਰਾ ਪ੍ਰਦਾਤਾ ਦੁਆਰਾ ਕੋਈ ਪ੍ਰੋਤਸਾਹਨ ਯੋਜਨਾ ਸੈਟ ਨਹੀਂ ਕੀਤੀ ਗਈ</string>
+    <string name="app_update_failed" comment="App update failed to install">ਅਪਡੇਟ ਨੰ ਸਥਾਪਿਤ ਨਹੀਂ ਕੀਤਾ ਗਿਆ, ਬਾਅਦ ਵਿੱਚ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।</string>
+    <string name="create_duplicate_order_error" comment="Create order error when pack is already active">ਉਪਭੋਗਤਾ ਕੋਲ ਪਹਿਲਾਂ ਹੀ ਸਮਾਨ ਤਤਕਰੇ ਪ੍ਰਦਾਤਾ ਲਈ ਆਰਡਰ ਹੈ</string>
+    <string name="change" comment="text to change the content provider in films/series tab">ਬਦਲੋ</string>
+    <string name="change_content_provider" comment="static text to change the content provider in films/series tab">ਕਿਰਪਾ ਕਰਕੇ ਉਸ ਚੈਨਲ ਨੂੰ ਚੁਣੋ ਅਤੇ ਕਲਿਕ ਕਰੋ ਜਿਸ ਨੂੰ ਤੁਸੀਂ ਦੇਖਣਾ ਚਾਹੁੰਦੇ ਹੋ!</string>
+    <string name="you_are_watching" comment="static text to saying which content provider user watching">ਤੁਸੀਂ %s ਨੂੰ ਦੇਖ ਰਹੇ ਹੋ</string>
+    <string name="view_all_seasons" comment="description text for episode list">ਸਾਰੀਆਂ ਰੁੱਤਾਂ ਦੇਖੋ</string>
+    <string name="season_suffix" comment="suffix for season">S</string>
+    <string name="episode_suffix" comment="suffix for episodes">E</string>
+    <string name="season_listing">ਸੀਜ਼ਨ</string>
+
+</resources>

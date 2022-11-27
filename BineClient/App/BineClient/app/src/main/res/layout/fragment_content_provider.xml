@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/container_content_provider_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/close"
+            layout="@layout/textview_close_bottom_sheet"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/fragment_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/close">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/bn_blue_gredient_with_starts">
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/smiley"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_smiley_grinning_face_with_big_eyes"
+                android:layout_marginTop="@dimen/dp_26"
+                android:layout_marginStart="@dimen/dp_16"
+
+                ></ImageView>
+
+            <TextView
+                android:id="@+id/title"
+                style="@style/BodyText16sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_24"
+                android:layout_marginEnd="@dimen/dp_16"
+                android:layout_toEndOf="@id/smiley"
+                android:drawablePadding="@dimen/dp_8"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:paddingStart="@dimen/dp_8"
+                android:text= "@string/change_content_provider"
+                android:textColor="@color/white"></TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/fragment_header"
+            android:background="@drawable/rounded_top_corners_rectangle"
+            android:backgroundTint="@color/white">
+
+            <TextView
+                android:id="@+id/title_bottomsheet"
+                android:visibility="gone"
+                style="@style/SubHeadingText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/dp_8"
+                android:layout_marginTop="@dimen/dp_24"
+                android:layout_marginEnd="@dimen/dp_16"
+                android:gravity="center"
+                android:paddingStart="@dimen/dp_16"
+                android:layout_marginStart="@dimen/dp_16"
+                android:text="@string/change_content_provider"
+                android:textColor="@color/black"></TextView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title_bottomsheet"
+                android:paddingBottom="?attr/actionBarSize"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+            </androidx.recyclerview.widget.RecyclerView>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</layout>

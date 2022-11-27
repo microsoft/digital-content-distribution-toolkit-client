@@ -1,0 +1,47 @@
+# Build your Android project with Gradle.
+# Add steps that test, sign, and distribute the APK, save build artifacts, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/android
+
+trigger:
+  branches:
+    include:
+      - dev
+  paths:
+    include:
+      - bine-sdk/*
+
+pool:
+  vmImage: 'macOS-10.14'
+
+steps:
+
+# Android
+- task: Gradle@2
+  displayName: Running Unit Tests
+  inputs:
+    workingDirectory: ''
+    gradleWrapperFile: 'gradlew'
+    gradleOptions: '-Xmx3072m'
+    publishJUnitResults: true
+    testResultsFiles: '**/TEST-*.xml'
+    tasks: ':bine-sdk:testReleaseUnitTest'
+
+- task: Gradle@2
+  displayName: Build aar
+  inputs:
+    workingDirectory: ''
+    gradleWrapperFile: 'gradlew'
+    gradleOptions: '-Xmx3072m'
+    publishJUnitResults: true
+    testResultsFiles: '**/TEST-*.xml'
+    tasks: ':bine-sdk:build'
+
+- task: Gradle@2
+  displayName: Publishing SDK Artifacts
+  inputs:
+    workingDirectory: ''
+    gradleWrapperFile: 'gradlew'
+    gradleOptions: '-Xmx3072m'
+    publishJUnitResults: true
+    testResultsFiles: '**/TEST-*.xml'
+    tasks: ':bine-sdk:publish'

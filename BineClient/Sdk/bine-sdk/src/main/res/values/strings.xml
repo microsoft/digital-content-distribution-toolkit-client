@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Mishtu</string>
+    <string name="error_no_internet_connection">No internet connection!</string>
+    <string name="file_deleted">File Deleted!</string>
+    <string name="connect">CONNECT</string>
+    <string name="connect_to_boot_wifi">Connect to booth WIFI</string>
+    <string name="you_have_you_reached_the_boot_to_start_download_get_connected_to_wifi">You have reached the booth, to start download get connected to WIFI</string>
+    <string name="str_coupon_title">Congrats you won a recharge coupon</string>
+    <string name="claim">CLAIM</string>
+    <string name="str_promocode_desc_notification">&#160;show this code to store owner to get the recharge done</string>
+    <string name="download_done">Download Done!</string>
+    <string name="downloading_now">Downloading Now</string>
+    <string name="text_download_status">completed… %d\%s</string>
+    <string name="download_failed">Download Failed</string>
+    <string name="button_title_play">PLAY</string>
+    <string name="cancel">CANCEL</string>
+
+    <string name="error_no_decoder">This device does not provide a decoder for <xliff:g id="mime_type">%1$s</xliff:g></string>
+    <string name="error_no_secure_decoder">This device does not provide a secure decoder for <xliff:g id="mime_type">%1$s</xliff:g></string>
+    <string name="error_querying_decoders">Unable to query device decoders</string>
+    <string name="error_instantiating_decoder">Unable to instantiate decoder <xliff:g id="decoder_name">%1$s</xliff:g></string>
+    <string name="error_generic">Playback failed</string>
+    <string name="channel_play">Video Play</string>
+    <string name="channel_play_description">Channel to notify when video is playing</string>
+</resources>

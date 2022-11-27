@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="@color/white"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:id="@+id/parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/dp_20">
+
+        <ImageView
+            app:layout_constraintBottom_toBottomOf="@id/subTitle"
+            android:id="@+id/icon"
+            android:layout_marginStart="@dimen/dp_20"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/title"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="0dp"
+            app:tint="#c4c4c4"
+            android:contentDescription="@string/bn_image_description"/>
+
+        <TextView
+            android:layout_marginTop="@dimen/dp_20"
+            android:textSize="@dimen/sp_14"
+            android:id="@+id/title"
+            style="@style/BodyText14sp"
+            android:textStyle="bold"
+            android:layout_marginStart="@dimen/dp_16"
+            app:layout_constraintStart_toEndOf="@id/icon"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/subTitle"
+            android:layout_marginStart="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_2"
+            style="@style/BodyText14sp"
+            app:layout_constraintStart_toEndOf="@id/icon"
+            app:layout_constraintTop_toBottomOf="@id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/check"
+            android:layout_marginEnd="@dimen/dp_24"
+            android:src="@drawable/bn_ic_check_blue"
+            app:layout_constraintBottom_toBottomOf="@id/subTitle"
+            app:layout_constraintTop_toTopOf="@id/title"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/bn_image_description"/>
+
+        <View
+            android:layout_marginEnd="@dimen/dp_16"
+            android:layout_marginStart="@dimen/dp_16"
+            android:background="@color/bn_divider_color"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <include
+            android:id="@+id/close"
+            layout="@layout/textview_close_bottom_sheet" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/listContainer"
+            android:layout_marginTop="@dimen/dp_24"
+            android:paddingBottom="@dimen/dp_50"
+            android:background="@drawable/bn_bg_bottom_sheet_language"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/close">
+
+            <TextView
+                android:layout_marginTop="@dimen/dp_20"
+                android:gravity="center"
+                android:id="@+id/title"
+                android:textColor="@color/black"
+                android:text="@string/bn_enter_referral_code"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/BodyText16sp"/>
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/titleDesc"
+                style="@style/BodyText14sp"
+                android:text="@string/enter_the_code_shared_by_the_retailer"
+                app:layout_constraintTop_toBottomOf="@id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/searchContainer"
+                android:layout_marginStart="@dimen/dp_20"
+                android:layout_marginEnd="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_10"
+                app:layout_constraintTop_toBottomOf="@id/titleDesc"
+                android:background="@drawable/bg_bn_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:maxLines="1"
+                    android:maxLength="6"
+                    android:singleLine="true"
+                    android:imeOptions="actionDone"
+                    android:background="@null"
+                    android:padding="@dimen/dp_12"
+                    android:textColorHint="@color/profile_light_text"
+                    android:hint="@string/bn_referral_code"
+                    android:autofillHints="@string/bn_referral_code"
+                    android:id="@+id/inputSearch"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    style="@style/BodyText16sp"/>
+
+                <ImageView
+                    android:id="@+id/searchMic"
+                    app:layout_constraintBottom_toBottomOf="@id/inputSearch"
+                    app:layout_constraintTop_toTopOf="@id/inputSearch"
+                    android:padding="@dimen/dp_5"
+                    android:src="@drawable/bn_ic_mic"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:contentDescription="@string/bn_image_description"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <Button
+                android:id="@+id/btnValidateReferral"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_20"
+                android:background="@drawable/bn_bg_btn_round"
+                android:text="@string/bn_submit"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:layout_constraintTop_toBottomOf="@id/searchContainer"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                style="@style/SubmitButtonStyle"/>
+
+            <Button
+                android:id="@+id/btnSkip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_20"
+                android:background="@drawable/bn_bg_btn_buy_pack"
+                android:text="@string/skip"
+                android:textAllCaps="false"
+                android:textColor="@color/button_color"
+                app:layout_constraintTop_toBottomOf="@id/btnValidateReferral"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                style="@style/SubmitButtonStyle"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:id="@+id/collapsing_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:elevation="@dimen/dp_2"
+                app:layout_scrollFlags="noScroll">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_scrollFlags="enterAlways"
+                    app:layout_collapseMode="pin"
+                    android:background="@color/transparent">
+
+                    <com.google.android.material.tabs.TabLayout
+                        android:id="@+id/tabLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dp_16"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_scrollFlags="enterAlways"
+                        style="@style/TabStyle">
+
+                        <!-- <com.google.android.material.tabs.TabItem
+                             android:id="@+id/tab_scratch_card"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="@string/bn_rewards" />-->
+
+                        <com.google.android.material.tabs.TabItem
+                            android:id="@+id/tab_offers"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/rewards_offers" />
+                    </com.google.android.material.tabs.TabLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rewards_coins_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:background="@drawable/bg_coins"
+                        android:layout_below="@id/tabLayout">
+
+                        <TextView
+                            android:id="@+id/available_textview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:fontFamily="@font/mukta_extrabold"
+                            android:text="@string/available"
+                            style="@style/RegularWhiteText20sp"
+                            android:textColor="@color/white"/>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@id/available_textview">
+
+                            <TextView
+                                android:id="@+id/rewards_coins"
+                                android:layout_width="wrap_content"
+                                android:layout_height="66dp"
+                                android:fontFamily="@font/mukta_extrabold"
+                                android:textColor="@color/white"
+                                android:textSize="40sp"
+                                android:textAlignment="center"
+                                android:gravity="center"
+                                android:text="- -"
+                                android:textStyle="bold"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"/>
+
+                            <ImageView
+                                android:id="@+id/coin_imageview"
+                                android:layout_width="@dimen/dp_38"
+                                android:layout_height="@dimen/dp_38"
+                                android:src="@drawable/ic_coin"
+                                android:layout_marginEnd="@dimen/dp_8"
+                                app:layout_constraintVertical_bias="0.3"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                android:contentDescription="@string/bn_image_description"
+                                app:layout_constraintEnd_toStartOf="@id/rewards_coins"/>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </RelativeLayout>
+
+                </RelativeLayout>
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        </com.google.android.material.appbar.AppBarLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

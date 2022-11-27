@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="@drawable/bg_header_blue_gradient"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_marginTop="@dimen/dp_40"
+            android:src="@drawable/bn_ic_app_logo"
+            android:id="@+id/appLogo"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="@dimen/dp_25"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_height="@dimen/dp_25"
+            android:contentDescription="@string/bn_image_description"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_marginTop="@dimen/dp_40"
+            app:layout_constraintTop_toBottomOf="@id/appLogo"
+            android:background="@drawable/bn_bg_bottom_sheet_language"
+            android:layout_width="match_parent"
+            app:layout_constraintBottom_toTopOf="@id/footer"
+            android:layout_height="0dp">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_marginTop="@dimen/dp_20"
+                style="@style/SubHeadingText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="@string/bn_enter_6_digits_otp"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/subTitle"
+                android:layout_marginTop="@dimen/dp_3"
+                style="@style/BodyText14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="@string/bn_otp_has_been_sent"
+                app:layout_constraintTop_toBottomOf="@id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <com.microsoft.mobile.polymer.mishtu.ui.views.OtpView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_24"
+                android:enabled="true"
+                android:id="@+id/inputOtp"
+                app:itemHeight="@dimen/dp_44"
+                app:itemWidth="@dimen/dp_44"
+                android:focusable="true"
+                android:inputType="number"
+                android:itemBackground="@drawable/bg_bn_search"
+                android:textColor="@color/black"
+                app:itemCount="6"
+                android:focusableInTouchMode="true"
+                app:itemPadding="@dimen/dp_10"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/subTitle"
+                app:viewType="none"
+                style="@style/BodyText16sp"/>
+
+
+            <TextView
+                android:layout_marginTop="@dimen/dp_16"
+                app:layout_constraintStart_toStartOf="@id/inputOtp"
+                android:id="@+id/resendOtp"
+                app:layout_constraintTop_toBottomOf="@id/inputOtp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/BodyText14sp"/>
+
+            <TextView
+                android:layout_marginTop="@dimen/dp_16"
+                app:layout_constraintStart_toStartOf="@id/inputOtp"
+                android:id="@+id/timer"
+                app:layout_constraintTop_toBottomOf="@id/inputOtp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/BodyText14sp"/>
+
+            <CheckBox
+                android:id="@+id/cbAgeConfirm"
+                android:padding="@dimen/dp_10"
+                android:text="@string/bn_i_confirm_my_age_is_18_and_above"
+                android:layout_marginBottom="@dimen/dp_16"
+                android:layout_marginStart="@dimen/dp_24"
+                android:button="@drawable/bn_checkbox_terms"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/BodyText16sp"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/dp_6"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <Button
+                android:enabled="false"
+                android:id="@+id/btnVerifyPin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_20"
+                android:background="@drawable/bn_btn_login_selector"
+                android:text="@string/bn_verify_pin"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.cardview.widget.CardView>
+
+        <ProgressBar
+            android:visibility="gone"
+            android:id="@+id/progress_bar"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/user_delete_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:padding="@dimen/dp_20"
+            android:clickable="true"
+            android:focusable="true"
+            android:visibility="gone"
+            android:elevation="@dimen/dp_8">
+
+            <ImageView
+                android:id="@+id/user_delete_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:src="@drawable/ic_user_delete_progress"
+                app:layout_constraintVertical_bias="0.2"
+                android:contentDescription="@string/bn_image_description"/>
+
+            <TextView
+                android:id="@+id/user_delete_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/account_deletion_in_progress"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/user_delete_image"
+                style="@style/HeadingText"
+                android:textSize="@dimen/sp_20"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/dp_50"/>
+
+            <TextView
+                android:id="@+id/user_delete_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/user_delete_description"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/user_delete_title"
+                style="@style/BodyText16sp"
+                android:textColor="@color/light_text_color"
+                android:textSize="@dimen/sp_20"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/dp_16"/>
+
+            <Button
+                android:id="@+id/user_delete_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/user_delete_description"
+                android:background="@drawable/bn_bg_btn_buy_pack"
+                style="@style/SubmitButtonStyle"
+                android:textSize="@dimen/sp_18"
+                android:text="@string/bn_okay"
+                android:textColor="@color/button_color"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

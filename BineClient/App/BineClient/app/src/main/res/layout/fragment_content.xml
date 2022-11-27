@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/root_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            tools:context=".ui.fragment.ContentFragment">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/bn_divider_color">
+
+                <LinearLayout
+                    android:id="@+id/contentContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/bn_divider_color"
+                    android:orientation="vertical"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/active_connection"
+                        style="@style/SubHeadingText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/button_color"
+                        android:drawablePadding="@dimen/dp_18"
+                        android:padding="@dimen/dp_16"
+                        android:text="@string/connection_active"
+                        android:textColor="@color/white"
+                        android:visibility="gone"
+                        app:drawableStartCompat="@drawable/ic_wifi_active" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/change_content_provider"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:id="@+id/cp_imageview"
+                            android:layout_width="@dimen/dp_70"
+                            android:layout_height="@dimen/dp_70"
+                            android:padding="6dp"
+                            android:src="@drawable/bn_ic_eros_squre"
+                            app:layout_constraintEnd_toStartOf="@id/selected_content_provider"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/selected_content_provider"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="@dimen/dp_8"
+                            android:paddingEnd="@dimen/dp_20"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@id/selected_cp_change"
+                            app:layout_constraintStart_toEndOf="@id/cp_imageview"
+                            app:layout_constraintTop_toTopOf="@id/cp_imageview" />
+
+                        <TextView
+                            android:id="@+id/selected_cp_change"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableEnd="@drawable/ic_right_arrow_blue"
+                            android:drawablePadding="10dp"
+                            android:paddingEnd="@dimen/dp_20"
+                            android:text="@string/change"
+                            android:textColor="@color/color_link_blue"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/selected_content_provider"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <LinearLayout
+                        android:id="@+id/parent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/divider_color"
+                        android:orientation="vertical" />
+                </LinearLayout>
+
+                <com.microsoft.mobile.polymer.mishtu.ui.views.ErrorView
+                    android:id="@+id/content_error_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <!--<com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/wifi_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_20"
+            android:src="@drawable/ic_wifi_active"
+            android:layout_gravity="end|bottom"
+            android:enabled="false"
+            android:visibility="gone"
+            android:shadowColor="@color/black"
+            app:fabSize="normal"
+            android:contentDescription="@string/bn_image_description" />-->
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

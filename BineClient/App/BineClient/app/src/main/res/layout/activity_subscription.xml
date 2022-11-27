@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/subscription_activity_container"
+        tools:context=".ui.activity.SubscriptionActivity">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolBar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            app:title="@string/bn_subscription"
+            app:titleTextColor="@color/black"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:titleTextAppearance="@style/ToolbarTextAppearance"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/subscription_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolBar"
+            />
+
+        <!--<include
+            android:id="@+id/subscription_active_layout"
+            layout="@layout/view_subscription_active"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolBar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:visibility="gone"/>-->
+
+        <!--<include
+            android:id="@+id/subscription_expired_layout"
+            layout="@layout/view_subscription_expired"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/subscription_active_layout"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:visibility="gone"/>-->
+
+        <TextView
+            android:id="@+id/subscription_previous_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/subscription_recyclerView"
+            app:layout_constraintStart_toStartOf="parent"
+            android:padding="@dimen/dp_20"
+            android:drawablePadding="@dimen/dp_10"
+            android:text="@string/bn_previous_subscriptions"
+            style="@style/BodyText16sp"
+            app:drawableEndCompat="@drawable/bn_ic_right_arrow"
+            app:drawableStartCompat="@drawable/bn_ic_previous_subscription" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_height"
+            android:background="@color/bn_divider_color_grey"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginEnd="@dimen/dp_20"
+            app:layout_constraintTop_toBottomOf="@id/subscription_previous_layout" />
+
+        <TextView
+            android:id="@+id/subscription_packs_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/subscription_previous_layout"
+            app:layout_constraintStart_toStartOf="parent"
+            android:padding="@dimen/dp_20"
+            android:drawablePadding="@dimen/dp_14"
+            android:text="@string/bn_view_other_packs"
+            style="@style/BodyText16sp"
+            app:drawableEndCompat="@drawable/bn_ic_right_arrow"
+            app:drawableStartCompat="@drawable/bn_ic_currency" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_height"
+            android:background="@color/bn_divider_color_grey"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginEnd="@dimen/dp_20"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/subscription_packs_layout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
