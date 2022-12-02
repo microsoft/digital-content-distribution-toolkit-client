@@ -150,7 +150,7 @@ class ProfileViewModel @Inject constructor(
                     }
                     DATAEXPORT_STATUS_ExportedDataNotified -> {
                         val exportValididtyDate =
-                            formatter.parse(it.dataExportedBy?.dataExportResult?.expiresOn.split(".")[0])
+                            formatter.parse(it.dataExportedBy?.dataExportResult?.expiresOn!!.split(".")[0])
                         val exportUrl = it.dataExportedBy?.dataExportResult?.exportedDataUrl
                         if (exportValididtyDate > date) {
                             exportDataReadyToDownload.postValue(Pair(exportUrl,

@@ -51,8 +51,9 @@ open class BottomSheetContentShortInfo(private val content: Content) : BottomShe
         binding.contentTitle.visibility = View.VISIBLE
         if(!content.isMovie) {
             binding.contentTitle.text = "${content.title}  ${
-                content.season?.lowercase()?.replace("season", requireContext()?.getString(R.string.season_suffix))
-            } • ${content.episode?.lowercase()?.replace("episode", requireContext()?.getString(R.string.episode_suffix))}"
+                requireContext().getString(R.string.season_suffix)
+                    .let { content.season!!.lowercase().replace("season", it) }
+            } • ${requireContext().getString(R.string.episode_suffix).let { content.episode?.lowercase()?.replace("episode", it) }}"
         }
         else{
             binding.contentTitle.text = content.title

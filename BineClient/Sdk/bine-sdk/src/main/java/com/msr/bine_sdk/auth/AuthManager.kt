@@ -17,7 +17,7 @@ class AuthManager @Inject constructor(private val service: AuthService,
     }
 
     suspend fun validatePhone(request: LoginRequest): LoginResponse {
-        when (val response = service.validatePhone(request.phoneNumber, ""/*BuildConfig.API_KEY*/)) {
+        when (val response = service.validatePhone(request.phoneNumber, BuildConfig.API_KEY)) {
             is NetworkResponse.Success -> {
                 //Save tokens
                 saveTokens(response.body)
@@ -38,7 +38,7 @@ class AuthManager @Inject constructor(private val service: AuthService,
     suspend fun validateOTP(request: LoginRequest): LoginResponse {
         val response = service.validateOTP(request.phoneNumber,
                 request.otp,
-                ""/*BuildConfig.API_KEY*/)
+                BuildConfig.API_KEY)
         when (response) {
             is NetworkResponse.Success -> {
                 //Save tokens
@@ -66,7 +66,7 @@ class AuthManager @Inject constructor(private val service: AuthService,
         }
 
         val response = service.logout(token,
-                ""/*BuildConfig.API_KEY*/)
+                BuildConfig.API_KEY)
         when (response) {
             is NetworkResponse.Success -> {
                 //Save tokens

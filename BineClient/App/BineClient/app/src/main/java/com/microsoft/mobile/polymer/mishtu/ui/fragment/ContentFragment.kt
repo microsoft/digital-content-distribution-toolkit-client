@@ -169,6 +169,7 @@ class ContentFragment(var type: TYPE, var contentProviderId: String) : DeviceCon
                 TYPE.MOVIES -> BootTelemetryLogger.getInstance()
                     .recordPageEvent(BootTelemetryLogger.BootPage.FILMS,
                         BootTelemetryLogger.BootMarker.PAGE_CREATE)
+                TYPE.SERIES -> {}
             }
         }
 
