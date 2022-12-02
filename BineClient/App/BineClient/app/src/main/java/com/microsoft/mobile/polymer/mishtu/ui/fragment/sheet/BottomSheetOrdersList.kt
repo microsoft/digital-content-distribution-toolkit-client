@@ -88,6 +88,14 @@ class BottomSheetOrdersList : BottomSheetDialogFragment(),
             when (it){
                 Error.NETWORK_ERROR -> binding.orderListNoOrders.text = getString(R.string.bn_no_internet_subtitle)
                 /*else -> binding.orderListNoOrders.text = getString(R.string.bn_server_error)*/
+                Error.INVALID_PHONE -> {}
+                Error.INVALID_OTP -> {}
+                Error.EXCEED_ATTEMPT -> {}
+                Error.UNKNOWN_ERROR -> {}
+                Error.USER_REFERRED -> {}
+                Error.INVALID_REFERRAL -> {}
+                Error.API_ERROR -> {}
+                Error.INIT_FAILURE -> {}
             }
         })
     }

@@ -38,7 +38,7 @@ interface AuthService {
     suspend fun refreshHubToken(@Field("refresh") token:String): NetworkResponse<Token, Error>
 
     companion object {
-        public const val BASE_URL = "" //BuildConfig.AUTH_BASE_URL
+        public const val BASE_URL = BuildConfig.AUTH_BASE_URL
 
         fun create(): AuthService {
             val logger = HttpLoggingInterceptor().apply { level = HttpLoggingInterceptor.Level.BODY }

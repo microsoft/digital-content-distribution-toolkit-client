@@ -26,7 +26,7 @@ class TokenAuthenticator constructor(private val sharedPreference: BineSharedPre
         val endpoint: String = Constants.HUB_REFRESH_TOKEN
 
         val requestBuilder: Request.Builder = Request.Builder()
-                .url(/*BuildConfig.AUTH_BASE_URL +*/ endpoint)
+                .url(BuildConfig.AUTH_BASE_URL + endpoint)
 
         val refresh = sharedPreference.getSecure(BineSharedPreference.KEY_RTOKEN_HUB)
 

@@ -88,9 +88,9 @@ class ContentViewModel @Inject constructor(
         private const val CONNECTED_HUB_ID_SAVED_STATE_KEY = "hubId"
     }
 
-    private val connectedHub: MutableLiveData<String?> by lazy {
+    private val connectedHub: MutableLiveData<String> =
         savedStateHandle.getLiveData<String>(CONNECTED_HUB_ID_SAVED_STATE_KEY)
-    }
+
 
     fun setConnectedHubId(query: String) {
         savedStateHandle[CONNECTED_HUB_ID_SAVED_STATE_KEY] = query
