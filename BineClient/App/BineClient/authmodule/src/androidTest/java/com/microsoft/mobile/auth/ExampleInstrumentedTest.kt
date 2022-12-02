@@ -1,3 +1,6 @@
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT license.
+
 package com.microsoft.mobile.auth
 
 import androidx.test.platform.app.InstrumentationRegistry

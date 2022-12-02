@@ -1,3 +1,6 @@
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT license.
+
 package com.microsoft.mobile.auth.dtos
 
 sealed class AuthResponse<out T : Any> {

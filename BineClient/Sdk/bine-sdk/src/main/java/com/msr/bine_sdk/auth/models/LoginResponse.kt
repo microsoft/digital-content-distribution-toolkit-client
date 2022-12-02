@@ -1,3 +1,6 @@
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT license.
+
 package com.msr.bine_sdk.auth.models
 
 import com.msr.bine_sdk.cloud.models.Token
