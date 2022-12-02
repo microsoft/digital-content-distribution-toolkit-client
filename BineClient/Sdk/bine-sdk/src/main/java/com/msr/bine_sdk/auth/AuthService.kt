@@ -1,3 +1,6 @@
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT license.
+
 @file:Suppress("ObsoleteExperimentalCoroutines")
 
 package com.msr.bine_sdk.auth

@@ -1,3 +1,6 @@
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT license.
+
 package com.msr.bine_sdk.di
 
 import com.msr.bine_sdk.BineAPI
